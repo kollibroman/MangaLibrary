@@ -9,6 +9,6 @@ namespace MangaLibCore.Entities
         public string Author { get; set; }
         public int PagesCount { get; set; }
         public int Chapters { get; set; }
-        public List<Pages> Pages { get; set; }
+        public virtual List<Pages> Pages { get; set; }
     }
 }

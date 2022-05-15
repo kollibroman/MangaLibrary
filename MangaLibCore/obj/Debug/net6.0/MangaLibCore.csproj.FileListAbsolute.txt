@@ -1,0 +1,14 @@
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/bin/Debug/net6.0/MangaLibCore.deps.json
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/bin/Debug/net6.0/MangaLibCore.runtimeconfig.json
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/bin/Debug/net6.0/MangaLibCore.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/bin/Debug/net6.0/ref/MangaLibCore.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/bin/Debug/net6.0/MangaLibCore.pdb
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/obj/Debug/net6.0/MangaLibCore.csproj.AssemblyReference.cache
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/obj/Debug/net6.0/MangaLibCore.GeneratedMSBuildEditorConfig.editorconfig
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/obj/Debug/net6.0/MangaLibCore.AssemblyInfoInputs.cache
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/obj/Debug/net6.0/MangaLibCore.AssemblyInfo.cs
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/obj/Debug/net6.0/MangaLibCore.csproj.CoreCompileInputs.cache
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/obj/Debug/net6.0/MangaLibCore.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/obj/Debug/net6.0/ref/MangaLibCore.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/obj/Debug/net6.0/MangaLibCore.pdb
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/obj/Debug/net6.0/MangaLibCore.genruntimeconfig.cache

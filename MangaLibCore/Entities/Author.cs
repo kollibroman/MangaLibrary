@@ -5,6 +5,6 @@ namespace MangaLibCore.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        List<Manga> WrittenMangas { get; set; }
+        public virtual List<Manga> WrittenMangas { get; set; }
     }
 }
