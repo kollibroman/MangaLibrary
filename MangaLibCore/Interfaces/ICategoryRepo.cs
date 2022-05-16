@@ -7,7 +7,7 @@ namespace MangaLibCore.Interfaces
         IEnumerable<Category> GetCategories();
         Category GetCategoryId(int id);
         Category AddCategory(Category category);
-        Category UpdateCategory(Category category);
+        void UpdateCategory(int id, Category category);
         void DeleteCategory(int id);
     }
 }

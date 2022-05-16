@@ -38,6 +38,9 @@ namespace MangaLibCore.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
                     b.HasKey("Id");
 
                     b.ToTable("Authors");
@@ -54,6 +57,9 @@ namespace MangaLibCore.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
 
@@ -78,7 +84,7 @@ namespace MangaLibCore.Migrations
                     b.Property<int?>("AuthorId")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("CategoryId")
+                    b.Property<int>("CategoryId")
                         .HasColumnType("integer");
 
                     b.Property<int>("Chapters")
@@ -94,6 +100,9 @@ namespace MangaLibCore.Migrations
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
 
@@ -111,6 +120,9 @@ namespace MangaLibCore.Migrations
                         .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Index")
+                        .HasColumnType("integer");
 
                     b.Property<int>("MangaId")
                         .HasColumnType("integer");
@@ -136,9 +148,13 @@ namespace MangaLibCore.Migrations
                         .WithMany("WrittenMangas")
                         .HasForeignKey("AuthorId");
 
-                    b.HasOne("MangaLibCore.Entities.Category", null)
+                    b.HasOne("MangaLibCore.Entities.Category", "Category")
                         .WithMany("Mangas")
-                        .HasForeignKey("CategoryId");
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("MangaLibCore.Entities.Pages", b =>

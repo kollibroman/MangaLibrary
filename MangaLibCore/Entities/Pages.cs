@@ -3,9 +3,10 @@ namespace MangaLibCore.Entities
     public class Pages
     {
         public int Id { get; set; }
+        public int Index { get; set; }
         public string PageTitle { get; set; }
         public byte[] PageData { get; set; }
 
-        public virtual Manga Manga { get; set; }
+        public Manga Manga { get; set; }
     }
 }

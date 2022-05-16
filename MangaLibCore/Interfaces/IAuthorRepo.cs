@@ -8,7 +8,7 @@ namespace MangaLibCore.Interfaces
         IEnumerable<Author> GetAuthors();
         Author GetAuthorId(int id);
         Author AddAuthor(Author author);
-        Author UpdateAuthor(Author author);
+        void UpdateAuthor(int id, Author author);
         void DeleteAuthor(int id);
     }
 }

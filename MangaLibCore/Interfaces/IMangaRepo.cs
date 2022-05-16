@@ -8,7 +8,7 @@ namespace MangaLibCore.Interfaces
         IEnumerable<Manga> GetMangas();
         Manga GetMangaId(int id);
         Manga AddManga(Manga manga);
-        Manga UpdateManga(Manga manga);
+        void UpdateManga(int id, Manga manga);
         void DeleteManga(int id);
     }
 }

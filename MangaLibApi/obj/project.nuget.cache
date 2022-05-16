@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "L1KXjdyZz9L1OiOKT6QsoKgw/UoGypPe8xnfxAW7akj1U1uW8iAfvZqTR3eHCavsLTOEohyv226R0W/1qTbH6A==",
+  "dgSpecHash": "tdTOMpKR29hynI7SECKALvvF08t9rgC8N1/+w3PjuXuKnadNLeFERkd0d9ck1UphBl8I3N1WYiD1qOQb2UipMg==",
   "success": true,
   "projectFilePath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/MangaLibApi.csproj",
   "expectedPackageFiles": [
-    "/home/kollibroman/.nuget/packages/microsoft.entityframeworkcore/6.0.4/microsoft.entityframeworkcore.6.0.4.nupkg.sha512",
-    "/home/kollibroman/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.4/microsoft.entityframeworkcore.abstractions.6.0.4.nupkg.sha512",
-    "/home/kollibroman/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.4/microsoft.entityframeworkcore.analyzers.6.0.4.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/microsoft.entityframeworkcore/6.0.5/microsoft.entityframeworkcore.6.0.5.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.5/microsoft.entityframeworkcore.abstractions.6.0.5.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.5/microsoft.entityframeworkcore.analyzers.6.0.5.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.entityframeworkcore.relational/6.0.4/microsoft.entityframeworkcore.relational.6.0.4.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.extensions.caching.abstractions/6.0.0/microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
