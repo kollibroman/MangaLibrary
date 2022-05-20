@@ -7,6 +7,6 @@ namespace MangaLibCore.Entities
         public string PageTitle { get; set; }
         public byte[] PageData { get; set; }
 
-        public Manga Manga { get; set; }
+        public Chapter Chapter { get; set; }
     }
 }
