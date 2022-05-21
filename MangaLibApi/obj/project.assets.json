@@ -901,19 +901,19 @@
     ]
   },
   "packageFolders": {
-    "/home/kollibroman/.nuget/packages/": {}
+    "C:\\Users\\filip\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/MangaLibApi.csproj",
+      "projectUniqueName": "c:\\Users\\filip\\OneDrive\\Dokumenty\\GitHub\\MangaLibrary\\MangaLibApi\\MangaLibApi.csproj",
       "projectName": "MangaLibApi",
-      "projectPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/MangaLibApi.csproj",
-      "packagesPath": "/home/kollibroman/.nuget/packages/",
-      "outputPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/obj/",
+      "projectPath": "c:\\Users\\filip\\OneDrive\\Dokumenty\\GitHub\\MangaLibrary\\MangaLibApi\\MangaLibApi.csproj",
+      "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\filip\\OneDrive\\Dokumenty\\GitHub\\MangaLibrary\\MangaLibApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/kollibroman/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -925,11 +925,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj": {
-              "projectPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj"
+            "c:\\Users\\filip\\OneDrive\\Dokumenty\\GitHub\\MangaLibrary\\MangaLibApp\\MangaLibApp.csproj": {
+              "projectPath": "c:\\Users\\filip\\OneDrive\\Dokumenty\\GitHub\\MangaLibrary\\MangaLibApp\\MangaLibApp.csproj"
             },
-            "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibLogic/MangaLibLogic.csproj": {
-              "projectPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibLogic/MangaLibLogic.csproj"
+            "c:\\Users\\filip\\OneDrive\\Dokumenty\\GitHub\\MangaLibrary\\MangaLibLogic\\MangaLibLogic.csproj": {
+              "projectPath": "c:\\Users\\filip\\OneDrive\\Dokumenty\\GitHub\\MangaLibrary\\MangaLibLogic\\MangaLibLogic.csproj"
             }
           }
         }
@@ -971,7 +971,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

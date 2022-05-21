@@ -3,6 +3,7 @@ using System;
 using MangaLibCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MangaLibCore.Migrations
 {
     [DbContext(typeof(MangaLibDbContext))]
-    partial class MangaLibDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220521163434_MadeChapters")]
+    partial class MadeChapters
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -64,6 +66,31 @@ namespace MangaLibCore.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.Chapter", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("MangaId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("PagesCount")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MangaId");
+
+                    b.ToTable("Chapter");
                 });
 
             modelBuilder.Entity("MangaLibCore.Entities.Manga", b =>
@@ -121,20 +148,15 @@ namespace MangaLibCore.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("ChapterId")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("ChapterId")
+                        .HasColumnType("integer");
 
-                    b.Property<string>("MangaId")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("Index")
+                        .HasColumnType("integer");
 
                     b.Property<byte[]>("PageData")
                         .IsRequired()
                         .HasColumnType("bytea");
-
-                    b.Property<int>("PageNumber")
-                        .HasColumnType("integer");
 
                     b.Property<string>("PageTitle")
                         .IsRequired()
@@ -142,7 +164,20 @@ namespace MangaLibCore.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ChapterId");
+
                     b.ToTable("Pages");
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.Chapter", b =>
+                {
+                    b.HasOne("MangaLibCore.Entities.Manga", "Manga")
+                        .WithMany("Chapters")
+                        .HasForeignKey("MangaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Manga");
                 });
 
             modelBuilder.Entity("MangaLibCore.Entities.Manga", b =>
@@ -160,6 +195,17 @@ namespace MangaLibCore.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("MangaLibCore.Entities.Pages", b =>
+                {
+                    b.HasOne("MangaLibCore.Entities.Chapter", "Chapter")
+                        .WithMany("Pages")
+                        .HasForeignKey("ChapterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Chapter");
+                });
+
             modelBuilder.Entity("MangaLibCore.Entities.Author", b =>
                 {
                     b.Navigation("WrittenMangas");
@@ -168,6 +214,16 @@ namespace MangaLibCore.Migrations
             modelBuilder.Entity("MangaLibCore.Entities.Category", b =>
                 {
                     b.Navigation("Mangas");
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.Chapter", b =>
+                {
+                    b.Navigation("Pages");
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.Manga", b =>
+                {
+                    b.Navigation("Chapters");
                 });
 #pragma warning restore 612, 618
         }
