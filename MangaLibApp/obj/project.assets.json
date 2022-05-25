@@ -665,19 +665,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\filip\\.nuget\\packages\\": {}
+    "/home/kollibroman/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\filip\\OneDrive\\Dokumenty\\GitHub\\MangaLibrary\\MangaLibApp\\MangaLibApp.csproj",
+      "projectUniqueName": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj",
       "projectName": "MangaLibApp",
-      "projectPath": "c:\\Users\\filip\\OneDrive\\Dokumenty\\GitHub\\MangaLibrary\\MangaLibApp\\MangaLibApp.csproj",
-      "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\filip\\OneDrive\\Dokumenty\\GitHub\\MangaLibrary\\MangaLibApp\\obj\\",
+      "projectPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj",
+      "packagesPath": "/home/kollibroman/.nuget/packages/",
+      "outputPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/kollibroman/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -689,8 +689,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\filip\\OneDrive\\Dokumenty\\GitHub\\MangaLibrary\\MangaLibCore\\MangaLibCore.csproj": {
-              "projectPath": "c:\\Users\\filip\\OneDrive\\Dokumenty\\GitHub\\MangaLibrary\\MangaLibCore\\MangaLibCore.csproj"
+            "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj": {
+              "projectPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj"
             }
           }
         }
@@ -719,7 +719,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
       }
     }
   }

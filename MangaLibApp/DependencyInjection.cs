@@ -1,3 +1,4 @@
+using MangaLibCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace MangaLibApp
@@ -6,7 +7,7 @@ namespace MangaLibApp
     {
         static IServiceCollection AddApp(this IServiceCollection services)
         {
-            
+            services.AddDbContext<MangaLibDbContext>();
             return services;
         }
     }
