@@ -9,5 +9,7 @@ namespace MangaLibCore.Entities
 
         public string MangaId { get; set; }
         public string ChapterId { get; set; }
+
+        public Chapter Chapter { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace MangaLibCore.Entities
         public int PagesCount { get; set; }
         public int ChaptersCount { get; set; }
 
-        public List<Pages> Pages { get; set; }
+        public List<Chapter> Chapters { get; set; }
         public Category Category { get; set; }
     }
 }

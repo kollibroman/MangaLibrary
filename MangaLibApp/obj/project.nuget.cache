@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "nFi/Z7SyUAr5CAyuHV6WWmJnfqkSQQEM/9EH9FHGlVxXbLluCt3M5zLnrE0tXHxDXfmUZXeOFACu33EMmgKgZw==",
+  "dgSpecHash": "+/9Ldb9v3GUeidpHcr6mGv9U2UEdCuPdHrwZv8+f1taWovC9XmqrwM58Thn2pKcvhFw8L67YSeshamWpMMvOlA==",
   "success": true,
   "projectFilePath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj",
   "expectedPackageFiles": [
+    "/home/kollibroman/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/11.0.0/automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.entityframeworkcore/6.0.5/microsoft.entityframeworkcore.6.0.5.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.5/microsoft.entityframeworkcore.abstractions.6.0.5.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.5/microsoft.entityframeworkcore.analyzers.6.0.5.nupkg.sha512",

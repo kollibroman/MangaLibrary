@@ -1,11 +1,12 @@
 namespace MangaLibCore.Entities
 {
-    public class Category
+    public class Chapter
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public DateTime UpdatedAt { get; set; }
 
-        public List<Manga> Mangas { get; set; }
+
+        public List<Pages> Pages { get; set; }
+        public Manga Manga { get; set; }
     }
 }
