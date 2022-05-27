@@ -6,8 +6,8 @@ namespace MangaLibApp.Interfaces
     {
         IEnumerable<CategoryDto> GetAll();
         CategoryDto GetById(int id);
-        void Create(CreateAuthorDto dto);
-        bool Update(int id, UpdateAuthorDto dto);
+        void Create(CreateCategoryDto dto);
+        bool Update(int id, UpdateCategoryDto dto);
         bool Delete(int id);
     }
 }

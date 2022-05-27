@@ -1,33 +1,65 @@
+using AutoMapper;
 using MangaLibApp.Interfaces;
 using MangaLibApp.Models;
+using MangaLibCore;
+using MangaLibCore.Entities;
 
 namespace MangaLibApp.Services
 {
     public class CategoryService : ICategoryService
     {
-        public void Create(CreateAuthorDto dto)
-        {
-            throw new NotImplementedException();
-        }
+        private readonly MangaLibDbContext _db;
+        private readonly IMapper _mapper;
 
-        public bool Delete(int id)
+        public CategoryService(MangaLibDbContext db, IMapper mapper)
         {
-            throw new NotImplementedException();
+            _db = db;
+            _mapper = mapper;
         }
-
         public IEnumerable<CategoryDto> GetAll()
         {
-            throw new NotImplementedException();
+            var category = _db.Categories.ToList();
+            return _mapper.Map<IEnumerable<CategoryDto>>(category);
         }
 
         public CategoryDto GetById(int id)
         {
-            throw new NotImplementedException();
+            var category = _db.Categories.SingleOrDefault(i => i.Id == id);
+            return _mapper.Map<CategoryDto>(category);
         }
 
-        public bool Update(int id, UpdateAuthorDto dto)
+        public bool Update(int id, UpdateCategoryDto dto)
         {
-            throw new NotImplementedException();
+            var category = _db.Categories.SingleOrDefault(i => i.Id == id);
+
+            if(category is null) 
+                return false;
+
+            category.Name = dto.Name;
+            category.Mangas = dto.Mangas;
+            category.UpdatedAt = DateTime.Now;
+            _db.SaveChanges();
+
+            return true;
         }
+        public void Create(CreateCategoryDto dto)
+        {
+            var category = _mapper.Map<Category>(dto);
+            _db.Add(category);
+            _db.SaveChanges();
+        }
+
+        public bool Delete(int id)
+        {
+            var category = _db.Categories.SingleOrDefault(i => i.Id == id);
+
+            if(category is null)
+                return false;
+
+            _db.Remove(category);
+            _db.SaveChanges();
+            return true;
+        }
+
     }
 }

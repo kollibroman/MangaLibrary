@@ -32,7 +32,8 @@ namespace MangaLibApp.Services
         {
             var manga = _dbcontext.Mangas.FirstOrDefault(i => i.Id == id);
 
-            if(manga is null) return false;
+            if(manga is null) 
+                return false;
 
             manga.Title = dto.Title;
             manga.UpdatedAt = DateTime.Now;
@@ -56,7 +57,8 @@ namespace MangaLibApp.Services
         {
             var manga = _dbcontext.Mangas.SingleOrDefault(i => i.Id == id);
 
-            if(manga is null) return false;
+            if(manga is null) 
+                return false;
 
             _dbcontext.Remove(manga);
             _dbcontext.SaveChanges();
