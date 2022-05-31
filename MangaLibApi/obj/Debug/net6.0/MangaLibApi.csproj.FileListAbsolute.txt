@@ -76,3 +76,4 @@ C:/Users/filip/OneDrive/Dokumenty/GitHub/MangaLibrary/MangaLibApi/obj/Debug/net6
 C:/Users/filip/OneDrive/Dokumenty/GitHub/MangaLibrary/MangaLibApi/obj/Debug/net6.0/MangaLibApi.genruntimeconfig.cache
 /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/AutoMapper.dll
 /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Newtonsoft.Json.dll

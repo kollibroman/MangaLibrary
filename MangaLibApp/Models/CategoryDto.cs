@@ -7,6 +7,6 @@ namespace MangaLibApp.Models
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public List<Manga> Mangas { get; set; }
+        public List<string> Mangas { get; set; }
     }
 }

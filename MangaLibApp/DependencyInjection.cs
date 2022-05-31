@@ -8,13 +8,13 @@ namespace MangaLibApp
 {
     public static class DependencyInjection
     {
-        static IServiceCollection AddApp(this IServiceCollection services)
+        public static IServiceCollection AddApp(this IServiceCollection services)
         {
             services.AddDbContext<MangaLibDbContext>();
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
-            services.AddSingleton<IMangaService, MangaService>();
-            services.AddSingleton<ICategoryService, CategoryService>();
-            services.AddSingleton<IAuthorService, AuthorService>();
+            services.AddScoped<IMangaService, MangaService>();
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IAuthorService, AuthorService>();
             return services;
         }
     }

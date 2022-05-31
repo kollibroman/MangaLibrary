@@ -1,6 +1,6 @@
 namespace MangaLibApp.Interfaces
 {
-    public class IChapterService
+    public interface IChapterService
     {
         
     }

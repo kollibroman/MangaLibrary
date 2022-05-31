@@ -11,6 +11,11 @@ namespace MangaLibCore
         public DbSet<Pages> Pages { get; set; }
         public DbSet<Author> Authors { get; set; }
 
+        public MangaLibDbContext()
+        {
+            AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Manga>()
@@ -25,6 +30,7 @@ namespace MangaLibCore
             modelBuilder.Entity<Author>()
                 .Property(n => n.Name)
                 .IsRequired();
+            modelBuilder.Seed();
         }
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {

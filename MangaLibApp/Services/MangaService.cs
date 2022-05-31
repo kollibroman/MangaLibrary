@@ -41,7 +41,7 @@ namespace MangaLibApp.Services
             manga.Author = dto.Author;
             manga.ChaptersCount = dto.ChaptersCount;
             manga.Chapters = dto.Chapters;
-            _dbcontext.SaveChanges();
+           _dbcontext.SaveChanges();
             
             return true;
         }
