@@ -28,6 +28,7 @@ namespace MangaLibApp.Services
         public AuthorDto GetById(int id)
         {
             var author = _db.Authors.SingleOrDefault(i => i.Id == id);
+
             return _mapper.Map<AuthorDto>(author);
         }
 
@@ -38,10 +39,12 @@ namespace MangaLibApp.Services
            if(author is null)
             return false;
 
-            author.Name = dto.Name;
-            author.Surname = dto.Surname;
             author.UpdatedAt = DateTime.Now;
-            author.WrittenMangas = dto.WrittenMangas;
+
+            if(dto.WrittenMangas is not null)
+            {
+                 author.WrittenMangas.Add(dto.WrittenMangas.ToString());
+            }
             _db.SaveChanges();
             return true;
         }

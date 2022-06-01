@@ -1,6 +1,9 @@
 using MangaLibApp;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore;
+using Serilog;
+using MangaLibApi.Middleware;
+
 namespace MangaLibApi
 {
     public class Startup
@@ -17,6 +20,7 @@ namespace MangaLibApi
         {
             services.AddControllers();
             services.AddSwaggerGen();
+            services.AddScoped<ErrorHandler>();
             services.AddApp();
         }
 
@@ -31,6 +35,8 @@ namespace MangaLibApi
             }
 
             app.UseHttpsRedirection();
+
+            app.UseMiddleware<ErrorHandler>();
 
             app.UseRouting();
 

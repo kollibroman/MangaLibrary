@@ -77,3 +77,13 @@ C:/Users/filip/OneDrive/Dokumenty/GitHub/MangaLibrary/MangaLibApi/obj/Debug/net6
 /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/AutoMapper.dll
 /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Newtonsoft.Json.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Serilog.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Serilog.AspNetCore.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Serilog.Extensions.Hosting.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Serilog.Extensions.Logging.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Serilog.Formatting.Compact.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Serilog.Settings.Configuration.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Serilog.Sinks.Console.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Serilog.Sinks.Debug.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Serilog.Sinks.File.dll

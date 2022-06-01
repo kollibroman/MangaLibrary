@@ -26,6 +26,12 @@ namespace MangaLibApi.Controllers
         public IActionResult GetAuthorById([FromRoute] int id)
         {
             var author = _service.GetById(id);
+
+            if(author is null)
+            {
+                return NotFound();
+            }
+
             return Ok(author);
         }
         

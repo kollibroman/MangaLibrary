@@ -1,0 +1,120 @@
+2022-06-01 14:51:10.451 +02:00 [INF] Starting web host
+2022-06-01 14:51:11.242 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-01 14:51:11.247 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-01 14:51:11.254 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-01 14:51:11.255 +02:00 [INF] Hosting environment: Development
+2022-06-01 14:51:11.256 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-01 14:51:32.068 +02:00 [INF] Application is shutting down...
+2022-06-01 20:34:03.928 +02:00 [INF] Starting web host
+2022-06-01 20:34:04.891 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-01 20:34:04.901 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-01 20:34:04.910 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-01 20:34:04.912 +02:00 [INF] Hosting environment: Development
+2022-06-01 20:34:04.912 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-01 20:34:11.774 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5106/ - -
+2022-06-01 20:34:11.879 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5106/ - - - 307 0 - 113.6729ms
+2022-06-01 20:34:12.087 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/index.html - -
+2022-06-01 20:34:12.103 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotImplementedException: The method or operation is not implemented.
+   at MangaLibApi.Middleware.ErrorHandler.InvokeAsync(HttpContext context, RequestDelegate next) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Middleware/ErrorHandler.cs:line 12
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-01 20:34:12.216 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/index.html - - - 500 - text/html;+charset=utf-8 129.2831ms
+2022-06-01 20:34:12.976 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/favicon.ico - -
+2022-06-01 20:34:12.980 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotImplementedException: The method or operation is not implemented.
+   at MangaLibApi.Middleware.ErrorHandler.InvokeAsync(HttpContext context, RequestDelegate next) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Middleware/ErrorHandler.cs:line 12
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-01 20:34:12.996 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/favicon.ico - - - 500 - text/plain;+charset=utf-8 19.7565ms
+2022-06-01 20:34:23.401 +02:00 [INF] Application is shutting down...
+2022-06-01 20:34:40.362 +02:00 [INF] Starting web host
+2022-06-01 20:34:41.069 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-01 20:34:41.076 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-01 20:34:41.083 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-01 20:34:41.084 +02:00 [INF] Hosting environment: Development
+2022-06-01 20:34:41.085 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-01 20:34:47.916 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5106/ - -
+2022-06-01 20:34:48.019 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5106/ - - - 307 0 - 114.0942ms
+2022-06-01 20:34:48.240 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/index.html - -
+2022-06-01 20:34:48.303 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/index.html - - - 404 0 - 63.1594ms
+2022-06-01 20:35:00.560 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger - -
+2022-06-01 20:35:00.565 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger - - - 301 0 - 4.4652ms
+2022-06-01 20:35:00.637 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-06-01 20:35:00.761 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 124.4500ms
+2022-06-01 20:35:00.985 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/swagger-ui.css - -
+2022-06-01 20:35:00.991 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/swagger-ui-bundle.js - -
+2022-06-01 20:35:01.004 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/swagger-ui-standalone-preset.js - -
+2022-06-01 20:35:01.077 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-01 20:35:01.077 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-06-01 20:35:01.077 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-06-01 20:35:01.083 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/swagger-ui.css - - - 200 143943 text/css 97.9799ms
+2022-06-01 20:35:01.083 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 78.7045ms
+2022-06-01 20:35:01.083 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/swagger-ui-bundle.js - - - 200 1095087 application/javascript 91.9126ms
+2022-06-01 20:35:01.420 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/favicon-16x16.png - -
+2022-06-01 20:35:01.422 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2022-06-01 20:35:01.423 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/favicon-16x16.png - - - 200 665 image/png 2.8077ms
+2022-06-01 20:35:01.603 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-06-01 20:35:01.814 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 211.4547ms
+2022-06-01 20:35:09.220 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Author - -
+2022-06-01 20:35:09.236 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-01 20:35:09.263 +02:00 [INF] Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthors() on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-06-01 20:35:12.134 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MangaLibApp.Models.AuthorDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-06-01 20:35:12.155 +02:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi) in 2876.7907ms
+2022-06-01 20:35:12.161 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-01 20:35:12.179 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Author - - - 200 - application/json;+charset=utf-8 2958.4794ms
+2022-06-01 20:36:31.326 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Author application/json 175
+2022-06-01 20:36:31.328 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.CreateAuthor (MangaLibApi)'
+2022-06-01 20:36:31.358 +02:00 [INF] Route matched with {action = "CreateAuthor", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateAuthor(MangaLibApp.Models.CreateAuthorDto) on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-06-01 20:36:31.772 +02:00 [INF] Executing CreatedResult, writing value of type 'null'.
+2022-06-01 20:36:31.773 +02:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.CreateAuthor (MangaLibApi) in 414.0944ms
+2022-06-01 20:36:31.773 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.CreateAuthor (MangaLibApi)'
+2022-06-01 20:36:31.774 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Author application/json 175 - 201 0 - 447.3169ms
+2022-06-01 20:36:47.473 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Author/7 - -
+2022-06-01 20:36:47.474 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi)'
+2022-06-01 20:36:47.479 +02:00 [INF] Route matched with {action = "GetAuthorById", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthorById(Int32) on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-06-01 20:36:47.774 +02:00 [INF] Executing OkObjectResult, writing value of type 'MangaLibApp.Models.AuthorDto'.
+2022-06-01 20:36:47.775 +02:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi) in 295.2356ms
+2022-06-01 20:36:47.776 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi)'
+2022-06-01 20:36:47.776 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Author/7 - - - 200 - application/json;+charset=utf-8 302.7650ms
+2022-06-01 20:37:24.107 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7143/api/Author/7 - -
+2022-06-01 20:37:24.108 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.DeleteAuthor (MangaLibApi)'
+2022-06-01 20:37:24.112 +02:00 [INF] Route matched with {action = "DeleteAuthor", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteAuthor(Int32) on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-06-01 20:37:24.208 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-06-01 20:37:24.209 +02:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.DeleteAuthor (MangaLibApi) in 95.9184ms
+2022-06-01 20:37:24.209 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.DeleteAuthor (MangaLibApi)'
+2022-06-01 20:37:24.209 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7143/api/Author/7 - - - 204 - - 102.5978ms
+2022-06-01 20:37:33.072 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Author - -
+2022-06-01 20:37:33.073 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-01 20:37:33.073 +02:00 [INF] Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthors() on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-06-01 20:37:33.078 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MangaLibApp.Models.AuthorDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-06-01 20:37:33.079 +02:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi) in 5.3492ms
+2022-06-01 20:37:33.080 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-01 20:37:33.080 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Author - - - 200 - application/json;+charset=utf-8 8.3570ms
+2022-06-01 20:37:59.585 +02:00 [INF] Application is shutting down...
+2022-06-01 20:45:17.536 +02:00 [INF] Starting web host
+2022-06-01 20:45:18.253 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-01 20:45:18.259 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-01 20:45:18.267 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-01 20:45:18.268 +02:00 [INF] Hosting environment: Development
+2022-06-01 20:45:18.269 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-01 20:45:29.895 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5106/ - -
+2022-06-01 20:45:29.996 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5106/ - - - 307 0 - 108.7860ms
+2022-06-01 20:45:30.215 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/index.html - -
+2022-06-01 20:45:30.307 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/index.html - - - 404 0 - 91.3332ms
+2022-06-01 20:45:39.294 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/ - -
+2022-06-01 20:45:39.297 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/ - - - 301 0 - 3.4210ms
+2022-06-01 20:45:39.376 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-06-01 20:45:39.503 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 127.2440ms
+2022-06-01 20:45:40.088 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/favicon-16x16.png - -
+2022-06-01 20:45:40.127 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2022-06-01 20:45:40.128 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/favicon-16x16.png - - - 0 665 image/png 39.4873ms
+2022-06-01 20:45:40.252 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-06-01 20:45:40.461 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 208.1981ms
+2022-06-01 20:45:52.958 +02:00 [INF] Application is shutting down...
