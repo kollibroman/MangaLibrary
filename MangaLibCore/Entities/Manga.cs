@@ -1,16 +1,16 @@
+using MangaLibCore.Enums;
+
 namespace MangaLibCore.Entities
 {
     public class Manga
     {
         public int Id { get; set; }
+        public MangaType Type { get; set; }
         public string Title { get; set; }
-        public byte[] Cover { get; set; }
-        public DateTime AddedAt { get; set; }
+        public string PublishedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
         public string Author { get; set; }
         public string Description { get; set; }
-        public int PagesCount { get; set; }
         public int ChaptersCount { get; set; }
-        public List<string> Chapters { get; set; }
     }
 }

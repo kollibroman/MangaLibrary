@@ -43,7 +43,7 @@ namespace MangaLibApp.Services
 
             if(dto.WrittenMangas is not null)
             {
-                 author.WrittenMangas.Add(dto.WrittenMangas.ToString());
+                 author.WrittenMangas.AddRange(dto.WrittenMangas);
             }
             _db.SaveChanges();
             return true;

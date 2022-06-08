@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MangaLibApi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/author")]
     public class AuthorController : ControllerBase
     {
         private readonly IAuthorService _service;
@@ -47,15 +47,15 @@ namespace MangaLibApi.Controllers
         {
             if(!ModelState.IsValid)
             {
-                return BadRequest("You are retarded!, bad id in request");
+                return BadRequest("You are retarded!");
             }
             var isUpdated = _service.Update(id, dto);
 
             if(!isUpdated)
             {
-                return NotFound();
+                return NotFound("DUPA");
             }
-            return Ok();
+            return Ok("Niedupa");
         }
 
         [HttpDelete("{id}")]

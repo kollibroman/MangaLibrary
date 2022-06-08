@@ -35,8 +35,7 @@ namespace MangaLibApp.Services
             if(category is null) 
                 return false;
 
-            category.Name = dto.Name;
-            category.Mangas = dto.Mangas;
+            category.Mangas.AddRange(dto.Mangas);
             category.UpdatedAt = DateTime.Now;
             _db.SaveChanges();
 

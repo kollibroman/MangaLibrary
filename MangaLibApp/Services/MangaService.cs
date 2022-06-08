@@ -3,6 +3,7 @@ using MangaLibApp.Interfaces;
 using MangaLibApp.Models;
 using MangaLibCore;
 using MangaLibCore.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace MangaLibApp.Services
 {
@@ -18,13 +19,15 @@ namespace MangaLibApp.Services
         }
         public IEnumerable<MangaDto> GetAll()
         {
-            var mangas = _dbcontext.Mangas.ToList();
+            var mangas = _dbcontext.Mangas
+            .ToList();
             return _mapper.Map<IEnumerable<MangaDto>>(mangas);
         }
 
         public MangaDto GetById(int id)
         {
-            var manga = _dbcontext.Mangas.SingleOrDefault(i => i.Id == id);
+            var manga = _dbcontext.Mangas
+            .SingleOrDefault(i => i.Id == id);
             return _mapper.Map<MangaDto>(manga);
         }
 
@@ -37,11 +40,9 @@ namespace MangaLibApp.Services
 
             manga.Title = dto.Title;
             manga.UpdatedAt = DateTime.Now;
-            manga.PagesCount = dto.PagesCount;
             manga.Author = dto.Author;
             manga.ChaptersCount = dto.ChaptersCount;
-            manga.Chapters = dto.Chapters;
-           _dbcontext.SaveChanges();
+            _dbcontext.SaveChanges();
             
             return true;
         }
