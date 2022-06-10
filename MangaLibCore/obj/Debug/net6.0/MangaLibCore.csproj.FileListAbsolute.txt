@@ -26,3 +26,17 @@ C:/Users/filip/OneDrive/Dokumenty/GitHub/MangaLibrary/MangaLibCore/obj/Debug/net
 C:/Users/filip/OneDrive/Dokumenty/GitHub/MangaLibrary/MangaLibCore/obj/Debug/net6.0/ref/MangaLibCore.dll
 C:/Users/filip/OneDrive/Dokumenty/GitHub/MangaLibrary/MangaLibCore/obj/Debug/net6.0/MangaLibCore.pdb
 C:/Users/filip/OneDrive/Dokumenty/GitHub/MangaLibrary/MangaLibCore/obj/Debug/net6.0/MangaLibCore.genruntimeconfig.cache
+C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibCore\bin\Debug\net6.0\MangaLibCore.deps.json
+C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibCore\bin\Debug\net6.0\MangaLibCore.runtimeconfig.json
+C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibCore\bin\Debug\net6.0\MangaLibCore.dll
+C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibCore\bin\Debug\net6.0\ref\MangaLibCore.dll
+C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibCore\bin\Debug\net6.0\MangaLibCore.pdb
+C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibCore\obj\Debug\net6.0\MangaLibCore.csproj.AssemblyReference.cache
+C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibCore\obj\Debug\net6.0\MangaLibCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibCore\obj\Debug\net6.0\MangaLibCore.AssemblyInfoInputs.cache
+C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibCore\obj\Debug\net6.0\MangaLibCore.AssemblyInfo.cs
+C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibCore\obj\Debug\net6.0\MangaLibCore.csproj.CoreCompileInputs.cache
+C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibCore\obj\Debug\net6.0\MangaLibCore.dll
+C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibCore\obj\Debug\net6.0\ref\MangaLibCore.dll
+C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibCore\obj\Debug\net6.0\MangaLibCore.pdb
+C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibCore\obj\Debug\net6.0\MangaLibCore.genruntimeconfig.cache

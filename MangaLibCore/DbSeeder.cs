@@ -2,6 +2,7 @@ using MangaLibCore.Enums;
 using MangaLibCore.Entities;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using System;
 
 namespace MangaLibCore
 {
@@ -116,6 +117,39 @@ namespace MangaLibCore
                     Author = "Horikoshi Kouhei",
                     Description = "MIDORYA MY BOI, LISTEN I HAVE MY ANUS SORE, PLEASE LUBE IT",
                     ChaptersCount = 355
+                },
+                new Manga
+                {
+                    Id = 3,
+                    Type = MangaType.Manga,
+                    Title = "Goblin Slayer",
+                    PublishedAt = "",
+                    UpdatedAt = DateTime.Now,
+                    Author = "KAGYU Kumo",
+                    Description = "Golin. Dead. Yes.",
+                    ChaptersCount = 58
+                },
+                new Manga
+                {
+                    Id = 4,
+                    Type = MangaType.Manga,
+                    Title = "Kengan Ashua",
+                    PublishedAt = "",
+                    UpdatedAt = DateTime.Now,
+                    Author = "Yabako Sandrovich",
+                    Description = "They beat the shit out of each other",
+                    ChaptersCount = 236
+                },
+                new Manga
+                {
+                    Id = 5,
+                    Type = MangaType.Manga,
+                    Title = "Fire Force",
+                    PublishedAt = "",
+                    UpdatedAt = DateTime.Now,
+                    Author = "Kei Urana",
+                    Description = " F I R E.",
+                    ChaptersCount = 304
                 }
             );
         }

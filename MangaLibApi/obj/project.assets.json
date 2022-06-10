@@ -1498,19 +1498,19 @@
     ]
   },
   "packageFolders": {
-    "/home/kollibroman/.nuget/packages/": {}
+    "C:\\Users\\Filip Kwiek\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/MangaLibApi.csproj",
+      "projectUniqueName": "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibApi\\MangaLibApi.csproj",
       "projectName": "MangaLibApi",
-      "projectPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/MangaLibApi.csproj",
-      "packagesPath": "/home/kollibroman/.nuget/packages/",
-      "outputPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/obj/",
+      "projectPath": "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibApi\\MangaLibApi.csproj",
+      "packagesPath": "C:\\Users\\Filip Kwiek\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/kollibroman/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Filip Kwiek\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1522,8 +1522,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj": {
-              "projectPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj"
+            "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibApp\\MangaLibApp.csproj": {
+              "projectPath": "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibApp\\MangaLibApp.csproj"
             }
           }
         }
@@ -1585,7 +1585,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
