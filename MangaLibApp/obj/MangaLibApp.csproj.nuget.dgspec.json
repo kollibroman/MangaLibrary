@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibApp\\MangaLibApp.csproj": {}
+    "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibApp\\MangaLibApp.csproj": {
+    "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibApp\\MangaLibApp.csproj",
+        "projectUniqueName": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj",
         "projectName": "MangaLibApp",
-        "projectPath": "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibApp\\MangaLibApp.csproj",
-        "packagesPath": "C:\\Users\\Filip Kwiek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibApp\\obj\\",
+        "projectPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj",
+        "packagesPath": "/home/kollibroman/.nuget/packages/",
+        "outputPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Filip Kwiek\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/kollibroman/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibCore\\MangaLibCore.csproj": {
-                "projectPath": "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibCore\\MangaLibCore.csproj"
+              "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj": {
+                "projectPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj"
               }
             }
           }
@@ -66,21 +66,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibCore\\MangaLibCore.csproj": {
+    "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibCore\\MangaLibCore.csproj",
+        "projectUniqueName": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj",
         "projectName": "MangaLibCore",
-        "projectPath": "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibCore\\MangaLibCore.csproj",
-        "packagesPath": "C:\\Users\\Filip Kwiek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Filip Kwiek\\Documents\\GitHub\\MangaLibrary\\MangaLibCore\\obj\\",
+        "projectPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj",
+        "packagesPath": "/home/kollibroman/.nuget/packages/",
+        "outputPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Filip Kwiek\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/kollibroman/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -138,7 +138,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }
