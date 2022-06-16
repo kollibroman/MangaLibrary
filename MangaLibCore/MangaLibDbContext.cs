@@ -10,6 +10,7 @@ namespace MangaLibCore
         public DbSet<Category> Categories { get; set; }
         public DbSet<Pages> Pages { get; set; }
         public DbSet<Author> Authors { get; set; }
+        public DbSet<Cover> Cover { get; set; }
 
         public MangaLibDbContext()
         {
@@ -30,6 +31,10 @@ namespace MangaLibCore
             modelBuilder.Entity<Author>()
                 .Property(n => n.Name)
                 .IsRequired();
+            modelBuilder.Entity<Cover>()
+                .Property(d => d.Data)
+                .IsRequired();
+                
             modelBuilder.Seed();
         }
         protected override void OnConfiguring(DbContextOptionsBuilder builder)

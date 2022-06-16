@@ -373,3 +373,289 @@ Npgsql.PostgresException (0x80004005): 3D000: database "MangaDb" does not exist
 2022-06-10 15:18:32.024 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi)'
 2022-06-10 15:18:32.026 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/manga - - - 200 - application/json;+charset=utf-8 65.0638ms
 2022-06-10 15:18:46.131 +02:00 [INF] Application is shutting down...
+2022-06-16 12:23:24.352 +02:00 [INF] Starting web host
+2022-06-16 12:23:24.980 +02:00 [INF] Now listening on: http://localhost:35499
+2022-06-16 12:23:24.983 +02:00 [INF] Now listening on: https://localhost:44785
+2022-06-16 12:23:24.987 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 12:23:24.987 +02:00 [INF] Hosting environment: Development
+2022-06-16 12:23:24.987 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-16 12:23:32.156 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:35499/ - -
+2022-06-16 12:23:32.213 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:35499/ - - - 307 0 - 61.4870ms
+2022-06-16 12:23:34.740 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44785/ - -
+2022-06-16 12:23:34.811 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44785/ - - - 404 0 - 70.8958ms
+2022-06-16 12:23:34.965 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44785/favicon.ico - -
+2022-06-16 12:23:34.966 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44785/favicon.ico - - - 404 0 - 1.3925ms
+2022-06-16 12:23:41.046 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44785/swagger - -
+2022-06-16 12:23:41.047 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44785/swagger - - - 301 0 - 0.8461ms
+2022-06-16 12:23:41.065 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44785/swagger/index.html - -
+2022-06-16 12:23:41.191 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44785/swagger/index.html - - - 200 - text/html;charset=utf-8 125.8774ms
+2022-06-16 12:23:41.279 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44785/swagger/swagger-ui.css - -
+2022-06-16 12:23:41.282 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44785/swagger/swagger-ui-bundle.js - -
+2022-06-16 12:23:41.284 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44785/swagger/swagger-ui-standalone-preset.js - -
+2022-06-16 12:23:41.303 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-06-16 12:23:41.303 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-06-16 12:23:41.303 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-16 12:23:41.303 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44785/swagger/swagger-ui-bundle.js - - - 200 1095087 application/javascript 21.5309ms
+2022-06-16 12:23:41.303 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44785/swagger/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 19.0055ms
+2022-06-16 12:23:41.303 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44785/swagger/swagger-ui.css - - - 200 143943 text/css 24.4601ms
+2022-06-16 12:23:41.506 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44785/swagger/favicon-16x16.png - -
+2022-06-16 12:23:41.506 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2022-06-16 12:23:41.506 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44785/swagger/favicon-16x16.png - - - 200 665 image/png 0.5947ms
+2022-06-16 12:23:41.583 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44785/swagger/v1/swagger.json - -
+2022-06-16 12:23:41.692 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44785/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.1994ms
+2022-06-16 12:23:46.748 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44785/api/manga - -
+2022-06-16 12:23:46.762 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi)'
+2022-06-16 12:23:46.770 +02:00 [INF] Route matched with {action = "GetAllMangas", controller = "Manga"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllMangas() on controller MangaLibApi.Controllers.MangaController (MangaLibApi).
+2022-06-16 12:23:46.971 +02:00 [INF] Executing action method MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi) - Validation state: "Valid"
+2022-06-16 12:23:49.382 +02:00 [INF] Executed action method MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2395.0758ms.
+2022-06-16 12:23:49.391 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MangaLibApp.Models.MangaDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-06-16 12:23:49.420 +02:00 [INF] Executed action MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi) in 2636.2538ms
+2022-06-16 12:23:49.420 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi)'
+2022-06-16 12:23:49.433 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44785/api/manga - - - 200 - application/json;+charset=utf-8 2684.8704ms
+2022-06-16 12:24:52.179 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44785/api/author?PageNumber=1 - -
+2022-06-16 12:24:52.180 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-16 12:24:52.193 +02:00 [INF] Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthors(MangaLibApp.Filter.PaginationFilter) on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-06-16 12:24:52.252 +02:00 [INF] Executing action method MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi) - Validation state: "Valid"
+2022-06-16 12:24:52.481 +02:00 [INF] Executed action method MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 228.6017ms.
+2022-06-16 12:24:52.482 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MangaLibApp.Models.AuthorDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-06-16 12:24:52.486 +02:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi) in 293.0417ms
+2022-06-16 12:24:52.487 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-16 12:24:52.487 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44785/api/author?PageNumber=1 - - - 200 - application/json;+charset=utf-8 308.5822ms
+2022-06-16 12:25:05.223 +02:00 [INF] Application is shutting down...
+2022-06-16 12:28:29.988 +02:00 [INF] Starting web host
+2022-06-16 12:28:30.751 +02:00 [INF] Now listening on: http://localhost:41255
+2022-06-16 12:28:30.754 +02:00 [INF] Now listening on: https://localhost:45835
+2022-06-16 12:28:30.758 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 12:28:30.759 +02:00 [INF] Hosting environment: Development
+2022-06-16 12:28:30.759 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-16 12:28:40.598 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:41255/ - -
+2022-06-16 12:28:40.647 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:41255/ - - - 307 0 - 52.3885ms
+2022-06-16 12:28:43.306 +02:00 [INF] Request starting HTTP/2 GET https://localhost:45835/ - -
+2022-06-16 12:28:43.370 +02:00 [INF] Request finished HTTP/2 GET https://localhost:45835/ - - - 404 0 - 63.9912ms
+2022-06-16 12:28:43.515 +02:00 [INF] Request starting HTTP/2 GET https://localhost:45835/favicon.ico - -
+2022-06-16 12:28:43.516 +02:00 [INF] Request finished HTTP/2 GET https://localhost:45835/favicon.ico - - - 404 0 - 1.4598ms
+2022-06-16 12:28:49.257 +02:00 [INF] Request starting HTTP/2 GET https://localhost:45835/swagger - -
+2022-06-16 12:28:49.258 +02:00 [INF] Request finished HTTP/2 GET https://localhost:45835/swagger - - - 301 0 - 1.3383ms
+2022-06-16 12:28:49.281 +02:00 [INF] Request starting HTTP/2 GET https://localhost:45835/swagger/index.html - -
+2022-06-16 12:28:49.429 +02:00 [INF] Request finished HTTP/2 GET https://localhost:45835/swagger/index.html - - - 200 - text/html;charset=utf-8 148.1065ms
+2022-06-16 12:28:49.515 +02:00 [INF] Request starting HTTP/2 GET https://localhost:45835/swagger/swagger-ui.css - -
+2022-06-16 12:28:49.521 +02:00 [INF] Request starting HTTP/2 GET https://localhost:45835/swagger/swagger-ui-bundle.js - -
+2022-06-16 12:28:49.533 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-16 12:28:49.533 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-06-16 12:28:49.533 +02:00 [INF] Request finished HTTP/2 GET https://localhost:45835/swagger/swagger-ui.css - - - 200 143943 text/css 18.0143ms
+2022-06-16 12:28:49.533 +02:00 [INF] Request finished HTTP/2 GET https://localhost:45835/swagger/swagger-ui-bundle.js - - - 200 1095087 application/javascript 12.6010ms
+2022-06-16 12:28:49.537 +02:00 [INF] Request starting HTTP/2 GET https://localhost:45835/swagger/swagger-ui-standalone-preset.js - -
+2022-06-16 12:28:49.546 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-06-16 12:28:49.546 +02:00 [INF] Request finished HTTP/2 GET https://localhost:45835/swagger/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 9.2839ms
+2022-06-16 12:28:49.737 +02:00 [INF] Request starting HTTP/2 GET https://localhost:45835/swagger/favicon-16x16.png - -
+2022-06-16 12:28:49.738 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2022-06-16 12:28:49.738 +02:00 [INF] Request finished HTTP/2 GET https://localhost:45835/swagger/favicon-16x16.png - - - 200 665 image/png 0.5976ms
+2022-06-16 12:28:49.817 +02:00 [INF] Request starting HTTP/2 GET https://localhost:45835/swagger/v1/swagger.json - -
+2022-06-16 12:28:50.037 +02:00 [INF] Request finished HTTP/2 GET https://localhost:45835/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 220.1412ms
+2022-06-16 12:28:56.829 +02:00 [INF] Request starting HTTP/2 GET https://localhost:45835/api/author/2 - -
+2022-06-16 12:28:56.835 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi)'
+2022-06-16 12:28:56.854 +02:00 [INF] Route matched with {action = "GetAuthorById", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthorById(Int32) on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-06-16 12:28:57.055 +02:00 [INF] Executing action method MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi) - Validation state: "Valid"
+2022-06-16 12:28:59.110 +02:00 [INF] Executed action method MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2036.8548ms.
+2022-06-16 12:28:59.119 +02:00 [INF] Executing OkObjectResult, writing value of type 'MangaLibApp.Wrappers.Response`1[[MangaLibApp.Models.AuthorDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-06-16 12:28:59.142 +02:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi) in 2276.2493ms
+2022-06-16 12:28:59.142 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi)'
+2022-06-16 12:28:59.155 +02:00 [INF] Request finished HTTP/2 GET https://localhost:45835/api/author/2 - - - 200 - application/json;+charset=utf-8 2325.7400ms
+2022-06-16 12:29:14.547 +02:00 [INF] Request starting HTTP/2 GET https://localhost:45835/api/author/10 - -
+2022-06-16 12:29:14.548 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi)'
+2022-06-16 12:29:14.548 +02:00 [INF] Route matched with {action = "GetAuthorById", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthorById(Int32) on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-06-16 12:29:14.553 +02:00 [INF] Executing action method MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi) - Validation state: "Valid"
+2022-06-16 12:29:14.580 +02:00 [INF] Executed action method MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 27.1357ms.
+2022-06-16 12:29:14.582 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-06-16 12:29:14.584 +02:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi) in 35.7279ms
+2022-06-16 12:29:14.585 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi)'
+2022-06-16 12:29:14.585 +02:00 [INF] Request finished HTTP/2 GET https://localhost:45835/api/author/10 - - - 404 - application/problem+json;+charset=utf-8 38.4271ms
+2022-06-16 12:29:36.236 +02:00 [INF] Application is shutting down...
+2022-06-16 13:02:36.140 +02:00 [INF] Starting web host
+2022-06-16 13:02:36.973 +02:00 [INF] Now listening on: http://localhost:37459
+2022-06-16 13:02:36.981 +02:00 [INF] Now listening on: https://localhost:40395
+2022-06-16 13:02:36.984 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 13:02:36.985 +02:00 [INF] Hosting environment: Development
+2022-06-16 13:02:36.985 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-16 13:02:37.960 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:37459/ - -
+2022-06-16 13:02:38.097 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:37459/ - - - 307 0 - 147.6240ms
+2022-06-16 13:02:40.200 +02:00 [INF] Request starting HTTP/2 GET https://localhost:40395/ - -
+2022-06-16 13:02:40.270 +02:00 [INF] Request finished HTTP/2 GET https://localhost:40395/ - - - 404 0 - 70.3415ms
+2022-06-16 13:02:40.441 +02:00 [INF] Request starting HTTP/2 GET https://localhost:40395/favicon.ico - -
+2022-06-16 13:02:40.443 +02:00 [INF] Request finished HTTP/2 GET https://localhost:40395/favicon.ico - - - 404 0 - 1.5579ms
+2022-06-16 13:02:45.072 +02:00 [INF] Request starting HTTP/2 GET https://localhost:40395/swagger - -
+2022-06-16 13:02:45.073 +02:00 [INF] Request finished HTTP/2 GET https://localhost:40395/swagger - - - 301 0 - 0.8429ms
+2022-06-16 13:02:45.090 +02:00 [INF] Request starting HTTP/2 GET https://localhost:40395/swagger/index.html - -
+2022-06-16 13:02:45.196 +02:00 [INF] Request finished HTTP/2 GET https://localhost:40395/swagger/index.html - - - 200 - text/html;charset=utf-8 105.1135ms
+2022-06-16 13:02:45.310 +02:00 [INF] Request starting HTTP/2 GET https://localhost:40395/swagger/swagger-ui.css - -
+2022-06-16 13:02:45.312 +02:00 [INF] Request starting HTTP/2 GET https://localhost:40395/swagger/swagger-ui-bundle.js - -
+2022-06-16 13:02:45.314 +02:00 [INF] Request starting HTTP/2 GET https://localhost:40395/swagger/swagger-ui-standalone-preset.js - -
+2022-06-16 13:02:45.337 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-16 13:02:45.337 +02:00 [INF] Request finished HTTP/2 GET https://localhost:40395/swagger/swagger-ui.css - - - 200 143943 text/css 27.0569ms
+2022-06-16 13:02:45.340 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-06-16 13:02:45.340 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-06-16 13:02:45.343 +02:00 [INF] Request finished HTTP/2 GET https://localhost:40395/swagger/swagger-ui-bundle.js - - - 200 1095087 application/javascript 30.6462ms
+2022-06-16 13:02:45.343 +02:00 [INF] Request finished HTTP/2 GET https://localhost:40395/swagger/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 29.0601ms
+2022-06-16 13:02:45.536 +02:00 [INF] Request starting HTTP/2 GET https://localhost:40395/swagger/favicon-16x16.png - -
+2022-06-16 13:02:45.536 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2022-06-16 13:02:45.536 +02:00 [INF] Request finished HTTP/2 GET https://localhost:40395/swagger/favicon-16x16.png - - - 200 665 image/png 0.8074ms
+2022-06-16 13:02:45.596 +02:00 [INF] Request starting HTTP/2 GET https://localhost:40395/swagger/v1/swagger.json - -
+2022-06-16 13:02:45.709 +02:00 [INF] Request finished HTTP/2 GET https://localhost:40395/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 112.8206ms
+2022-06-16 13:02:53.543 +02:00 [INF] Request starting HTTP/2 GET https://localhost:40395/api/author?PageNumber=1&PageSize=10 - -
+2022-06-16 13:02:53.556 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-16 13:02:53.577 +02:00 [INF] Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthors(MangaLibApp.Filter.PaginationFilter) on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-06-16 13:02:53.798 +02:00 [INF] Executing action method MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi) - Validation state: "Valid"
+2022-06-16 13:02:55.805 +02:00 [INF] Executed action method MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1998.7757ms.
+2022-06-16 13:02:55.809 +02:00 [INF] Executing OkObjectResult, writing value of type 'MangaLibApp.Wrappers.PagedResponse`1[[System.Collections.Generic.IEnumerable`1[[MangaLibApp.Models.AuthorDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-06-16 13:02:55.823 +02:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi) in 2239.105ms
+2022-06-16 13:02:55.823 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-16 13:02:55.829 +02:00 [INF] Request finished HTTP/2 GET https://localhost:40395/api/author?PageNumber=1&PageSize=10 - - - 200 - application/json;+charset=utf-8 2285.8584ms
+2022-06-16 13:03:58.627 +02:00 [INF] Application is shutting down...
+2022-06-16 13:26:17.207 +02:00 [INF] Starting web host
+2022-06-16 13:26:17.938 +02:00 [INF] Now listening on: http://localhost:41059
+2022-06-16 13:26:17.942 +02:00 [INF] Now listening on: https://localhost:39313
+2022-06-16 13:26:17.947 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 13:26:17.948 +02:00 [INF] Hosting environment: Development
+2022-06-16 13:26:17.948 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-16 13:26:21.273 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:41059/ - -
+2022-06-16 13:26:21.319 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:41059/ - - - 307 0 - 48.9548ms
+2022-06-16 13:26:29.925 +02:00 [INF] Request starting HTTP/2 GET https://localhost:39313/ - -
+2022-06-16 13:26:29.953 +02:00 [INF] Request finished HTTP/2 GET https://localhost:39313/ - - - 404 0 - 27.8754ms
+2022-06-16 13:26:30.109 +02:00 [INF] Request starting HTTP/2 GET https://localhost:39313/favicon.ico - -
+2022-06-16 13:26:30.110 +02:00 [INF] Request finished HTTP/2 GET https://localhost:39313/favicon.ico - - - 404 0 - 1.6087ms
+2022-06-16 13:26:35.639 +02:00 [INF] Request starting HTTP/2 GET https://localhost:39313/swagger - -
+2022-06-16 13:26:35.640 +02:00 [INF] Request finished HTTP/2 GET https://localhost:39313/swagger - - - 301 0 - 0.9317ms
+2022-06-16 13:26:35.666 +02:00 [INF] Request starting HTTP/2 GET https://localhost:39313/swagger/index.html - -
+2022-06-16 13:26:35.768 +02:00 [INF] Request finished HTTP/2 GET https://localhost:39313/swagger/index.html - - - 200 - text/html;charset=utf-8 102.4563ms
+2022-06-16 13:26:35.865 +02:00 [INF] Request starting HTTP/2 GET https://localhost:39313/swagger/swagger-ui.css - -
+2022-06-16 13:26:35.871 +02:00 [INF] Request starting HTTP/2 GET https://localhost:39313/swagger/swagger-ui-bundle.js - -
+2022-06-16 13:26:35.874 +02:00 [INF] Request starting HTTP/2 GET https://localhost:39313/swagger/swagger-ui-standalone-preset.js - -
+2022-06-16 13:26:35.889 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-16 13:26:35.889 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-06-16 13:26:35.889 +02:00 [INF] Request finished HTTP/2 GET https://localhost:39313/swagger/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 15.5137ms
+2022-06-16 13:26:35.889 +02:00 [INF] Request finished HTTP/2 GET https://localhost:39313/swagger/swagger-ui.css - - - 200 143943 text/css 24.8387ms
+2022-06-16 13:26:35.892 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-06-16 13:26:35.895 +02:00 [INF] Request finished HTTP/2 GET https://localhost:39313/swagger/swagger-ui-bundle.js - - - 200 1095087 application/javascript 23.7230ms
+2022-06-16 13:26:36.104 +02:00 [INF] Request starting HTTP/2 GET https://localhost:39313/swagger/favicon-16x16.png - -
+2022-06-16 13:26:36.104 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2022-06-16 13:26:36.105 +02:00 [INF] Request finished HTTP/2 GET https://localhost:39313/swagger/favicon-16x16.png - - - 200 665 image/png 0.9372ms
+2022-06-16 13:26:36.187 +02:00 [INF] Request starting HTTP/2 GET https://localhost:39313/swagger/v1/swagger.json - -
+2022-06-16 13:26:36.293 +02:00 [INF] Request finished HTTP/2 GET https://localhost:39313/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 106.2943ms
+2022-06-16 13:26:43.846 +02:00 [INF] Request starting HTTP/2 GET https://localhost:39313/api/author?PageNumber=1&PageSize=10 - -
+2022-06-16 13:26:43.857 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-16 13:26:43.879 +02:00 [INF] Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthors(MangaLibApp.Filter.PaginationFilter) on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-06-16 13:26:44.081 +02:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi) in 196.0261ms
+2022-06-16 13:26:44.083 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-16 13:26:44.084 +02:00 [ERR] No service for type 'Microsoft.AspNetCore.Http.IHttpContextAccessor' has been registered.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Http.IHttpContextAccessor' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MangaLibApp.DependencyInjection.<>c.<AddApp>b__0_0(IServiceProvider o) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/DependencyInjection.cs:line 22
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MangaLibApi.Middleware.ErrorHandler.InvokeAsync(HttpContext context, RequestDelegate next) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Middleware/ErrorHandler.cs:line 14
+2022-06-16 13:26:44.102 +02:00 [INF] Request finished HTTP/2 GET https://localhost:39313/api/author?PageNumber=1&PageSize=10 - - - 500 - - 255.4557ms
+2022-06-16 13:27:04.908 +02:00 [INF] Application is shutting down...
+2022-06-16 13:27:20.471 +02:00 [INF] Starting web host
+2022-06-16 13:27:21.197 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-16 13:27:21.206 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-16 13:27:21.211 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 13:27:21.212 +02:00 [INF] Hosting environment: Development
+2022-06-16 13:27:21.212 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-16 13:27:22.912 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5106/ - -
+2022-06-16 13:27:22.961 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5106/ - - - 307 0 - 54.8364ms
+2022-06-16 13:27:23.061 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/ - -
+2022-06-16 13:27:23.116 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/ - - - 404 0 - 55.7644ms
+2022-06-16 13:27:23.453 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/favicon.ico - -
+2022-06-16 13:27:23.454 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/favicon.ico - - - 404 0 - 1.9555ms
+2022-06-16 13:27:27.720 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/ - -
+2022-06-16 13:27:27.722 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/ - - - 301 0 - 1.5777ms
+2022-06-16 13:27:27.754 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-06-16 13:27:27.823 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 69.8637ms
+2022-06-16 13:27:27.926 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/swagger-ui.css - -
+2022-06-16 13:27:27.928 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/swagger-ui-bundle.js - -
+2022-06-16 13:27:27.945 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-16 13:27:27.948 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/swagger-ui.css - - - 200 143943 text/css 21.4666ms
+2022-06-16 13:27:27.948 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-06-16 13:27:27.948 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/swagger-ui-bundle.js - - - 200 1095087 application/javascript 20.3434ms
+2022-06-16 13:27:27.960 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/swagger-ui-standalone-preset.js - -
+2022-06-16 13:27:27.970 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-06-16 13:27:27.974 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 13.2518ms
+2022-06-16 13:27:28.178 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/favicon-16x16.png - -
+2022-06-16 13:27:28.179 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2022-06-16 13:27:28.179 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/favicon-16x16.png - - - 200 665 image/png 0.8527ms
+2022-06-16 13:27:28.272 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-06-16 13:27:28.385 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 112.9932ms
+2022-06-16 13:27:33.901 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/author?PageNumber=1&PageSize=10 - -
+2022-06-16 13:27:33.909 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-16 13:27:33.937 +02:00 [INF] Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthors(MangaLibApp.Filter.PaginationFilter) on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-06-16 13:27:34.351 +02:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi) in 401.722ms
+2022-06-16 13:27:34.357 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-16 13:27:34.358 +02:00 [ERR] No service for type 'Microsoft.AspNetCore.Http.IHttpContextAccessor' has been registered.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Http.IHttpContextAccessor' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MangaLibApp.DependencyInjection.<>c.<AddApp>b__0_0(IServiceProvider o) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/DependencyInjection.cs:line 22
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MangaLibApi.Middleware.ErrorHandler.InvokeAsync(HttpContext context, RequestDelegate next) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Middleware/ErrorHandler.cs:line 14
+2022-06-16 13:27:34.398 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/author?PageNumber=1&PageSize=10 - - - 500 - - 497.3870ms
+2022-06-16 13:27:50.141 +02:00 [INF] Application is shutting down...
+2022-06-16 13:28:32.859 +02:00 [INF] Starting web host
+2022-06-16 13:28:33.356 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-16 13:28:33.360 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-16 13:28:33.364 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-16 13:28:33.364 +02:00 [INF] Hosting environment: Development
+2022-06-16 13:28:33.364 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-16 13:28:35.222 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5106/ - -
+2022-06-16 13:28:35.303 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5106/ - - - 307 0 - 90.5525ms
+2022-06-16 13:28:35.391 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/ - -
+2022-06-16 13:28:35.433 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/ - - - 404 0 - 42.1345ms
+2022-06-16 13:28:38.355 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-06-16 13:28:38.465 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 110.7463ms
+2022-06-16 13:28:38.866 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-06-16 13:28:39.116 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 250.0525ms
+2022-06-16 13:28:44.846 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/author?PageNumber=1&PageSize=10 - -
+2022-06-16 13:28:44.853 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-16 13:28:44.881 +02:00 [INF] Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuthors(MangaLibApp.Filter.PaginationFilter) on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-06-16 13:28:48.834 +02:00 [INF] Executing OkObjectResult, writing value of type 'MangaLibApp.Wrappers.PagedResponse`1[[System.Collections.Generic.List`1[[MangaLibApp.Models.AuthorDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-06-16 13:28:48.864 +02:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi) in 3973.2905ms
+2022-06-16 13:28:48.867 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-16 13:28:48.876 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/author?PageNumber=1&PageSize=10 - - - 200 - application/json;+charset=utf-8 4029.9812ms
+2022-06-16 13:29:03.458 +02:00 [INF] Application is shutting down...

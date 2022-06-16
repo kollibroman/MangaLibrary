@@ -1,6 +1,7 @@
 using System.Reflection.Metadata.Ecma335;
 using System.Xml;
 using AutoMapper;
+using MangaLibApp.Filter;
 using MangaLibApp.Interfaces;
 using MangaLibApp.Models;
 using MangaLibCore;
@@ -19,10 +20,19 @@ namespace MangaLibApp.Services
             _db = db;
         }
 
-        public IEnumerable<AuthorDto> GetAll()
+        public int GetTotalRecords()
         {
-            var author = _db.Authors.ToList();
-            return _mapper.Map<IEnumerable<AuthorDto>>(author);
+            return _db.Authors.Count();
+        }
+
+        public List<AuthorDto> GetAll(PaginationFilter filter)
+        {
+            var validFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
+            var author = _db.Authors.
+            Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
+            .Take(validFilter.PageSize)
+            .ToList();
+            return _mapper.Map<List<AuthorDto>>(author);
         }
 
         public AuthorDto GetById(int id)

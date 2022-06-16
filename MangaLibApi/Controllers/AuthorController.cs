@@ -1,5 +1,8 @@
+using MangaLibApp.Filter;
+using MangaLibApp.Helpers;
 using MangaLibApp.Interfaces;
 using MangaLibApp.Models;
+using MangaLibApp.Wrappers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MangaLibApi.Controllers
@@ -9,17 +12,25 @@ namespace MangaLibApi.Controllers
     public class AuthorController : ControllerBase
     {
         private readonly IAuthorService _service;
+        private readonly IUriService _uriService;
 
-        public AuthorController(IAuthorService service)
+        public AuthorController(IAuthorService service, IUriService uriService)
         {
             _service = service;
+            _uriService = uriService;
         }
 
         [HttpGet]
-        public IActionResult GetAuthors()
+        public IActionResult GetAuthors([FromQuery] PaginationFilter paginationFilter)
         {
-            var authors = _service.GetAll();
-            return Ok(authors);
+            var route = Request.Path.Value;
+            var validFilter = new PaginationFilter(paginationFilter.PageNumber, paginationFilter.PageSize);
+
+            var authors = _service.GetAll(validFilter);
+            var authorsCount = _service.GetTotalRecords();
+
+            var pagedResponse = PaginationHelper.CreatePagedReponse<AuthorDto>(authors, validFilter, authorsCount, _uriService, route);
+            return Ok(pagedResponse);
         }
 
         [HttpGet("{id}")]
@@ -32,7 +43,7 @@ namespace MangaLibApi.Controllers
                 return NotFound();
             }
 
-            return Ok(author);
+            return Ok(new Response<AuthorDto>(author));
         }
         
         [HttpPost]
