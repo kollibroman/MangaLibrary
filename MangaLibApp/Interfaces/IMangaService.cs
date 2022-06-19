@@ -1,13 +1,15 @@
+using MangaLibApp.Filter;
 using MangaLibApp.Models;
 
 namespace MangaLibApp.Interfaces
 {
     public interface IMangaService
     {
-        IEnumerable<MangaDto> GetAll();
-        MangaDto GetById(int id);
-        void Create(CreateMangaDto dto);
-        bool Update(int id, UpdateMangaDto dto);
-        bool Delete(int id);
+        Task<List<MangaDto>> GetAll(PaginationFilter filter);
+        Task<MangaDto> GetById(int id);
+        Task<int> GetTotalRecords();
+        Task Create(CreateMangaDto dto);
+        Task<bool> Update(int id, UpdateMangaDto dto);
+        Task<bool> Delete(int id);
     }
 }

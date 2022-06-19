@@ -1,8 +1,10 @@
 using AutoMapper;
+using MangaLibApp.Filter;
 using MangaLibApp.Interfaces;
 using MangaLibApp.Models;
 using MangaLibCore;
 using MangaLibCore.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace MangaLibApp.Services
 {
@@ -16,47 +18,56 @@ namespace MangaLibApp.Services
             _db = db;
             _mapper = mapper;
         }
-        public IEnumerable<CategoryDto> GetAll()
+        public async Task<List<CategoryDto>> GetAll(PaginationFilter filter)
         {
-            var category = _db.Categories.ToList();
-            return _mapper.Map<IEnumerable<CategoryDto>>(category);
+           var validFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
+            var categories = await  _db.Categories.
+            Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
+            .Take(validFilter.PageSize)
+            .ToListAsync();
+            return _mapper.Map<List<CategoryDto>>(categories);
         }
 
-        public CategoryDto GetById(int id)
+        public Task<int> GetTotalRecords()
         {
-            var category = _db.Categories.SingleOrDefault(i => i.Id == id);
+            return _db.Categories.CountAsync();
+        }
+
+        public async Task<CategoryDto> GetById(int id)
+        {
+            var category = await _db.Categories.SingleOrDefaultAsync(i => i.Id == id);
             return _mapper.Map<CategoryDto>(category);
         }
 
-        public bool Update(int id, UpdateCategoryDto dto)
+        public async Task<bool> Update(int id, UpdateCategoryDto dto)
         {
-            var category = _db.Categories.SingleOrDefault(i => i.Id == id);
+            var category = await _db.Categories.SingleOrDefaultAsync(i => i.Id == id);
 
             if(category is null) 
                 return false;
 
             category.Mangas.AddRange(dto.Mangas);
             category.UpdatedAt = DateTime.Now;
-            _db.SaveChanges();
+            await _db.SaveChangesAsync();
 
             return true;
         }
-        public void Create(CreateCategoryDto dto)
+        public async Task Create(CreateCategoryDto dto)
         {
             var category = _mapper.Map<Category>(dto);
-            _db.Add(category);
-            _db.SaveChanges();
+            await _db.AddAsync(category);
+            await _db.SaveChangesAsync();
         }
 
-        public bool Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            var category = _db.Categories.SingleOrDefault(i => i.Id == id);
+            var category = await _db.Categories.SingleOrDefaultAsync(i => i.Id == id);
 
             if(category is null)
                 return false;
 
             _db.Remove(category);
-            _db.SaveChanges();
+            await _db.SaveChangesAsync();
             return true;
         }
 

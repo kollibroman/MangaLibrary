@@ -5,11 +5,11 @@ namespace MangaLibApp.Interfaces
 {
     public interface IAuthorService
     {
-        List<AuthorDto> GetAll(PaginationFilter filter);
-        AuthorDto GetById(int id);
-        void Create(CreateAuthorDto dto);
-        bool Update(int id, UpdateAuthorDto dto);
-        bool Delete(int id);
-        int GetTotalRecords();
+        Task<List<AuthorDto>> GetAll(PaginationFilter filter);
+        Task<AuthorDto> GetById(int id);
+        Task Create(CreateAuthorDto dto);
+        Task<bool> Update(int id, UpdateAuthorDto dto);
+        Task<bool> Delete(int id);
+        Task<int> GetTotalRecords();
     }
 }

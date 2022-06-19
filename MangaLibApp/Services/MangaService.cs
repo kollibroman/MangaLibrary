@@ -1,4 +1,5 @@
 using AutoMapper;
+using MangaLibApp.Filter;
 using MangaLibApp.Interfaces;
 using MangaLibApp.Models;
 using MangaLibCore;
@@ -17,23 +18,31 @@ namespace MangaLibApp.Services
             _dbcontext = dbcontext;
             _mapper = mapper;
         }
-        public IEnumerable<MangaDto> GetAll()
+        public async Task<List<MangaDto>> GetAll(PaginationFilter filter)
         {
-            var mangas = _dbcontext.Mangas
-            .ToList();
-            return _mapper.Map<IEnumerable<MangaDto>>(mangas);
+            var validFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
+            var mangas = await _dbcontext.Mangas.
+            Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
+            .Take(validFilter.PageSize)
+            .ToListAsync();
+            return _mapper.Map<List<MangaDto>>(mangas);
         }
 
-        public MangaDto GetById(int id)
+        public Task<int> GetTotalRecords()
         {
-            var manga = _dbcontext.Mangas
-            .SingleOrDefault(i => i.Id == id);
+            return _dbcontext.Mangas.CountAsync();
+        }
+
+        public async Task<MangaDto> GetById(int id)
+        {
+            var manga = await _dbcontext.Mangas
+            .SingleOrDefaultAsync(i => i.Id == id);
             return _mapper.Map<MangaDto>(manga);
         }
 
-        public bool Update(int id, UpdateMangaDto dto)
+        public async Task<bool> Update(int id, UpdateMangaDto dto)
         {
-            var manga = _dbcontext.Mangas.FirstOrDefault(i => i.Id == id);
+            var manga = await _dbcontext.Mangas.FirstOrDefaultAsync(i => i.Id == id);
 
             if(manga is null) 
                 return false;
@@ -42,27 +51,27 @@ namespace MangaLibApp.Services
             manga.UpdatedAt = DateTime.Now;
             manga.Author = dto.Author;
             manga.ChaptersCount = dto.ChaptersCount;
-            _dbcontext.SaveChanges();
+            await _dbcontext.SaveChangesAsync();
             
             return true;
         }
-        public void Create(CreateMangaDto dto)
+        public async Task Create(CreateMangaDto dto)
         {
            var manga = _mapper.Map<Manga>(dto);
 
-           _dbcontext.Add(manga);
-           _dbcontext.SaveChanges();
+           await _dbcontext.AddAsync(manga);
+           await _dbcontext.SaveChangesAsync();
         }
 
-        public bool Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            var manga = _dbcontext.Mangas.SingleOrDefault(i => i.Id == id);
+            var manga = await  _dbcontext.Mangas.SingleOrDefaultAsync(i => i.Id == id);
 
             if(manga is null) 
                 return false;
 
             _dbcontext.Remove(manga);
-            _dbcontext.SaveChanges();
+            await _dbcontext.SaveChangesAsync();
             return true;
         }
 
