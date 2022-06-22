@@ -14,11 +14,15 @@ namespace MangaLibApp.Mappings
             
             CreateMap<CreateAuthorDto, Author>();
             CreateMap<CreateCategoryDto, Category>();
-            CreateMap<CreateMangaDto, Manga>();
+            CreateMap<CreateMangaDto, Manga>()
+                .ForMember(p => p.PublishedAt, c => c.MapFrom(a => a.AddedAt));
+
             
             CreateMap<UpdateAuthorDto, Author>();
             CreateMap<UpdateCategoryDto, Category>();
             CreateMap<UpdateMangaDto, Manga>();
+
+            CreateMap<UploadCoverDto, Cover>();
         }
     }
 }

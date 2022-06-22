@@ -659,3 +659,695 @@ System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Http
 2022-06-16 13:28:48.867 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
 2022-06-16 13:28:48.876 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/author?PageNumber=1&PageSize=10 - - - 200 - application/json;+charset=utf-8 4029.9812ms
 2022-06-16 13:29:03.458 +02:00 [INF] Application is shutting down...
+2022-06-19 20:17:42.766 +02:00 [INF] Starting web host
+2022-06-19 20:17:43.832 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-19 20:17:43.838 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-19 20:17:43.845 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-19 20:17:43.846 +02:00 [INF] Hosting environment: Development
+2022-06-19 20:17:43.846 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-19 20:17:48.737 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5106/ - -
+2022-06-19 20:17:48.833 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5106/ - - - 307 0 - 103.0722ms
+2022-06-19 20:17:49.049 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/ - -
+2022-06-19 20:17:49.140 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/ - - - 404 0 - 90.6679ms
+2022-06-19 20:17:49.793 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/favicon.ico - -
+2022-06-19 20:17:49.796 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/favicon.ico - - - 404 0 - 3.0894ms
+2022-06-19 20:17:54.895 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/ - -
+2022-06-19 20:17:54.896 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/ - - - 301 0 - 1.4729ms
+2022-06-19 20:17:54.943 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-06-19 20:17:55.075 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 131.8968ms
+2022-06-19 20:17:55.456 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/swagger-ui.css - -
+2022-06-19 20:17:55.486 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-19 20:17:55.487 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/swagger-ui.css - - - 0 143943 text/css 30.7696ms
+2022-06-19 20:17:55.838 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/favicon-16x16.png - -
+2022-06-19 20:17:55.842 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2022-06-19 20:17:55.843 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/favicon-16x16.png - - - 200 665 image/png 4.4472ms
+2022-06-19 20:17:56.157 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-06-19 20:17:56.436 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 278.4419ms
+2022-06-19 20:18:11.309 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/author?PageNumber=1&PageSize=10 - -
+2022-06-19 20:18:11.326 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-19 20:18:11.410 +02:00 [INF] Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAuthors(MangaLibApp.Filter.PaginationFilter) on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-06-19 20:18:16.183 +02:00 [INF] Executing OkObjectResult, writing value of type 'MangaLibApp.Wrappers.PagedResponse`1[[System.Collections.Generic.List`1[[MangaLibApp.Models.AuthorDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-06-19 20:18:16.221 +02:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi) in 4793.8057ms
+2022-06-19 20:18:16.230 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-19 20:18:16.268 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/author?PageNumber=1&PageSize=10 - - - 200 - application/json;+charset=utf-8 4958.1641ms
+2022-06-19 20:18:44.334 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/category?PageNumber=1&PageSize=10 - -
+2022-06-19 20:18:44.338 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.CategoryController.GetCategories (MangaLibApi)'
+2022-06-19 20:18:44.348 +02:00 [INF] Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories(MangaLibApp.Filter.PaginationFilter) on controller MangaLibApi.Controllers.CategoryController (MangaLibApi).
+2022-06-19 20:18:44.426 +02:00 [INF] Executing OkObjectResult, writing value of type 'MangaLibApp.Wrappers.PagedResponse`1[[System.Collections.Generic.List`1[[MangaLibApp.Models.CategoryDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-06-19 20:18:44.436 +02:00 [INF] Executed action MangaLibApi.Controllers.CategoryController.GetCategories (MangaLibApi) in 87.3232ms
+2022-06-19 20:18:44.436 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.CategoryController.GetCategories (MangaLibApi)'
+2022-06-19 20:18:44.437 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/category?PageNumber=1&PageSize=10 - - - 200 - application/json;+charset=utf-8 102.6700ms
+2022-06-19 20:23:15.447 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/manga?PageNumber=1&PageSize=2 - -
+2022-06-19 20:23:15.447 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi)'
+2022-06-19 20:23:15.457 +02:00 [INF] Route matched with {action = "GetAllMangas", controller = "Manga"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMangas(MangaLibApp.Filter.PaginationFilter) on controller MangaLibApi.Controllers.MangaController (MangaLibApi).
+2022-06-19 20:23:15.725 +02:00 [INF] Executing OkObjectResult, writing value of type 'MangaLibApp.Wrappers.PagedResponse`1[[System.Collections.Generic.List`1[[MangaLibApp.Models.MangaDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-06-19 20:23:15.745 +02:00 [INF] Executed action MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi) in 287.0477ms
+2022-06-19 20:23:15.745 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi)'
+2022-06-19 20:23:15.746 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/manga?PageNumber=1&PageSize=2 - - - 200 - application/json;+charset=utf-8 299.1216ms
+2022-06-19 20:23:26.829 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/manga?PageNumber=2&PageSize=2 - -
+2022-06-19 20:23:26.829 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi)'
+2022-06-19 20:23:26.830 +02:00 [INF] Route matched with {action = "GetAllMangas", controller = "Manga"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMangas(MangaLibApp.Filter.PaginationFilter) on controller MangaLibApi.Controllers.MangaController (MangaLibApi).
+2022-06-19 20:23:26.853 +02:00 [INF] Executing OkObjectResult, writing value of type 'MangaLibApp.Wrappers.PagedResponse`1[[System.Collections.Generic.List`1[[MangaLibApp.Models.MangaDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-06-19 20:23:26.854 +02:00 [INF] Executed action MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi) in 24.252ms
+2022-06-19 20:23:26.855 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi)'
+2022-06-19 20:23:26.856 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/manga?PageNumber=2&PageSize=2 - - - 200 - application/json;+charset=utf-8 27.1189ms
+2022-06-19 20:23:36.255 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/manga?PageNumber=3&PageSize=2 - -
+2022-06-19 20:23:36.257 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi)'
+2022-06-19 20:23:36.258 +02:00 [INF] Route matched with {action = "GetAllMangas", controller = "Manga"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMangas(MangaLibApp.Filter.PaginationFilter) on controller MangaLibApi.Controllers.MangaController (MangaLibApi).
+2022-06-19 20:23:36.270 +02:00 [INF] Executing OkObjectResult, writing value of type 'MangaLibApp.Wrappers.PagedResponse`1[[System.Collections.Generic.List`1[[MangaLibApp.Models.MangaDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-06-19 20:23:36.271 +02:00 [INF] Executed action MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi) in 12.3834ms
+2022-06-19 20:23:36.271 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi)'
+2022-06-19 20:23:36.272 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/manga?PageNumber=3&PageSize=2 - - - 200 - application/json;+charset=utf-8 16.7802ms
+2022-06-19 20:23:47.358 +02:00 [INF] Application is shutting down...
+2022-06-21 20:41:15.846 +02:00 [INF] Starting web host
+2022-06-21 20:41:16.337 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-21 20:41:16.341 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-21 20:41:16.345 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-21 20:41:16.346 +02:00 [INF] Hosting environment: Development
+2022-06-21 20:41:16.346 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-21 20:41:19.441 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/ - -
+2022-06-21 20:41:19.532 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/ - - - 404 0 - 94.5102ms
+2022-06-21 20:41:24.004 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/ - -
+2022-06-21 20:41:24.006 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/ - - - 301 0 - 1.9605ms
+2022-06-21 20:41:24.038 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-06-21 20:41:24.115 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 77.0372ms
+2022-06-21 20:41:24.240 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/swagger-ui.css - -
+2022-06-21 20:41:24.260 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-21 20:41:24.261 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/swagger-ui.css - - - 0 143943 text/css 20.0082ms
+2022-06-21 20:41:24.434 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/favicon-16x16.png - -
+2022-06-21 20:41:24.435 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2022-06-21 20:41:24.436 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/favicon-16x16.png - - - 200 665 image/png 1.4032ms
+2022-06-21 20:41:24.517 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-06-21 20:41:24.662 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 145.3504ms
+2022-06-21 20:44:41.847 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7143/api/cover/The Fable multipart/form-data;+boundary=--------------------------031616993860124335249227 167115
+2022-06-21 20:44:41.851 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7143/api/cover/The Fable multipart/form-data;+boundary=--------------------------031616993860124335249227 167115 - 404 0 - 3.8761ms
+2022-06-21 20:44:41.857 +02:00 [INF] Connection id "0HMIJMMGR1HE5", Request id "0HMIJMMGR1HE5:00000002": the application completed without reading the entire request body.
+2022-06-21 20:45:20.155 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7143/api/cover/ multipart/form-data;+boundary=--------------------------625952598609120197156577 167115
+2022-06-21 20:45:20.159 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7143/api/cover/ multipart/form-data;+boundary=--------------------------625952598609120197156577 167115 - 404 0 - 3.8917ms
+2022-06-21 20:45:20.160 +02:00 [INF] Connection id "0HMIJMMGR1HE5", Request id "0HMIJMMGR1HE5:00000003": the application completed without reading the entire request body.
+2022-06-21 20:45:26.194 +02:00 [INF] Application is shutting down...
+2022-06-21 20:45:52.608 +02:00 [INF] Starting web host
+2022-06-21 20:45:53.107 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-21 20:45:53.112 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-21 20:45:53.115 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-21 20:45:53.116 +02:00 [INF] Hosting environment: Development
+2022-06-21 20:45:53.117 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-21 20:45:56.910 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/cover/ multipart/form-data;+boundary=--------------------------219739357261396236947169 167115
+2022-06-21 20:45:56.971 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/cover/ multipart/form-data;+boundary=--------------------------219739357261396236947169 167115 - 404 0 - 63.6643ms
+2022-06-21 20:45:56.979 +02:00 [INF] Connection id "0HMIJMP3HFT5M", Request id "0HMIJMP3HFT5M:00000002": the application completed without reading the entire request body.
+2022-06-21 20:46:25.159 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/cover/The-Fable multipart/form-data;+boundary=--------------------------076721044901819590906691 167115
+2022-06-21 20:46:25.161 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/cover/The-Fable multipart/form-data;+boundary=--------------------------076721044901819590906691 167115 - 404 0 - 2.1287ms
+2022-06-21 20:46:25.162 +02:00 [INF] Connection id "0HMIJMP3HFT5M", Request id "0HMIJMP3HFT5M:00000003": the application completed without reading the entire request body.
+2022-06-21 20:46:37.904 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/cover/"The Fable" multipart/form-data;+boundary=--------------------------703300202806177799140078 167115
+2022-06-21 20:46:37.907 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/cover/"The Fable" multipart/form-data;+boundary=--------------------------703300202806177799140078 167115 - 404 0 - 3.1238ms
+2022-06-21 20:46:37.908 +02:00 [INF] Connection id "0HMIJMP3HFT5M", Request id "0HMIJMP3HFT5M:00000004": the application completed without reading the entire request body.
+2022-06-21 20:46:59.484 +02:00 [INF] Application is shutting down...
+2022-06-21 22:23:09.006 +02:00 [INF] Starting web host
+2022-06-21 22:23:09.603 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-21 22:23:09.607 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-21 22:23:09.611 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-21 22:23:09.611 +02:00 [INF] Hosting environment: Development
+2022-06-21 22:23:09.612 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-21 22:23:49.017 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/upload/cover/ multipart/form-data;+boundary=--------------------------420567450429595754173008 167115
+2022-06-21 22:23:49.089 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/upload/cover/ multipart/form-data;+boundary=--------------------------420567450429595754173008 167115 - 404 0 - 76.0755ms
+2022-06-21 22:23:49.098 +02:00 [INF] Connection id "0HMIJOFPI6NJK", Request id "0HMIJOFPI6NJK:00000002": the application completed without reading the entire request body.
+2022-06-21 22:24:14.784 +02:00 [INF] Application is shutting down...
+2022-06-21 22:24:31.014 +02:00 [INF] Starting web host
+2022-06-21 22:24:31.515 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-21 22:24:31.518 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-21 22:24:31.522 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-21 22:24:31.522 +02:00 [INF] Hosting environment: Development
+2022-06-21 22:24:31.523 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-21 22:24:51.247 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/upload/cover/?The%20Fable multipart/form-data;+boundary=--------------------------353821290575847035286582 167115
+2022-06-21 22:24:51.321 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/upload/cover/?The%20Fable multipart/form-data;+boundary=--------------------------353821290575847035286582 167115 - 404 0 - 79.3433ms
+2022-06-21 22:24:51.333 +02:00 [INF] Connection id "0HMIJOGC3HVTG", Request id "0HMIJOGC3HVTG:00000002": the application completed without reading the entire request body.
+2022-06-21 22:25:00.916 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/upload/cover/?The%20Fable=The%20Fable multipart/form-data;+boundary=--------------------------398257291600403706947794 167115
+2022-06-21 22:25:00.919 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/upload/cover/?The%20Fable=The%20Fable multipart/form-data;+boundary=--------------------------398257291600403706947794 167115 - 404 0 - 3.1904ms
+2022-06-21 22:25:00.920 +02:00 [INF] Connection id "0HMIJOGC3HVTG", Request id "0HMIJOGC3HVTG:00000003": the application completed without reading the entire request body.
+2022-06-21 22:25:11.757 +02:00 [INF] Application is shutting down...
+2022-06-21 22:25:25.349 +02:00 [INF] Starting web host
+2022-06-21 22:25:25.810 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-21 22:25:25.813 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-21 22:25:25.817 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-21 22:25:25.818 +02:00 [INF] Hosting environment: Development
+2022-06-21 22:25:25.818 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-21 22:25:46.772 +02:00 [INF] Application is shutting down...
+2022-06-21 22:26:09.690 +02:00 [INF] Starting web host
+2022-06-21 22:26:10.148 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-21 22:26:10.152 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-21 22:26:10.156 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-21 22:26:10.156 +02:00 [INF] Hosting environment: Development
+2022-06-21 22:26:10.157 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-21 22:26:24.852 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/upload/cover/ multipart/form-data;+boundary=--------------------------177529016481255633020763 167223
+2022-06-21 22:26:24.919 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-21 22:26:24.956 +02:00 [INF] Route matched with {action = "UploadCover", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadCover(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller MangaLibApi.Controllers.UploadController (MangaLibApi).
+2022-06-21 22:26:25.285 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-06-21 22:26:25.320 +02:00 [INF] Executed action MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi) in 357.7477ms
+2022-06-21 22:26:25.323 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-21 22:26:25.339 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/upload/cover/ multipart/form-data;+boundary=--------------------------177529016481255633020763 167223 - 400 - application/problem+json;+charset=utf-8 489.9582ms
+2022-06-21 22:26:57.928 +02:00 [INF] Application is shutting down...
+2022-06-21 22:27:18.252 +02:00 [INF] Starting web host
+2022-06-21 22:27:18.712 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-21 22:27:18.715 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-21 22:27:18.719 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-21 22:27:18.720 +02:00 [INF] Hosting environment: Development
+2022-06-21 22:27:18.720 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-21 22:27:23.816 +02:00 [INF] Application is shutting down...
+2022-06-21 22:29:25.629 +02:00 [INF] Starting web host
+2022-06-21 22:29:26.123 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-21 22:29:26.128 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-21 22:29:26.132 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-21 22:29:26.133 +02:00 [INF] Hosting environment: Development
+2022-06-21 22:29:26.133 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-21 22:30:17.211 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/upload/cover/The Fable multipart/form-data;+boundary=--------------------------656163601300414037654961 167115
+2022-06-21 22:30:17.282 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/upload/cover/The Fable multipart/form-data;+boundary=--------------------------656163601300414037654961 167115 - 404 0 - 74.7430ms
+2022-06-21 22:30:17.292 +02:00 [INF] Connection id "0HMIJOJD8A6DG", Request id "0HMIJOJD8A6DG:00000002": the application completed without reading the entire request body.
+2022-06-21 22:30:24.591 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/upload/cover/The-Fable multipart/form-data;+boundary=--------------------------687503383328951021403907 167115
+2022-06-21 22:30:24.594 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/upload/cover/The-Fable multipart/form-data;+boundary=--------------------------687503383328951021403907 167115 - 404 0 - 3.0992ms
+2022-06-21 22:30:24.595 +02:00 [INF] Connection id "0HMIJOJD8A6DG", Request id "0HMIJOJD8A6DG:00000003": the application completed without reading the entire request body.
+2022-06-21 22:30:29.600 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/upload/cover/TheFable multipart/form-data;+boundary=--------------------------738782710335884172876914 167115
+2022-06-21 22:30:29.602 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/upload/cover/TheFable multipart/form-data;+boundary=--------------------------738782710335884172876914 167115 - 404 0 - 2.6157ms
+2022-06-21 22:30:29.602 +02:00 [INF] Connection id "0HMIJOJD8A6DG", Request id "0HMIJOJD8A6DG:00000004": the application completed without reading the entire request body.
+2022-06-21 22:30:44.431 +02:00 [INF] Application is shutting down...
+2022-06-21 22:31:00.816 +02:00 [INF] Starting web host
+2022-06-21 22:31:01.273 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-21 22:31:01.278 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-21 22:31:01.282 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-21 22:31:01.283 +02:00 [INF] Hosting environment: Development
+2022-06-21 22:31:01.283 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-21 22:31:09.595 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/upload/cover/The Fable multipart/form-data;+boundary=--------------------------380172982695971421182144 167115
+2022-06-21 22:31:09.664 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-21 22:31:09.706 +02:00 [INF] Route matched with {action = "UploadCover", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadCover(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller MangaLibApi.Controllers.UploadController (MangaLibApi).
+2022-06-21 22:31:10.020 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-06-21 22:31:10.055 +02:00 [INF] Executed action MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi) in 339.0806ms
+2022-06-21 22:31:10.060 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-21 22:31:10.071 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/upload/cover/The Fable multipart/form-data;+boundary=--------------------------380172982695971421182144 167115 - 400 - application/problem+json;+charset=utf-8 479.6182ms
+2022-06-21 22:32:00.514 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/ - -
+2022-06-21 22:32:00.531 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/ - - - 404 0 - 17.0966ms
+2022-06-21 22:32:00.847 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/favicon.ico - -
+2022-06-21 22:32:00.854 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/favicon.ico - - - 404 0 - 6.6774ms
+2022-06-21 22:32:07.201 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/ - -
+2022-06-21 22:32:07.201 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/ - - - 0 - - 0.6332ms
+2022-06-21 22:32:07.229 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-06-21 22:32:07.293 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 64.4052ms
+2022-06-21 22:32:07.507 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/swagger-ui.css - -
+2022-06-21 22:32:07.515 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-21 22:32:07.515 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/swagger-ui.css - - - 0 143943 text/css 8.4809ms
+2022-06-21 22:32:07.773 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-06-21 22:32:07.912 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 139.0048ms
+2022-06-21 22:32:55.740 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Upload/cover/The Fable multipart/form-data;+boundary=---------------------------13081652807462758442675595217 881
+2022-06-21 22:32:55.743 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-21 22:32:55.744 +02:00 [INF] Route matched with {action = "UploadCover", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadCover(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller MangaLibApi.Controllers.UploadController (MangaLibApi).
+2022-06-21 22:32:55.754 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-06-21 22:32:55.755 +02:00 [INF] Executed action MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi) in 10.5399ms
+2022-06-21 22:32:55.755 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-21 22:32:55.756 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Upload/cover/The Fable multipart/form-data;+boundary=---------------------------13081652807462758442675595217 881 - 400 - application/problem+json;+charset=utf-8 15.9165ms
+2022-06-21 22:34:13.789 +02:00 [INF] Application is shutting down...
+2022-06-21 22:35:44.311 +02:00 [INF] Starting web host
+2022-06-21 22:35:44.835 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-21 22:35:44.842 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-21 22:35:44.845 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-21 22:35:44.845 +02:00 [INF] Hosting environment: Development
+2022-06-21 22:35:44.846 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-21 22:35:47.010 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/ - -
+2022-06-21 22:35:47.115 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/ - - - 404 0 - 110.3282ms
+2022-06-21 22:35:53.016 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-06-21 22:35:53.101 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 84.2284ms
+2022-06-21 22:35:53.539 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-06-21 22:35:53.708 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 169.1334ms
+2022-06-21 22:36:24.395 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Upload/cover?mangaName=The%20Fable multipart/form-data;+boundary=---------------------------701355768476659503666188273 167127
+2022-06-21 22:36:24.402 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-21 22:36:24.448 +02:00 [INF] Route matched with {action = "UploadCover", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadCover(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller MangaLibApi.Controllers.UploadController (MangaLibApi).
+2022-06-21 22:36:26.808 +02:00 [INF] Executed action MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi) in 2351.3185ms
+2022-06-21 22:36:26.811 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-21 22:36:26.813 +02:00 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "Cover" violates foreign key constraint "FK_Cover_Mangas_MangaId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "Cover" violates foreign key constraint "FK_Cover_Mangas_MangaId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Cover
+    ConstraintName: FK_Cover_Mangas_MangaId
+    File: ri_triggers.c
+    Line: 2528
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MangaLibApp.Services.UploadService.UploadCoverAsync(IFormFile file, String mangaName) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/Services/UploadService.cs:line 31
+   at MangaLibApi.Controllers.UploadController.UploadCover(IFormFile file, String mangaName) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Controllers/UploadController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MangaLibApi.Middleware.ErrorHandler.InvokeAsync(HttpContext context, RequestDelegate next) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Middleware/ErrorHandler.cs:line 14
+2022-06-21 22:36:26.866 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Upload/cover?mangaName=The%20Fable multipart/form-data;+boundary=---------------------------701355768476659503666188273 167127 - 500 - - 2471.7428ms
+2022-06-21 22:37:26.476 +02:00 [INF] Application is shutting down...
+2022-06-21 22:47:00.370 +02:00 [INF] Starting web host
+2022-06-21 22:47:00.896 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-21 22:47:00.900 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-21 22:47:00.905 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-21 22:47:00.906 +02:00 [INF] Hosting environment: Development
+2022-06-21 22:47:00.907 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-21 22:47:03.860 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/ - -
+2022-06-21 22:47:03.971 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/ - - - 404 0 - 115.8831ms
+2022-06-21 22:47:07.838 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-06-21 22:47:07.927 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 88.1280ms
+2022-06-21 22:47:08.390 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-06-21 22:47:08.547 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.2001ms
+2022-06-21 22:47:41.046 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Upload/cover?mangaName=I%20was%20Reborn%20as%20a%20paint%20Stirrer multipart/form-data;+boundary=---------------------------19996994923398417993587521641 167131
+2022-06-21 22:47:41.055 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-21 22:47:41.102 +02:00 [INF] Route matched with {action = "UploadCover", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadCover(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller MangaLibApi.Controllers.UploadController (MangaLibApi).
+2022-06-21 22:47:43.359 +02:00 [INF] Executed action MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi) in 2246.0835ms
+2022-06-21 22:47:43.366 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-21 22:47:43.368 +02:00 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "Cover" violates foreign key constraint "FK_Cover_Mangas_MangaId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "Cover" violates foreign key constraint "FK_Cover_Mangas_MangaId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Cover
+    ConstraintName: FK_Cover_Mangas_MangaId
+    File: ri_triggers.c
+    Line: 2528
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MangaLibApp.Services.UploadService.UploadCoverAsync(IFormFile file, String mangaName) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/Services/UploadService.cs:line 32
+   at MangaLibApi.Controllers.UploadController.UploadCover(IFormFile file, String mangaName) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Controllers/UploadController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MangaLibApi.Middleware.ErrorHandler.InvokeAsync(HttpContext context, RequestDelegate next) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Middleware/ErrorHandler.cs:line 14
+2022-06-21 22:47:43.419 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Upload/cover?mangaName=I%20was%20Reborn%20as%20a%20paint%20Stirrer multipart/form-data;+boundary=---------------------------19996994923398417993587521641 167131 - 500 - - 2372.1510ms
+2022-06-21 22:49:16.068 +02:00 [INF] Application is shutting down...
+2022-06-21 22:50:08.391 +02:00 [INF] Starting web host
+2022-06-21 22:50:08.883 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-21 22:50:08.887 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-21 22:50:08.891 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-21 22:50:08.892 +02:00 [INF] Hosting environment: Development
+2022-06-21 22:50:08.892 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-21 22:50:11.419 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/ - -
+2022-06-21 22:50:11.528 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/ - - - 404 0 - 114.4061ms
+2022-06-21 22:50:18.227 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-06-21 22:50:18.315 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 88.0214ms
+2022-06-21 22:50:18.776 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-06-21 22:50:18.927 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 150.6256ms
+2022-06-21 22:50:40.586 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Upload/cover?mangaName=The-Fable multipart/form-data;+boundary=---------------------------2263967129948695831698649537 167129
+2022-06-21 22:50:40.593 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-21 22:50:40.636 +02:00 [INF] Route matched with {action = "UploadCover", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadCover(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller MangaLibApi.Controllers.UploadController (MangaLibApi).
+2022-06-21 22:50:42.925 +02:00 [INF] Executed action MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi) in 2281.0967ms
+2022-06-21 22:50:42.929 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-21 22:50:42.931 +02:00 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "Cover" violates foreign key constraint "FK_Cover_Mangas_MangaId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "Cover" violates foreign key constraint "FK_Cover_Mangas_MangaId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Cover
+    ConstraintName: FK_Cover_Mangas_MangaId
+    File: ri_triggers.c
+    Line: 2528
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MangaLibApp.Services.UploadService.UploadCoverAsync(IFormFile file, String mangaName) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/Services/UploadService.cs:line 32
+   at MangaLibApi.Controllers.UploadController.UploadCover(IFormFile file, String mangaName) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Controllers/UploadController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MangaLibApi.Middleware.ErrorHandler.InvokeAsync(HttpContext context, RequestDelegate next) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Middleware/ErrorHandler.cs:line 14
+2022-06-21 22:50:42.978 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Upload/cover?mangaName=The-Fable multipart/form-data;+boundary=---------------------------2263967129948695831698649537 167129 - 500 - - 2392.5043ms
+2022-06-21 22:50:57.503 +02:00 [INF] Application is shutting down...
+2022-06-21 23:00:30.673 +02:00 [INF] Starting web host
+2022-06-21 23:00:31.187 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-21 23:00:31.190 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-21 23:00:31.195 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-21 23:00:31.196 +02:00 [INF] Hosting environment: Development
+2022-06-21 23:00:31.196 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-21 23:00:33.768 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/ - -
+2022-06-21 23:00:33.880 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/ - - - 404 0 - 120.0280ms
+2022-06-21 23:00:40.138 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-06-21 23:00:40.227 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 88.9602ms
+2022-06-21 23:00:40.668 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-06-21 23:00:40.819 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 150.9869ms
+2022-06-21 23:01:00.803 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Upload/cover?mangaName=The-Fable multipart/form-data;+boundary=---------------------------17426571155255089181240468234 167131
+2022-06-21 23:01:00.813 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-21 23:01:00.856 +02:00 [INF] Route matched with {action = "UploadCover", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadCover(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller MangaLibApi.Controllers.UploadController (MangaLibApi).
+2022-06-21 23:01:03.132 +02:00 [INF] Executed action MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi) in 2270.1587ms
+2022-06-21 23:01:03.135 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-21 23:01:03.137 +02:00 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "Cover" violates foreign key constraint "FK_Cover_Mangas_MangaId"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "Cover" violates foreign key constraint "FK_Cover_Mangas_MangaId"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Cover
+    ConstraintName: FK_Cover_Mangas_MangaId
+    File: ri_triggers.c
+    Line: 2528
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MangaLibApp.Services.UploadService.UploadCoverAsync(IFormFile file, String mangaName) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/Services/UploadService.cs:line 32
+   at MangaLibApi.Controllers.UploadController.UploadCover(IFormFile file, String mangaName) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Controllers/UploadController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MangaLibApi.Middleware.ErrorHandler.InvokeAsync(HttpContext context, RequestDelegate next) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Middleware/ErrorHandler.cs:line 14
+2022-06-21 23:01:03.191 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Upload/cover?mangaName=The-Fable multipart/form-data;+boundary=---------------------------17426571155255089181240468234 167131 - 500 - - 2387.8197ms
+2022-06-21 23:01:24.500 +02:00 [INF] Application is shutting down...
+2022-06-22 20:20:33.923 +02:00 [INF] Starting web host
+2022-06-22 20:20:34.702 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-22 20:20:34.708 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-22 20:20:34.716 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-22 20:20:34.717 +02:00 [INF] Hosting environment: Development
+2022-06-22 20:20:34.718 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-22 20:20:39.406 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/ - -
+2022-06-22 20:20:39.579 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/ - - - 404 0 - 180.3446ms
+2022-06-22 20:20:43.705 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-06-22 20:20:43.838 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 133.1933ms
+2022-06-22 20:20:44.101 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/swagger-ui.css - -
+2022-06-22 20:20:44.137 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/swagger-ui-standalone-preset.js - -
+2022-06-22 20:20:44.141 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/swagger-ui-bundle.js - -
+2022-06-22 20:20:44.151 +02:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2022-06-22 20:20:44.152 +02:00 [INF] The file /swagger-ui-bundle.js was not modified
+2022-06-22 20:20:44.153 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 15.9120ms
+2022-06-22 20:20:44.153 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 11.7040ms
+2022-06-22 20:20:44.160 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-06-22 20:20:44.161 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/swagger-ui.css - - - 200 143943 text/css 60.3669ms
+2022-06-22 20:20:44.390 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/favicon-16x16.png - -
+2022-06-22 20:20:44.391 +02:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2022-06-22 20:20:44.392 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/favicon-16x16.png - - - 200 665 image/png 1.7422ms
+2022-06-22 20:20:44.536 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-06-22 20:20:44.773 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 236.5658ms
+2022-06-22 20:21:26.371 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/author?PageNumber=1&PageSize=10 - -
+2022-06-22 20:21:26.386 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-22 20:21:26.458 +02:00 [INF] Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAuthors(MangaLibApp.Filter.PaginationFilter) on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-06-22 20:21:30.359 +02:00 [INF] Executing OkObjectResult, writing value of type 'MangaLibApp.Wrappers.PagedResponse`1[[System.Collections.Generic.List`1[[MangaLibApp.Models.AuthorDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-06-22 20:21:30.392 +02:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi) in 3918.6956ms
+2022-06-22 20:21:30.402 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-06-22 20:21:30.428 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/author?PageNumber=1&PageSize=10 - - - 200 - application/json;+charset=utf-8 4056.1474ms
+2022-06-22 20:22:01.922 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/manga?PageNumber=1&PageSize=10 - -
+2022-06-22 20:22:01.928 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi)'
+2022-06-22 20:22:01.939 +02:00 [INF] Route matched with {action = "GetAllMangas", controller = "Manga"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMangas(MangaLibApp.Filter.PaginationFilter) on controller MangaLibApi.Controllers.MangaController (MangaLibApi).
+2022-06-22 20:22:02.038 +02:00 [INF] Executing OkObjectResult, writing value of type 'MangaLibApp.Wrappers.PagedResponse`1[[System.Collections.Generic.List`1[[MangaLibApp.Models.MangaDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-06-22 20:22:02.054 +02:00 [INF] Executed action MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi) in 114.4774ms
+2022-06-22 20:22:02.054 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi)'
+2022-06-22 20:22:02.055 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/manga?PageNumber=1&PageSize=10 - - - 200 - application/json;+charset=utf-8 133.5373ms
+2022-06-22 20:24:20.875 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7143/api/manga application/json 253
+2022-06-22 20:24:20.875 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.MangaController.CreateManga (MangaLibApi)'
+2022-06-22 20:24:20.883 +02:00 [INF] Route matched with {action = "CreateManga", controller = "Manga"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateManga(MangaLibApp.Models.CreateMangaDto) on controller MangaLibApi.Controllers.MangaController (MangaLibApi).
+2022-06-22 20:24:20.911 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-06-22 20:24:20.913 +02:00 [INF] Executed action MangaLibApi.Controllers.MangaController.CreateManga (MangaLibApi) in 29.5695ms
+2022-06-22 20:24:20.913 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.MangaController.CreateManga (MangaLibApi)'
+2022-06-22 20:24:20.914 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7143/api/manga application/json 253 - 400 - application/problem+json;+charset=utf-8 39.1685ms
+2022-06-22 20:24:49.291 +02:00 [INF] Application is shutting down...
+2022-06-22 20:24:58.198 +02:00 [INF] Starting web host
+2022-06-22 20:24:58.970 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-22 20:24:58.976 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-22 20:24:58.983 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-22 20:24:58.984 +02:00 [INF] Hosting environment: Development
+2022-06-22 20:24:58.984 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-22 20:25:01.486 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/ - -
+2022-06-22 20:25:01.663 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/ - - - 404 0 - 185.5749ms
+2022-06-22 20:25:05.123 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-06-22 20:25:05.255 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 131.6703ms
+2022-06-22 20:25:05.821 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-06-22 20:25:06.083 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 261.5300ms
+2022-06-22 20:25:48.230 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7143/api/manga application/json 232
+2022-06-22 20:25:48.244 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.MangaController.CreateManga (MangaLibApi)'
+2022-06-22 20:25:48.313 +02:00 [INF] Route matched with {action = "CreateManga", controller = "Manga"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateManga(MangaLibApp.Models.CreateMangaDto) on controller MangaLibApi.Controllers.MangaController (MangaLibApi).
+2022-06-22 20:25:51.590 +02:00 [INF] Executed action MangaLibApi.Controllers.MangaController.CreateManga (MangaLibApi) in 3263.2345ms
+2022-06-22 20:25:51.596 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.MangaController.CreateManga (MangaLibApi)'
+2022-06-22 20:25:51.599 +02:00 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "PublishedAt" of relation "Mangas" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "PublishedAt" of relation "Mangas" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Mangas
+    ColumnName: PublishedAt
+    File: execMain.c
+    Line: 1883
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MangaLibApp.Services.MangaService.Create(CreateMangaDto dto) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/Services/MangaService.cs:line 63
+   at MangaLibApi.Controllers.MangaController.CreateManga(CreateMangaDto dto) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Controllers/MangaController.cs:line 52
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MangaLibApi.Middleware.ErrorHandler.InvokeAsync(HttpContext context, RequestDelegate next) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Middleware/ErrorHandler.cs:line 14
+2022-06-22 20:25:51.694 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7143/api/manga application/json 232 - 500 - - 3464.2280ms
+2022-06-22 20:26:39.459 +02:00 [INF] Application is shutting down...
+2022-06-22 20:28:44.717 +02:00 [INF] Starting web host
+2022-06-22 20:28:45.465 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-22 20:28:45.471 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-22 20:28:45.479 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-22 20:28:45.480 +02:00 [INF] Hosting environment: Development
+2022-06-22 20:28:45.483 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-22 20:28:48.576 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/ - -
+2022-06-22 20:28:48.750 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/ - - - 404 0 - 182.5439ms
+2022-06-22 20:28:51.751 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-06-22 20:28:51.928 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 176.7114ms
+2022-06-22 20:28:52.460 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-06-22 20:28:52.753 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 293.3168ms
+2022-06-22 20:29:28.350 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7143/api/manga application/json 233
+2022-06-22 20:29:28.365 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.MangaController.CreateManga (MangaLibApi)'
+2022-06-22 20:29:28.440 +02:00 [INF] Route matched with {action = "CreateManga", controller = "Manga"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateManga(MangaLibApp.Models.CreateMangaDto) on controller MangaLibApi.Controllers.MangaController (MangaLibApi).
+2022-06-22 20:29:31.761 +02:00 [INF] Executed action MangaLibApi.Controllers.MangaController.CreateManga (MangaLibApi) in 3309.9094ms
+2022-06-22 20:29:31.766 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.MangaController.CreateManga (MangaLibApi)'
+2022-06-22 20:29:31.769 +02:00 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "Description" of relation "Mangas" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "Description" of relation "Mangas" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Mangas
+    ColumnName: Description
+    File: execMain.c
+    Line: 1883
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MangaLibApp.Services.MangaService.Create(CreateMangaDto dto) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/Services/MangaService.cs:line 63
+   at MangaLibApi.Controllers.MangaController.CreateManga(CreateMangaDto dto) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Controllers/MangaController.cs:line 52
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MangaLibApi.Middleware.ErrorHandler.InvokeAsync(HttpContext context, RequestDelegate next) in /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/Middleware/ErrorHandler.cs:line 14
+2022-06-22 20:29:31.860 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7143/api/manga application/json 233 - 500 - - 3509.9951ms
+2022-06-22 20:30:09.534 +02:00 [INF] Application is shutting down...
+2022-06-22 20:30:36.406 +02:00 [INF] Starting web host
+2022-06-22 20:30:37.175 +02:00 [INF] Now listening on: https://localhost:7143
+2022-06-22 20:30:37.181 +02:00 [INF] Now listening on: http://localhost:5106
+2022-06-22 20:30:37.188 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-22 20:30:37.190 +02:00 [INF] Hosting environment: Development
+2022-06-22 20:30:37.191 +02:00 [INF] Content root path: /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-06-22 20:30:54.653 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/ - -
+2022-06-22 20:30:54.883 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/ - - - 404 0 - 236.4574ms
+2022-06-22 20:30:56.043 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-06-22 20:30:56.174 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 131.3870ms
+2022-06-22 20:30:56.818 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-06-22 20:30:57.061 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 243.5897ms
+2022-06-22 20:31:41.329 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7143/api/manga application/json 266
+2022-06-22 20:31:41.343 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.MangaController.CreateManga (MangaLibApi)'
+2022-06-22 20:31:41.419 +02:00 [INF] Route matched with {action = "CreateManga", controller = "Manga"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateManga(MangaLibApp.Models.CreateMangaDto) on controller MangaLibApi.Controllers.MangaController (MangaLibApi).
+2022-06-22 20:31:44.920 +02:00 [INF] Executing CreatedResult, writing value of type 'null'.
+2022-06-22 20:31:44.931 +02:00 [INF] Executed action MangaLibApi.Controllers.MangaController.CreateManga (MangaLibApi) in 3501.9936ms
+2022-06-22 20:31:44.937 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.MangaController.CreateManga (MangaLibApi)'
+2022-06-22 20:31:44.965 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7143/api/manga application/json 266 - 201 0 - 3636.1309ms
+2022-06-22 20:32:15.061 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Upload/cover?mangaName=how%20I%20did%20ur%20mom multipart/form-data;+boundary=---------------------------773323242919612043247945889 167127
+2022-06-22 20:32:15.065 +02:00 [INF] Executing endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-22 20:32:15.076 +02:00 [INF] Route matched with {action = "UploadCover", controller = "Upload"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadCover(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller MangaLibApi.Controllers.UploadController (MangaLibApi).
+2022-06-22 20:32:15.292 +02:00 [INF] NIEDUPA
+2022-06-22 20:32:15.293 +02:00 [INF] Executing CreatedResult, writing value of type 'null'.
+2022-06-22 20:32:15.294 +02:00 [INF] Executed action MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi) in 217.9715ms
+2022-06-22 20:32:15.295 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.UploadController.UploadCover (MangaLibApi)'
+2022-06-22 20:32:15.304 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Upload/cover?mangaName=how%20I%20did%20ur%20mom multipart/form-data;+boundary=---------------------------773323242919612043247945889 167127 - 201 0 - 243.3854ms
+2022-06-22 20:32:57.565 +02:00 [INF] Application is shutting down...

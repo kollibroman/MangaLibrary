@@ -5,213 +5,254 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MangaLibCore.Migrations
 {
-    public partial class schoolBackup : Migration
+    public partial class yes : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropForeignKey(
+                name: "FK_Cover_Mangas_MangaId",
+                table: "Cover");
+
+            migrationBuilder.DropIndex(
+                name: "IX_Cover_MangaId",
+                table: "Cover");
+
+            migrationBuilder.DropColumn(
+                name: "MangaId",
+                table: "Cover");
+
             migrationBuilder.UpdateData(
                 table: "Authors",
                 keyColumn: "Id",
                 keyValue: 1,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 14, 3, 135, DateTimeKind.Utc).AddTicks(5742));
+                value: new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6861));
 
             migrationBuilder.UpdateData(
                 table: "Authors",
                 keyColumn: "Id",
                 keyValue: 2,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 14, 3, 135, DateTimeKind.Utc).AddTicks(5745));
+                value: new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6872));
 
             migrationBuilder.UpdateData(
                 table: "Authors",
                 keyColumn: "Id",
                 keyValue: 3,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 14, 3, 135, DateTimeKind.Utc).AddTicks(5747));
+                value: new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6875));
 
             migrationBuilder.UpdateData(
                 table: "Authors",
                 keyColumn: "Id",
                 keyValue: 4,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 14, 3, 135, DateTimeKind.Utc).AddTicks(5749));
+                value: new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6878));
 
             migrationBuilder.UpdateData(
                 table: "Authors",
                 keyColumn: "Id",
                 keyValue: 5,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 14, 3, 135, DateTimeKind.Utc).AddTicks(5750));
+                value: new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6882));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 1,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 14, 3, 135, DateTimeKind.Utc).AddTicks(5638));
+                value: new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6487));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 2,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 14, 3, 135, DateTimeKind.Utc).AddTicks(5643));
+                value: new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6502));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 3,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 14, 3, 135, DateTimeKind.Utc).AddTicks(5645));
+                value: new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6505));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 4,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 14, 3, 135, DateTimeKind.Utc).AddTicks(5646));
+                value: new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6508));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 5,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 14, 3, 135, DateTimeKind.Utc).AddTicks(5647));
+                value: new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6511));
 
             migrationBuilder.UpdateData(
                 table: "Mangas",
                 keyColumn: "Id",
                 keyValue: 1,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 14, 3, 135, DateTimeKind.Utc).AddTicks(5811));
+                value: new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6914));
 
             migrationBuilder.UpdateData(
                 table: "Mangas",
                 keyColumn: "Id",
                 keyValue: 2,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 15, 14, 3, 135, DateTimeKind.Local).AddTicks(5815));
+                value: new DateTime(2022, 6, 22, 20, 17, 4, 472, DateTimeKind.Local).AddTicks(6928));
 
             migrationBuilder.UpdateData(
                 table: "Mangas",
                 keyColumn: "Id",
                 keyValue: 3,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 15, 14, 3, 135, DateTimeKind.Local).AddTicks(5848));
+                value: new DateTime(2022, 6, 22, 20, 17, 4, 472, DateTimeKind.Local).AddTicks(7007));
 
-            migrationBuilder.InsertData(
+            migrationBuilder.UpdateData(
                 table: "Mangas",
-                columns: new[] { "Id", "Author", "ChaptersCount", "Description", "PublishedAt", "Title", "Type", "UpdatedAt" },
-                values: new object[,]
-                {
-                    { 4, "Yabako Sandrovich", 236, "They beat the shit out of each other", "", "Kengan Ashua", 0, new DateTime(2022, 6, 10, 15, 14, 3, 135, DateTimeKind.Local).AddTicks(5850) },
-                    { 5, "Kei Urana", 304, " F I R E.", "", "Fire Force", 0, new DateTime(2022, 6, 10, 15, 14, 3, 135, DateTimeKind.Local).AddTicks(5852) }
-                });
+                keyColumn: "Id",
+                keyValue: 4,
+                column: "UpdatedAt",
+                value: new DateTime(2022, 6, 22, 20, 17, 4, 472, DateTimeKind.Local).AddTicks(7013));
+
+            migrationBuilder.UpdateData(
+                table: "Mangas",
+                keyColumn: "Id",
+                keyValue: 5,
+                column: "UpdatedAt",
+                value: new DateTime(2022, 6, 22, 20, 17, 4, 472, DateTimeKind.Local).AddTicks(7018));
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DeleteData(
-                table: "Mangas",
-                keyColumn: "Id",
-                keyValue: 4);
-
-            migrationBuilder.DeleteData(
-                table: "Mangas",
-                keyColumn: "Id",
-                keyValue: 5);
+            migrationBuilder.AddColumn<int>(
+                name: "MangaId",
+                table: "Cover",
+                type: "integer",
+                nullable: false,
+                defaultValue: 0);
 
             migrationBuilder.UpdateData(
                 table: "Authors",
                 keyColumn: "Id",
                 keyValue: 1,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 8, 15, 379, DateTimeKind.Utc).AddTicks(7472));
+                value: new DateTime(2022, 6, 21, 20, 59, 54, 893, DateTimeKind.Utc).AddTicks(6201));
 
             migrationBuilder.UpdateData(
                 table: "Authors",
                 keyColumn: "Id",
                 keyValue: 2,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 8, 15, 379, DateTimeKind.Utc).AddTicks(7477));
+                value: new DateTime(2022, 6, 21, 20, 59, 54, 893, DateTimeKind.Utc).AddTicks(6220));
 
             migrationBuilder.UpdateData(
                 table: "Authors",
                 keyColumn: "Id",
                 keyValue: 3,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 8, 15, 379, DateTimeKind.Utc).AddTicks(7478));
+                value: new DateTime(2022, 6, 21, 20, 59, 54, 893, DateTimeKind.Utc).AddTicks(6234));
 
             migrationBuilder.UpdateData(
                 table: "Authors",
                 keyColumn: "Id",
                 keyValue: 4,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 8, 15, 379, DateTimeKind.Utc).AddTicks(7480));
+                value: new DateTime(2022, 6, 21, 20, 59, 54, 893, DateTimeKind.Utc).AddTicks(6249));
 
             migrationBuilder.UpdateData(
                 table: "Authors",
                 keyColumn: "Id",
                 keyValue: 5,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 8, 15, 379, DateTimeKind.Utc).AddTicks(7482));
+                value: new DateTime(2022, 6, 21, 20, 59, 54, 893, DateTimeKind.Utc).AddTicks(6263));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 1,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 8, 15, 379, DateTimeKind.Utc).AddTicks(7314));
+                value: new DateTime(2022, 6, 21, 20, 59, 54, 893, DateTimeKind.Utc).AddTicks(5910));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 2,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 8, 15, 379, DateTimeKind.Utc).AddTicks(7325));
+                value: new DateTime(2022, 6, 21, 20, 59, 54, 893, DateTimeKind.Utc).AddTicks(5934));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 3,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 8, 15, 379, DateTimeKind.Utc).AddTicks(7327));
+                value: new DateTime(2022, 6, 21, 20, 59, 54, 893, DateTimeKind.Utc).AddTicks(5972));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 4,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 8, 15, 379, DateTimeKind.Utc).AddTicks(7329));
+                value: new DateTime(2022, 6, 21, 20, 59, 54, 893, DateTimeKind.Utc).AddTicks(6010));
 
             migrationBuilder.UpdateData(
                 table: "Categories",
                 keyColumn: "Id",
                 keyValue: 5,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 8, 15, 379, DateTimeKind.Utc).AddTicks(7331));
+                value: new DateTime(2022, 6, 21, 20, 59, 54, 893, DateTimeKind.Utc).AddTicks(6045));
 
             migrationBuilder.UpdateData(
                 table: "Mangas",
                 keyColumn: "Id",
                 keyValue: 1,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 13, 8, 15, 379, DateTimeKind.Utc).AddTicks(7502));
+                value: new DateTime(2022, 6, 21, 20, 59, 54, 893, DateTimeKind.Utc).AddTicks(6325));
 
             migrationBuilder.UpdateData(
                 table: "Mangas",
                 keyColumn: "Id",
                 keyValue: 2,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 15, 8, 15, 379, DateTimeKind.Local).AddTicks(7507));
+                value: new DateTime(2022, 6, 21, 22, 59, 54, 893, DateTimeKind.Local).AddTicks(6345));
 
             migrationBuilder.UpdateData(
                 table: "Mangas",
                 keyColumn: "Id",
                 keyValue: 3,
                 column: "UpdatedAt",
-                value: new DateTime(2022, 6, 10, 15, 8, 15, 379, DateTimeKind.Local).AddTicks(7555));
+                value: new DateTime(2022, 6, 21, 22, 59, 54, 893, DateTimeKind.Local).AddTicks(6398));
+
+            migrationBuilder.UpdateData(
+                table: "Mangas",
+                keyColumn: "Id",
+                keyValue: 4,
+                column: "UpdatedAt",
+                value: new DateTime(2022, 6, 21, 22, 59, 54, 893, DateTimeKind.Local).AddTicks(6413));
+
+            migrationBuilder.UpdateData(
+                table: "Mangas",
+                keyColumn: "Id",
+                keyValue: 5,
+                column: "UpdatedAt",
+                value: new DateTime(2022, 6, 21, 22, 59, 54, 893, DateTimeKind.Local).AddTicks(6432));
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Cover_MangaId",
+                table: "Cover",
+                column: "MangaId");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_Cover_Mangas_MangaId",
+                table: "Cover",
+                column: "MangaId",
+                principalTable: "Mangas",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Cascade);
         }
     }
 }

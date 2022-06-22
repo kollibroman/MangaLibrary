@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MangaLibCore.Migrations
 {
     [DbContext(typeof(MangaLibDbContext))]
-    [Migration("20220608210233_yes")]
+    [Migration("20220622181705_yes")]
     partial class yes
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -57,7 +57,7 @@ namespace MangaLibCore.Migrations
                             Id = 1,
                             Name = "Kei",
                             Surname = "Urana",
-                            UpdatedAt = new DateTime(2022, 6, 8, 21, 2, 33, 37, DateTimeKind.Utc).AddTicks(3090),
+                            UpdatedAt = new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6861),
                             WrittenMangas = "[\"Soul Eater\",\"Fire Force\",\"Gachiakuta\"]"
                         },
                         new
@@ -65,7 +65,7 @@ namespace MangaLibCore.Migrations
                             Id = 2,
                             Name = "Kouhei",
                             Surname = "Horikoshi",
-                            UpdatedAt = new DateTime(2022, 6, 8, 21, 2, 33, 37, DateTimeKind.Utc).AddTicks(3138),
+                            UpdatedAt = new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6872),
                             WrittenMangas = "[\"Boku no Hero Academia\"]"
                         },
                         new
@@ -73,7 +73,7 @@ namespace MangaLibCore.Migrations
                             Id = 3,
                             Name = "KAGYU",
                             Surname = "Kumo",
-                            UpdatedAt = new DateTime(2022, 6, 8, 21, 2, 33, 37, DateTimeKind.Utc).AddTicks(3157),
+                            UpdatedAt = new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6875),
                             WrittenMangas = "[\"Goblin Slayer\"]"
                         },
                         new
@@ -81,7 +81,7 @@ namespace MangaLibCore.Migrations
                             Id = 4,
                             Name = "Yabako",
                             Surname = "Sandrovich",
-                            UpdatedAt = new DateTime(2022, 6, 8, 21, 2, 33, 37, DateTimeKind.Utc).AddTicks(3181),
+                            UpdatedAt = new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6878),
                             WrittenMangas = "[\"Kengan Ashua\",\"Kengan Omega\"]"
                         },
                         new
@@ -89,7 +89,7 @@ namespace MangaLibCore.Migrations
                             Id = 5,
                             Name = "Minami",
                             Surname = "Katsuhusa",
-                            UpdatedAt = new DateTime(2022, 6, 8, 21, 2, 33, 37, DateTimeKind.Utc).AddTicks(3201),
+                            UpdatedAt = new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6882),
                             WrittenMangas = "[\"The Fable\"]"
                         });
                 });
@@ -123,36 +123,81 @@ namespace MangaLibCore.Migrations
                             Id = 1,
                             Mangas = "[\"some manga\"]",
                             Name = "Shounen",
-                            UpdatedAt = new DateTime(2022, 6, 8, 21, 2, 33, 37, DateTimeKind.Utc).AddTicks(2710)
+                            UpdatedAt = new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6487)
                         },
                         new
                         {
                             Id = 2,
                             Mangas = "[\"some manga\"]",
                             Name = "Shoujo",
-                            UpdatedAt = new DateTime(2022, 6, 8, 21, 2, 33, 37, DateTimeKind.Utc).AddTicks(2757)
+                            UpdatedAt = new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6502)
                         },
                         new
                         {
                             Id = 3,
                             Mangas = "[\"some manga\"]",
                             Name = "Seinen",
-                            UpdatedAt = new DateTime(2022, 6, 8, 21, 2, 33, 37, DateTimeKind.Utc).AddTicks(2780)
+                            UpdatedAt = new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6505)
                         },
                         new
                         {
                             Id = 4,
                             Mangas = "[\"some manga\"]",
                             Name = "Comedy",
-                            UpdatedAt = new DateTime(2022, 6, 8, 21, 2, 33, 37, DateTimeKind.Utc).AddTicks(2800)
+                            UpdatedAt = new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6508)
                         },
                         new
                         {
                             Id = 5,
                             Mangas = "[\"some manga\"]",
                             Name = "Action",
-                            UpdatedAt = new DateTime(2022, 6, 8, 21, 2, 33, 37, DateTimeKind.Utc).AddTicks(2824)
+                            UpdatedAt = new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6511)
                         });
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.Chapter", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("PagesCount")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Chapters");
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.Cover", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<byte[]>("Data")
+                        .IsRequired()
+                        .HasColumnType("bytea");
+
+                    b.Property<string>("MangaName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cover");
                 });
 
             modelBuilder.Entity("MangaLibCore.Entities.Manga", b =>
@@ -202,7 +247,51 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "01/11/2014",
                             Title = "The Fable",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 6, 8, 21, 2, 33, 37, DateTimeKind.Utc).AddTicks(3269)
+                            UpdatedAt = new DateTime(2022, 6, 22, 18, 17, 4, 472, DateTimeKind.Utc).AddTicks(6914)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Author = "Horikoshi Kouhei",
+                            ChaptersCount = 355,
+                            Description = "MIDORYA MY BOI, LISTEN I HAVE MY ANUS SORE, PLEASE LUBE IT",
+                            PublishedAt = "",
+                            Title = "Bocu no Pico Academia",
+                            Type = 0,
+                            UpdatedAt = new DateTime(2022, 6, 22, 20, 17, 4, 472, DateTimeKind.Local).AddTicks(6928)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Author = "KAGYU Kumo",
+                            ChaptersCount = 58,
+                            Description = "Golin. Dead. Yes.",
+                            PublishedAt = "",
+                            Title = "Goblin Slayer",
+                            Type = 0,
+                            UpdatedAt = new DateTime(2022, 6, 22, 20, 17, 4, 472, DateTimeKind.Local).AddTicks(7007)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Author = "Yabako Sandrovich",
+                            ChaptersCount = 236,
+                            Description = "They beat the shit out of each other",
+                            PublishedAt = "",
+                            Title = "Kengan Ashua",
+                            Type = 0,
+                            UpdatedAt = new DateTime(2022, 6, 22, 20, 17, 4, 472, DateTimeKind.Local).AddTicks(7013)
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Author = "Kei Urana",
+                            ChaptersCount = 304,
+                            Description = " F I R E.",
+                            PublishedAt = "",
+                            Title = "Fire Force",
+                            Type = 0,
+                            UpdatedAt = new DateTime(2022, 6, 22, 20, 17, 4, 472, DateTimeKind.Local).AddTicks(7018)
                         });
                 });
 
@@ -218,9 +307,8 @@ namespace MangaLibCore.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("MangaId")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("ChapterId1")
+                        .HasColumnType("integer");
 
                     b.Property<byte[]>("PageData")
                         .IsRequired()
@@ -235,7 +323,25 @@ namespace MangaLibCore.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ChapterId1");
+
                     b.ToTable("Pages");
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.Pages", b =>
+                {
+                    b.HasOne("MangaLibCore.Entities.Chapter", "Chapter")
+                        .WithMany("Pages")
+                        .HasForeignKey("ChapterId1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Chapter");
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.Chapter", b =>
+                {
+                    b.Navigation("Pages");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Http;
+
 namespace MangaLibApp.Interfaces
 {
     public interface IUploadService
     {
-        void UploadCover();
-        void UploadChapter();
-        void UploadPage();
+       Task UploadCoverAsync(IFormFile file, string mangaName);
+       Task UploadChapterAsync(IFormFile file, string mangaName);
+       Task UploadPageAsync(IFormFile file, string mangaName);
     }
 }
