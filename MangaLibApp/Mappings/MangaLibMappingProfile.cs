@@ -11,6 +11,9 @@ namespace MangaLibApp.Mappings
             CreateMap<Manga, MangaDto>();
             CreateMap<Author, AuthorDto>();
             CreateMap<Category, CategoryDto>();
+            CreateMap<Cover, CoverDto>();
+            CreateMap<Chapter, ChapterDto>();
+            CreateMap<PageDto, PageDto>();
             
             CreateMap<CreateAuthorDto, Author>();
             CreateMap<CreateCategoryDto, Category>();
@@ -23,6 +26,8 @@ namespace MangaLibApp.Mappings
             CreateMap<UpdateMangaDto, Manga>();
 
             CreateMap<UploadCoverDto, Cover>();
+            CreateMap<UploadChapterDto, Chapter>();
+            CreateMap<UploadPageDto, Pages>();
         }
     }
 }

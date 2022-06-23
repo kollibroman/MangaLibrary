@@ -10,6 +10,7 @@ namespace MangaLibCore.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public byte[] Data { get; set; }
+        public DateTime UpdatedAt { get; set; }
         public string MangaName { get; set; }
     }
 }

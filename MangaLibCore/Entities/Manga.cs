@@ -1,9 +1,11 @@
+using System.ComponentModel.DataAnnotations.Schema;
 using MangaLibCore.Enums;
 
 namespace MangaLibCore.Entities
 {
     public class Manga
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public MangaType Type { get; set; }
         public string Title { get; set; }

@@ -1,4 +1,5 @@
 using AutoMapper;
+using MangaLibApp.Helpers;
 using MangaLibApp.Interfaces;
 using MangaLibApp.Models;
 using MangaLibCore;
@@ -17,13 +18,13 @@ namespace MangaLibApp.Services
             _db = db;
             _mapper = mapper;
         }
-        public async Task UploadCoverAsync(IFormFile file, string mangaName)
+        public async Task UploadCoverAsync(IFormFile file, string fileName,string mangaName)
         {
+            var converter = new ApiConverter();
             var dto = new UploadCoverDto
             {
-                Id = 1,
-                Name = file.Name,
-                Data = new byte[file.Length],
+                Name = fileName,
+                Data = await converter.convertToByte(file),
                 MangaName = mangaName
             };
             var cover = _mapper.Map<Cover>(dto);
@@ -37,7 +38,7 @@ namespace MangaLibApp.Services
             throw new NotImplementedException();
         }
 
-        public Task UploadPageAsync(IFormFile file, string mangaName)
+        public async Task UploadPageAsync(IFormFile file)
         {
             throw new NotImplementedException();
         }

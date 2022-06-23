@@ -6,6 +6,8 @@ namespace MangaLibCore.Enums
         Comix,
         WebToon,
         Manhwa,
-        Manhua
+        Manhua,
+        Hentai,
+        Doujin,
     }
 }
