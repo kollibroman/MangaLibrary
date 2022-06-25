@@ -5,6 +5,7 @@ using MangaLibApp.Models;
 using MangaLibCore;
 using MangaLibCore.Entities;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 
 namespace MangaLibApp.Services
 {
@@ -13,12 +14,14 @@ namespace MangaLibApp.Services
         private readonly MangaLibDbContext _db;
         private readonly IMapper _mapper;
         private readonly IApiConverter _converter;
+        private readonly ILogger<UploadService> _logger;
 
-        public UploadService(MangaLibDbContext db, IMapper mapper, IApiConverter converter)
+        public UploadService(MangaLibDbContext db, IMapper mapper, IApiConverter converter, ILogger<UploadService> logger)
         {
             _db = db;
             _mapper = mapper;
             _converter = converter;
+            _logger = logger;
         }
         public async Task UploadCoverAsync(IFormFile file, string fileName, string mangaName)
         {
@@ -48,16 +51,16 @@ namespace MangaLibApp.Services
 
                 var page = new UploadPageDto
                 {
-                    Id = i,
                     PageNumber = i,
                     PageData = pageDatas.ElementAt(i - 1)
                 };
                 pages.Add(page);
             }
 
+            _logger.LogInformation($"{i}");
+
             var chapterDto = new UploadChapterDto
             {
-                Id = 1,
                 Name = chapterName,
                 PagesCount = pages.Count,
                 ChapterName = chapterName,
