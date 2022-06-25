@@ -1,3 +1,4 @@
+using System.Reflection.Metadata.Ecma335;
 using MangaLibApp.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,16 +23,19 @@ namespace MangaLibApi.Controllers
             
         // }
 
-        // [HttpPost]
-        // public async Task<IActionResult> UploadChapter()
-        // {
-           
-        // }
+        [HttpPost("chapter")]
+        public async Task<IActionResult> UploadChapter(List<IFormFile> files, string ChapterName, string MangaName)
+        {
+           await _service.UploadChapterAsync(files, ChapterName, MangaName);
+
+            _logger.LogInformation("NIEDUPA");
+            return Created($"api/chapter/{ChapterName}", null);
+        }
 
         [HttpPost("cover")]
-        public async Task<IActionResult> UploadCover(IFormFile file, string mangaName)
+        public async Task<IActionResult> UploadCover(IFormFile file, [FromQuery]string fileName,[FromQuery]string mangaName)
         {
-           await _service.UploadCoverAsync(file, mangaName);
+           await _service.UploadCoverAsync(file, fileName,mangaName);
 
            _logger.LogInformation("NIEDUPA");
            return Created($"api/cover/{mangaName}", null);

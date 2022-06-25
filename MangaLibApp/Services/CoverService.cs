@@ -4,6 +4,7 @@ using MangaLibApp.Interfaces;
 using MangaLibApp.Models;
 using MangaLibCore;
 using MangaLibCore.Entities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 
 namespace MangaLibApp.Services
@@ -12,11 +13,13 @@ namespace MangaLibApp.Services
     {
         private readonly MangaLibDbContext _db;
         private readonly IMapper _mapper;
+        private readonly IApiConverter _converter;
 
-        public CoverService(MangaLibDbContext db, IMapper mapper)
+        public CoverService(MangaLibDbContext db, IMapper mapper, IApiConverter converter)
         {
             _db = db;
             _mapper = mapper;
+            _converter = converter;
         }
 
         public async Task<List<CoverDto>> GetAll(PaginationFilter filter)
@@ -53,14 +56,14 @@ namespace MangaLibApp.Services
             return await _db.Cover.CountAsync();
         }
 
-        public async Task<bool> Update(int id, UpdateCoverDto dto)
+        public async Task<bool> Update(int id, IFormFile file)
         {
             var cover = await _db.Cover.SingleOrDefaultAsync(i => i.Id == id);
 
             if(cover is null) 
                 return false;
 
-            cover.Data = dto.Data;
+            cover.Data = await _converter.convertToByte(file);
             cover.UpdatedAt = DateTime.Now;
             await _db.SaveChangesAsync();
             return true;

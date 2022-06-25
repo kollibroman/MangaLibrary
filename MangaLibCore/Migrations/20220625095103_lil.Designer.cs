@@ -3,6 +3,7 @@ using System;
 using MangaLibCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MangaLibCore.Migrations
 {
     [DbContext(typeof(MangaLibDbContext))]
-    partial class MangaLibDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220625095103_lil")]
+    partial class lil
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -55,7 +57,7 @@ namespace MangaLibCore.Migrations
                             Id = 1,
                             Name = "Kei",
                             Surname = "Urana",
-                            UpdatedAt = new DateTime(2022, 6, 25, 9, 54, 8, 896, DateTimeKind.Utc).AddTicks(5962),
+                            UpdatedAt = new DateTime(2022, 6, 25, 9, 51, 2, 577, DateTimeKind.Utc).AddTicks(5505),
                             WrittenMangas = "[\"Soul Eater\",\"Fire Force\",\"Gachiakuta\"]"
                         },
                         new
@@ -63,7 +65,7 @@ namespace MangaLibCore.Migrations
                             Id = 2,
                             Name = "Kouhei",
                             Surname = "Horikoshi",
-                            UpdatedAt = new DateTime(2022, 6, 25, 9, 54, 8, 896, DateTimeKind.Utc).AddTicks(5974),
+                            UpdatedAt = new DateTime(2022, 6, 25, 9, 51, 2, 577, DateTimeKind.Utc).AddTicks(5513),
                             WrittenMangas = "[\"Boku no Hero Academia\"]"
                         },
                         new
@@ -71,7 +73,7 @@ namespace MangaLibCore.Migrations
                             Id = 3,
                             Name = "KAGYU",
                             Surname = "Kumo",
-                            UpdatedAt = new DateTime(2022, 6, 25, 9, 54, 8, 896, DateTimeKind.Utc).AddTicks(5980),
+                            UpdatedAt = new DateTime(2022, 6, 25, 9, 51, 2, 577, DateTimeKind.Utc).AddTicks(5519),
                             WrittenMangas = "[\"Goblin Slayer\"]"
                         },
                         new
@@ -79,7 +81,7 @@ namespace MangaLibCore.Migrations
                             Id = 4,
                             Name = "Yabako",
                             Surname = "Sandrovich",
-                            UpdatedAt = new DateTime(2022, 6, 25, 9, 54, 8, 896, DateTimeKind.Utc).AddTicks(5987),
+                            UpdatedAt = new DateTime(2022, 6, 25, 9, 51, 2, 577, DateTimeKind.Utc).AddTicks(5522),
                             WrittenMangas = "[\"Kengan Ashua\",\"Kengan Omega\"]"
                         },
                         new
@@ -87,7 +89,7 @@ namespace MangaLibCore.Migrations
                             Id = 5,
                             Name = "Minami",
                             Surname = "Katsuhusa",
-                            UpdatedAt = new DateTime(2022, 6, 25, 9, 54, 8, 896, DateTimeKind.Utc).AddTicks(5993),
+                            UpdatedAt = new DateTime(2022, 6, 25, 9, 51, 2, 577, DateTimeKind.Utc).AddTicks(5526),
                             WrittenMangas = "[\"The Fable\"]"
                         });
                 });
@@ -121,35 +123,35 @@ namespace MangaLibCore.Migrations
                             Id = 1,
                             Mangas = "[\"some manga\"]",
                             Name = "Shounen",
-                            UpdatedAt = new DateTime(2022, 6, 25, 9, 54, 8, 896, DateTimeKind.Utc).AddTicks(5486)
+                            UpdatedAt = new DateTime(2022, 6, 25, 9, 51, 2, 577, DateTimeKind.Utc).AddTicks(5281)
                         },
                         new
                         {
                             Id = 2,
                             Mangas = "[\"some manga\"]",
                             Name = "Shoujo",
-                            UpdatedAt = new DateTime(2022, 6, 25, 9, 54, 8, 896, DateTimeKind.Utc).AddTicks(5505)
+                            UpdatedAt = new DateTime(2022, 6, 25, 9, 51, 2, 577, DateTimeKind.Utc).AddTicks(5292)
                         },
                         new
                         {
                             Id = 3,
                             Mangas = "[\"some manga\"]",
                             Name = "Seinen",
-                            UpdatedAt = new DateTime(2022, 6, 25, 9, 54, 8, 896, DateTimeKind.Utc).AddTicks(5511)
+                            UpdatedAt = new DateTime(2022, 6, 25, 9, 51, 2, 577, DateTimeKind.Utc).AddTicks(5295)
                         },
                         new
                         {
                             Id = 4,
                             Mangas = "[\"some manga\"]",
                             Name = "Comedy",
-                            UpdatedAt = new DateTime(2022, 6, 25, 9, 54, 8, 896, DateTimeKind.Utc).AddTicks(5517)
+                            UpdatedAt = new DateTime(2022, 6, 25, 9, 51, 2, 577, DateTimeKind.Utc).AddTicks(5298)
                         },
                         new
                         {
                             Id = 5,
                             Mangas = "[\"some manga\"]",
                             Name = "Action",
-                            UpdatedAt = new DateTime(2022, 6, 25, 9, 54, 8, 896, DateTimeKind.Utc).AddTicks(5522)
+                            UpdatedAt = new DateTime(2022, 6, 25, 9, 51, 2, 577, DateTimeKind.Utc).AddTicks(5301)
                         });
                 });
 
@@ -256,7 +258,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "01/11/2014",
                             Title = "The Fable",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 6, 25, 9, 54, 8, 896, DateTimeKind.Utc).AddTicks(6047)
+                            UpdatedAt = new DateTime(2022, 6, 25, 9, 51, 2, 577, DateTimeKind.Utc).AddTicks(5554)
                         },
                         new
                         {
@@ -267,7 +269,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Bocu no Pico Academia",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 6, 25, 11, 54, 8, 896, DateTimeKind.Local).AddTicks(6061)
+                            UpdatedAt = new DateTime(2022, 6, 25, 11, 51, 2, 577, DateTimeKind.Local).AddTicks(5565)
                         },
                         new
                         {
@@ -278,7 +280,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Goblin Slayer",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 6, 25, 11, 54, 8, 896, DateTimeKind.Local).AddTicks(6152)
+                            UpdatedAt = new DateTime(2022, 6, 25, 11, 51, 2, 577, DateTimeKind.Local).AddTicks(5639)
                         },
                         new
                         {
@@ -289,7 +291,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Kengan Ashua",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 6, 25, 11, 54, 8, 896, DateTimeKind.Local).AddTicks(6163)
+                            UpdatedAt = new DateTime(2022, 6, 25, 11, 51, 2, 577, DateTimeKind.Local).AddTicks(5645)
                         },
                         new
                         {
@@ -300,7 +302,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Fire Force",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 6, 25, 11, 54, 8, 896, DateTimeKind.Local).AddTicks(6173)
+                            UpdatedAt = new DateTime(2022, 6, 25, 11, 51, 2, 577, DateTimeKind.Local).AddTicks(5650)
                         });
                 });
 
@@ -312,7 +314,7 @@ namespace MangaLibCore.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("ChapterId")
+                    b.Property<int?>("ChapterId")
                         .HasColumnType("integer");
 
                     b.Property<byte[]>("PageData")
@@ -333,9 +335,7 @@ namespace MangaLibCore.Migrations
                 {
                     b.HasOne("MangaLibCore.Entities.Chapter", null)
                         .WithMany("Pages")
-                        .HasForeignKey("ChapterId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ChapterId");
                 });
 
             modelBuilder.Entity("MangaLibCore.Entities.Chapter", b =>

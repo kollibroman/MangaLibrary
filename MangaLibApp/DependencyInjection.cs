@@ -1,4 +1,5 @@
 using System.Reflection;
+using MangaLibApp.Helpers;
 using MangaLibApp.Interfaces;
 using MangaLibApp.Services;
 using MangaLibCore;
@@ -18,6 +19,7 @@ namespace MangaLibApp
             services.AddScoped<IAuthorService, AuthorService>();
             services.AddScoped<IUploadService, UploadService>();
             services.AddScoped<ICoverService, CoverService>();
+            services.AddScoped<IApiConverter, ApiConverter>();
 
             services.AddHttpContextAccessor();
 

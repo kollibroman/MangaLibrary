@@ -37,17 +37,23 @@ namespace MangaLibApi.Controllers
         public async Task<IActionResult> GetById([FromRoute]int id)
         {
            var cover = await _service.GetById(id);
+
+            if(cover is null)
+            {
+                return NotFound();
+            }
+
            return Ok(new Response<CoverDto>(cover));
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateCover([FromRoute] int id, [FromBody] UpdateCoverDto dto)
+        public async Task<IActionResult> UpdateCover([FromRoute] int id, IFormFile file)
         {
             if(!ModelState.IsValid)
             {
                 return BadRequest("You are retarded!");
             }
-            var isUpdated = await _service.Update(id, dto);
+            var isUpdated = await _service.Update(id, file);
 
             if(!isUpdated)
             {

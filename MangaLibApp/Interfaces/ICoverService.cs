@@ -1,5 +1,6 @@
 using MangaLibApp.Filter;
 using MangaLibApp.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace MangaLibApp.Interfaces
 {
@@ -7,7 +8,7 @@ namespace MangaLibApp.Interfaces
     {
        Task<List<CoverDto>> GetAll(PaginationFilter filter);
         Task<CoverDto> GetById(int id);
-        Task<bool> Update(int id, UpdateCoverDto dto);
+        Task<bool> Update(int id, IFormFile file);
         Task<bool> Delete(int id);
         Task<int> GetTotalRecords();
     }

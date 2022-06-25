@@ -1,9 +1,10 @@
+using MangaLibApp.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Internal;
 
 namespace MangaLibApp.Helpers
 {
-    public class ApiConverter 
+    public class ApiConverter : IApiConverter
     {
         public async Task<byte[]> convertToByte(IFormFile file)
         {

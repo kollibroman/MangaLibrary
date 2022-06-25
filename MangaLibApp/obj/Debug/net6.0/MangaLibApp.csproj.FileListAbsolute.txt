@@ -28,18 +28,18 @@ C:/Users/filip/OneDrive/Dokumenty/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6
 C:/Users/filip/OneDrive/Dokumenty/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.dll
 C:/Users/filip/OneDrive/Dokumenty/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/ref/MangaLibApp.dll
 C:/Users/filip/OneDrive/Dokumenty/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.pdb
-C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibApp\bin\Debug\net6.0\MangaLibApp.deps.json
-C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibApp\bin\Debug\net6.0\MangaLibApp.dll
-C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibApp\bin\Debug\net6.0\ref\MangaLibApp.dll
-C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibApp\bin\Debug\net6.0\MangaLibApp.pdb
-C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibApp\bin\Debug\net6.0\MangaLibCore.dll
-C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibApp\bin\Debug\net6.0\MangaLibCore.pdb
-C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibApp\obj\Debug\net6.0\MangaLibApp.csproj.AssemblyReference.cache
-C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibApp\obj\Debug\net6.0\MangaLibApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibApp\obj\Debug\net6.0\MangaLibApp.AssemblyInfoInputs.cache
-C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibApp\obj\Debug\net6.0\MangaLibApp.AssemblyInfo.cs
-C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibApp\obj\Debug\net6.0\MangaLibApp.csproj.CoreCompileInputs.cache
-C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibApp\obj\Debug\net6.0\MangaLibApp.csproj.CopyComplete
-C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibApp\obj\Debug\net6.0\MangaLibApp.dll
-C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibApp\obj\Debug\net6.0\ref\MangaLibApp.dll
-C:\Users\Filip Kwiek\Documents\GitHub\MangaLibrary\MangaLibApp\obj\Debug\net6.0\MangaLibApp.pdb
+C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/bin/Debug/net6.0/MangaLibApp.deps.json
+C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/bin/Debug/net6.0/MangaLibApp.dll
+C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/bin/Debug/net6.0/ref/MangaLibApp.dll
+C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/bin/Debug/net6.0/MangaLibApp.pdb
+C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/bin/Debug/net6.0/MangaLibCore.dll
+C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/bin/Debug/net6.0/MangaLibCore.pdb
+C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.csproj.AssemblyReference.cache
+C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.AssemblyInfoInputs.cache
+C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.AssemblyInfo.cs
+C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.csproj.CoreCompileInputs.cache
+C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.csproj.CopyComplete
+C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.dll
+C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/ref/MangaLibApp.dll
+C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.pdb
