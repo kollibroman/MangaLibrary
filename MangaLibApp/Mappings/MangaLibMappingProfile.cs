@@ -13,7 +13,7 @@ namespace MangaLibApp.Mappings
             CreateMap<Category, CategoryDto>();
             CreateMap<Cover, CoverDto>();
             CreateMap<Chapter, ChapterDto>();
-            CreateMap<PageDto, PageDto>();
+            CreateMap<Page, PageDto>();
             
             CreateMap<CreateAuthorDto, Author>();
             CreateMap<CreateCategoryDto, Category>();

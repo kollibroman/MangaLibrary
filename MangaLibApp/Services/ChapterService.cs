@@ -21,6 +21,7 @@ namespace MangaLibApp.Services
         public async Task<List<ChapterDto>> GetAllFromManga(string MangaName)
         {
                 var chapters = await _db.Chapters
+                .Include(p => p.Pages)
                 .Where(m => m.MangaName == MangaName)
                 .OrderBy(i => i.Id)
                 .ToListAsync();
