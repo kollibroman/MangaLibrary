@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj": {}
+    "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj": {}
   },
   "projects": {
-    "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj": {
+    "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj",
+        "projectUniqueName": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj",
         "projectName": "MangaLibCore",
-        "projectPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj",
-        "packagesPath": "/home/kollibroman/.nuget/packages/",
-        "outputPath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibCore/obj/",
+        "projectPath": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj",
+        "packagesPath": "/home/kollibro_man/.nuget/packages/",
+        "outputPath": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/kollibroman/.nuget/NuGet/NuGet.Config"
+          "/home/kollibro_man/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

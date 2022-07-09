@@ -73,9 +73,19 @@ namespace MangaLibApp.Services
             await _db.SaveChangesAsync();
         }
 
-        public async Task UploadPageAsync(IFormFile file)
+        public async Task UploadPageAsync(IFormFile file, int pageNumber, string mangaName)
         {
-            throw new NotImplementedException();
+           var pagedto = new UploadPageDto
+           {
+                PageData = await _converter.convertToByte(file),
+                PageNumber = pageNumber,
+                MangaName = mangaName
+           };
+
+           var page = _mapper.Map<Page>(pagedto);
+           
+           await _db.Pages.AddAsync(page);
+           await _db.SaveChangesAsync();
         }
     }
 }

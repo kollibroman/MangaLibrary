@@ -6,6 +6,6 @@ namespace MangaLibApp.Interfaces
     {
        Task UploadCoverAsync(IFormFile file, string fileName,string mangaName);
        Task UploadChapterAsync(List<IFormFile> files, string chapterName, string mangaName);
-       Task UploadPageAsync(IFormFile file);
+       Task UploadPageAsync(IFormFile file, int pageNumber, string MangaName);
     }
 }

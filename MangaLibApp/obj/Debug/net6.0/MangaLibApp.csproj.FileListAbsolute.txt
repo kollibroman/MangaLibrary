@@ -43,3 +43,18 @@ C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/
 C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.dll
 C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/ref/MangaLibApp.dll
 C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.pdb
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net6.0/MangaLibApp.deps.json
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net6.0/MangaLibApp.dll
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net6.0/ref/MangaLibApp.dll
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net6.0/MangaLibApp.pdb
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net6.0/MangaLibCore.dll
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net6.0/MangaLibCore.pdb
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.csproj.AssemblyReference.cache
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.AssemblyInfoInputs.cache
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.AssemblyInfo.cs
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.csproj.CoreCompileInputs.cache
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.csproj.CopyComplete
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.dll
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net6.0/ref/MangaLibApp.dll
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.pdb

@@ -17,11 +17,14 @@ namespace MangaLibApi.Controllers
             _logger = logger;
         }
 
-        // [HttpPost]
-        // public async Task<IActionResult> UploadPage()
-        // {
-            
-        // }
+        [HttpPost("page")]
+        public async Task<IActionResult> UploadPage(IFormFile file, int pageNumber, [FromQuery]string MangaName)
+        {
+            await _service.UploadPageAsync(file, pageNumber, MangaName);
+
+            _logger.LogInformation("NIEDUPA");
+            return Created($"api/page/{MangaName}", null);
+        }
 
         [HttpPost("chapter")]
         public async Task<IActionResult> UploadChapter(List<IFormFile> files, string ChapterName, string MangaName)
