@@ -51,10 +51,5 @@ namespace MangaLibApp.Services
             await _db.SaveChangesAsync();
             return true;
         }
-
-        // public Task<bool> Update(string Name, IFormFile file)
-        // {
-        //     throw new NotImplementedException();
-        // }
     }
 }

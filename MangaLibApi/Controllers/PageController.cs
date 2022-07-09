@@ -7,12 +7,12 @@ namespace MangaLibApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ChapterController : ControllerBase
+    public class PageController : ControllerBase
     {
-        private readonly IChapterService _service;
-        private readonly ILogger<ChapterController> _logger;
+        private readonly IPageService _service;
+        private readonly ILogger<PageController> _logger;
 
-        public ChapterController(IChapterService service, ILogger<ChapterController> logger)
+        public PageController(IPageService service, ILogger<PageController> logger)
         {
             _service = service;
             _logger = logger;
@@ -21,21 +21,21 @@ namespace MangaLibApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetChapterFromMangaName([FromQuery] string MangaName)
         {
-            var chapters = await _service.GetAllFromManga(MangaName);
-            return Ok(new Response<List<ChapterDto>>(chapters));
+            var pages = await _service.GetAllFromManga(MangaName);
+            return Ok(new Response<List<PageDto>>(pages));
         }
 
         [HttpGet("{ChapterName}")]
-        public async Task<IActionResult> GetChapterByName([FromRoute]string ChapterName)
+        public async Task<IActionResult> GetChapterByName([FromRoute]int PageNumber)
         {
-           var chapter = await _service.GetByName(ChapterName);
+           var page = await _service.GetByName(PageNumber);
            
-           if(chapter is null)
+           if(page is null)
            {
                 return NotFound();
            }
 
-           return Ok(new Response<ChapterDto>(chapter));
+           return Ok(new Response<PageDto>(page));
         }
 
         [HttpDelete("{id}")]
