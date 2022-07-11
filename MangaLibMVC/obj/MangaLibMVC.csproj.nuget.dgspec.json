@@ -1,0 +1,235 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/MangaLibMVC.csproj": {}
+  },
+  "projects": {
+    "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj",
+        "projectName": "MangaLibApp",
+        "projectPath": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj",
+        "packagesPath": "/home/kollibro_man/.nuget/packages/",
+        "outputPath": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kollibro_man/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj": {
+                "projectPath": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.WebUtilities": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj",
+        "projectName": "MangaLibCore",
+        "projectPath": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj",
+        "packagesPath": "/home/kollibro_man/.nuget/packages/",
+        "outputPath": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kollibro_man/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/MangaLibMVC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/MangaLibMVC.csproj",
+        "projectName": "MangaLibMVC",
+        "projectPath": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/MangaLibMVC.csproj",
+        "packagesPath": "/home/kollibro_man/.nuget/packages/",
+        "outputPath": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kollibro_man/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj": {
+                "projectPath": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/MangaLibApp.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Tye.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[0.10.0-alpha.21420.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.11.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

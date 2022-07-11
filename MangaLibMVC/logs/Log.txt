@@ -1,0 +1,174 @@
+2022-07-10 20:52:47.098 +00:00 [INF] Starting web host
+2022-07-10 20:52:47.596 +00:00 [INF] Now listening on: https://localhost:7131
+2022-07-10 20:52:47.600 +00:00 [INF] Now listening on: http://localhost:5127
+2022-07-10 20:52:47.606 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-10 20:52:47.607 +00:00 [INF] Hosting environment: Development
+2022-07-10 20:52:47.607 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-07-10 20:52:57.870 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/ - -
+2022-07-10 20:52:57.900 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/ - - - 404 0 - 32.7374ms
+2022-07-10 20:52:58.232 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/favicon.ico - -
+2022-07-10 20:52:58.232 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/favicon.ico - - - 404 0 - 0.6600ms
+2022-07-10 20:53:17.400 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/home - -
+2022-07-10 20:53:17.402 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/home - - - 404 0 - 2.1969ms
+2022-07-10 20:53:22.303 +00:00 [INF] Application is shutting down...
+2022-07-11 22:05:49.471 +00:00 [INF] Starting web host
+2022-07-11 22:05:49.843 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-07-11 22:05:49.872 +00:00 [INF] Creating key {8e94d028-dbae-49d5-869a-72c844347d3a} with creation date 2022-07-11 22:05:49Z, activation date 2022-07-11 22:05:49Z, and expiration date 2022-10-09 22:05:49Z.
+2022-07-11 22:05:49.889 +00:00 [WRN] No XML encryptor configured. Key {8e94d028-dbae-49d5-869a-72c844347d3a} may be persisted to storage in unencrypted form.
+2022-07-11 22:05:49.895 +00:00 [INF] Writing data to file '/home/kollibro_man/.aspnet/DataProtection-Keys/key-8e94d028-dbae-49d5-869a-72c844347d3a.xml'.
+2022-07-11 22:05:50.019 +00:00 [FTL] Application startup exception
+System.InvalidOperationException: Unable to find the required services. Please add all the required services by calling 'IServiceCollection.AddRazorPages' inside the call to 'ConfigureServices(...)' in the application startup code.
+   at Microsoft.AspNetCore.Builder.RazorPagesEndpointRouteBuilderExtensions.EnsureRazorPagesServices(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.RazorPagesEndpointRouteBuilderExtensions.MapRazorPages(IEndpointRouteBuilder endpoints)
+   at MangaLibMVC.Startup.<>c.<Configure>b__5_0(IEndpointRouteBuilder endpoints) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Startup.cs:line 53
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at MangaLibMVC.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Startup.cs:line 47
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2022-07-11 22:05:50.044 +00:00 [FTL] Host terminated unexpectedly
+System.InvalidOperationException: Unable to find the required services. Please add all the required services by calling 'IServiceCollection.AddRazorPages' inside the call to 'ConfigureServices(...)' in the application startup code.
+   at Microsoft.AspNetCore.Builder.RazorPagesEndpointRouteBuilderExtensions.EnsureRazorPagesServices(IEndpointRouteBuilder endpoints)
+   at Microsoft.AspNetCore.Builder.RazorPagesEndpointRouteBuilderExtensions.MapRazorPages(IEndpointRouteBuilder endpoints)
+   at MangaLibMVC.Startup.<>c.<Configure>b__5_0(IEndpointRouteBuilder endpoints) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Startup.cs:line 53
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at MangaLibMVC.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Startup.cs:line 47
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-07-11 22:06:18.908 +00:00 [INF] Starting web host
+2022-07-11 22:06:19.156 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-07-11 22:06:19.463 +00:00 [INF] Now listening on: https://localhost:7131
+2022-07-11 22:06:19.463 +00:00 [INF] Now listening on: http://localhost:5127
+2022-07-11 22:06:19.467 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 22:06:19.468 +00:00 [INF] Hosting environment: Development
+2022-07-11 22:06:19.468 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-07-11 22:06:25.790 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/ - -
+2022-07-11 22:06:25.831 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-07-11 22:06:25.861 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-07-11 22:06:25.875 +00:00 [INF] Executing ViewResult, running view Index.
+2022-07-11 22:06:25.988 +00:00 [INF] Executed ViewResult - view Index executed in 113.397ms.
+2022-07-11 22:06:25.991 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 128.9724ms
+2022-07-11 22:06:25.992 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-07-11 22:06:25.997 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/ - - - 200 - text/html;+charset=utf-8 211.3131ms
+2022-07-11 22:06:26.111 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-07-11 22:06:26.111 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/lib/jquery/dist/jquery.min.js - -
+2022-07-11 22:06:26.111 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/MangaLibMVC.styles.css?v=6GzMGlD041XkM1O-dMCC-wJgg1oUsHyhkQABPiIRCk4 - -
+2022-07-11 22:06:26.111 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2022-07-11 22:06:26.114 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-07-11 22:06:26.115 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-07-11 22:06:26.146 +00:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/js/site.js'
+2022-07-11 22:06:26.146 +00:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/css/site.css'
+2022-07-11 22:06:26.146 +00:00 [INF] Sending file. Request path: '/MangaLibMVC.styles.css'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/obj/Debug/net6.0/scopedcss/bundle/MangaLibMVC.styles.css'
+2022-07-11 22:06:26.148 +00:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2022-07-11 22:06:26.149 +00:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/lib/jquery/dist/jquery.min.js'
+2022-07-11 22:06:26.149 +00:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2022-07-11 22:06:26.151 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 37.4575ms
+2022-07-11 22:06:26.151 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 39.5506ms
+2022-07-11 22:06:26.151 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 39.6685ms
+2022-07-11 22:06:26.151 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 39.5471ms
+2022-07-11 22:06:26.151 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 36.3553ms
+2022-07-11 22:06:26.151 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/MangaLibMVC.styles.css?v=6GzMGlD041XkM1O-dMCC-wJgg1oUsHyhkQABPiIRCk4 - - - 200 1079 text/css 39.7604ms
+2022-07-11 22:06:26.323 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/favicon.ico - -
+2022-07-11 22:06:26.333 +00:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/favicon.ico'
+2022-07-11 22:06:26.334 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/favicon.ico - - - 200 5430 image/x-icon 11.0924ms
+2022-07-11 22:06:28.654 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/ - -
+2022-07-11 22:06:28.655 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-07-11 22:06:28.656 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-07-11 22:06:28.656 +00:00 [INF] Executing ViewResult, running view Index.
+2022-07-11 22:06:28.660 +00:00 [INF] Executed ViewResult - view Index executed in 3.4968ms.
+2022-07-11 22:06:28.660 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 4.2263ms
+2022-07-11 22:06:28.660 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-07-11 22:06:28.661 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/ - - - 200 - text/html;+charset=utf-8 6.5408ms
+2022-07-11 22:06:28.860 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/favicon.ico - -
+2022-07-11 22:06:28.861 +00:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/favicon.ico'
+2022-07-11 22:06:28.861 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/favicon.ico - - - 0 5430 image/x-icon 1.7215ms
+2022-07-11 22:06:31.480 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/Home/Privacy - -
+2022-07-11 22:06:31.483 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Privacy (MangaLibMVC)'
+2022-07-11 22:06:31.486 +00:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-07-11 22:06:31.488 +00:00 [INF] Executing ViewResult, running view Privacy.
+2022-07-11 22:06:31.493 +00:00 [INF] Executed ViewResult - view Privacy executed in 6.2113ms.
+2022-07-11 22:06:31.493 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Privacy (MangaLibMVC) in 6.8658ms
+2022-07-11 22:06:31.494 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Privacy (MangaLibMVC)'
+2022-07-11 22:06:31.494 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/Home/Privacy - - - 200 - text/html;+charset=utf-8 13.9425ms
+2022-07-11 22:06:33.837 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/ - -
+2022-07-11 22:06:33.837 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-07-11 22:06:33.838 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-07-11 22:06:33.838 +00:00 [INF] Executing ViewResult, running view Index.
+2022-07-11 22:06:33.839 +00:00 [INF] Executed ViewResult - view Index executed in 1.5171ms.
+2022-07-11 22:06:33.840 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 1.8689ms
+2022-07-11 22:06:33.840 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-07-11 22:06:33.840 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/ - - - 200 - text/html;+charset=utf-8 3.4278ms
+2022-07-11 22:06:35.106 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7131/ - -
+2022-07-11 22:06:35.106 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-07-11 22:06:35.107 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-07-11 22:06:35.107 +00:00 [INF] Executing ViewResult, running view Index.
+2022-07-11 22:06:35.108 +00:00 [INF] Executed ViewResult - view Index executed in 1.1756ms.
+2022-07-11 22:06:35.109 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 1.6921ms
+2022-07-11 22:06:35.109 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-07-11 22:06:35.109 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7131/ - - - 200 - text/html;+charset=utf-8 3.0696ms
+2022-07-11 22:06:40.903 +00:00 [INF] Application is shutting down...
+2022-07-11 22:20:07.959 +00:00 [INF] Starting web host
+2022-07-11 22:20:08.194 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-07-11 22:20:08.510 +00:00 [INF] Now listening on: http://localhost:39169
+2022-07-11 22:20:08.510 +00:00 [INF] Now listening on: https://localhost:38659
+2022-07-11 22:20:08.513 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 22:20:08.513 +00:00 [INF] Hosting environment: Development
+2022-07-11 22:20:08.514 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-07-11 22:20:24.474 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:39169/ - -
+2022-07-11 22:20:24.484 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:39169/ - - - 307 0 - 14.2474ms
+2022-07-11 22:20:27.617 +00:00 [INF] Request starting HTTP/2 GET https://localhost:38659/ - -
+2022-07-11 22:20:27.647 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-07-11 22:20:27.670 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-07-11 22:20:27.678 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-07-11 22:20:27.693 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.0795ms.
+2022-07-11 22:20:27.710 +00:00 [INF] Executing ViewResult, running view Index.
+2022-07-11 22:20:27.802 +00:00 [INF] Executed ViewResult - view Index executed in 97.3868ms.
+2022-07-11 22:20:27.803 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 131.9547ms
+2022-07-11 22:20:27.804 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-07-11 22:20:27.809 +00:00 [INF] Request finished HTTP/2 GET https://localhost:38659/ - - - 200 - text/html;+charset=utf-8 192.2738ms
+2022-07-11 22:20:27.926 +00:00 [INF] Request starting HTTP/2 GET https://localhost:38659/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-07-11 22:20:27.927 +00:00 [INF] Request starting HTTP/2 GET https://localhost:38659/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2022-07-11 22:20:27.927 +00:00 [INF] Request starting HTTP/2 GET https://localhost:38659/MangaLibMVC.styles.css?v=6GzMGlD041XkM1O-dMCC-wJgg1oUsHyhkQABPiIRCk4 - -
+2022-07-11 22:20:27.927 +00:00 [INF] Request starting HTTP/2 GET https://localhost:38659/lib/jquery/dist/jquery.min.js - -
+2022-07-11 22:20:27.937 +00:00 [INF] Request starting HTTP/2 GET https://localhost:38659/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-07-11 22:20:27.947 +00:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/css/site.css'
+2022-07-11 22:20:27.947 +00:00 [INF] Sending file. Request path: '/MangaLibMVC.styles.css'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/obj/Debug/net6.0/scopedcss/bundle/MangaLibMVC.styles.css'
+2022-07-11 22:20:27.952 +00:00 [INF] Request finished HTTP/2 GET https://localhost:38659/MangaLibMVC.styles.css?v=6GzMGlD041XkM1O-dMCC-wJgg1oUsHyhkQABPiIRCk4 - - - 200 1079 text/css 25.1510ms
+2022-07-11 22:20:27.952 +00:00 [INF] Request finished HTTP/2 GET https://localhost:38659/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 25.2346ms
+2022-07-11 22:20:27.958 +00:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/lib/jquery/dist/jquery.min.js'
+2022-07-11 22:20:27.958 +00:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2022-07-11 22:20:27.958 +00:00 [INF] Request finished HTTP/2 GET https://localhost:38659/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 31.6708ms
+2022-07-11 22:20:27.958 +00:00 [INF] Request finished HTTP/2 GET https://localhost:38659/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 21.3709ms
+2022-07-11 22:20:27.959 +00:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2022-07-11 22:20:27.959 +00:00 [INF] Request finished HTTP/2 GET https://localhost:38659/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 32.9931ms
+2022-07-11 22:20:27.986 +00:00 [INF] Request starting HTTP/2 GET https://localhost:38659/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-07-11 22:20:27.987 +00:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/js/site.js'
+2022-07-11 22:20:27.987 +00:00 [INF] Request finished HTTP/2 GET https://localhost:38659/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 1.0522ms
+2022-07-11 22:20:28.023 +00:00 [INF] Request starting HTTP/2 GET https://localhost:38659/favicon.ico - -
+2022-07-11 22:20:28.023 +00:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/favicon.ico'
+2022-07-11 22:20:28.024 +00:00 [INF] Request finished HTTP/2 GET https://localhost:38659/favicon.ico - - - 200 5430 image/x-icon 0.8653ms
+2022-07-11 22:20:42.430 +00:00 [INF] Application is shutting down...
+2022-07-11 22:20:49.267 +00:00 [INF] Starting web host
+2022-07-11 22:20:49.514 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-07-11 22:20:49.856 +00:00 [INF] Now listening on: http://localhost:45989
+2022-07-11 22:20:49.856 +00:00 [INF] Now listening on: https://localhost:35967
+2022-07-11 22:20:49.859 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 22:20:49.859 +00:00 [INF] Hosting environment: Development
+2022-07-11 22:20:49.859 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-07-11 22:21:15.448 +00:00 [INF] Application is shutting down...

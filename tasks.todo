@@ -1,0 +1,54 @@
+Basics(backend):
+    Author:
+        ✔ services @done (7/9/2022, 11:55:03 PM)
+        ✔ controller @done (7/9/2022, 11:55:04 PM)
+    Manga:
+        ✔ services @done (7/9/2022, 11:55:07 PM)
+        ✔ controller @done (7/9/2022, 11:55:08 PM)
+    Category:
+        ✔ services @done (7/9/2022, 11:55:10 PM)
+        ✔ controller @done (7/9/2022, 11:55:11 PM)
+    Upload:
+        ✔ page @done (7/9/2022, 11:55:13 PM)
+        ✔ cover @done (7/9/2022, 11:55:13 PM)
+        ✔ chapter @done (7/9/2022, 11:55:15 PM)
+        ✔ services @done (7/9/2022, 11:55:15 PM)
+        ✔ controller @done (7/9/2022, 11:55:16 PM)
+    Cover:
+        ✔ services @done (7/9/2022, 11:55:18 PM)
+        ✔ controller @done (7/9/2022, 11:55:19 PM)
+    Chapter:
+        ✔ services @done (7/9/2022, 11:55:21 PM)
+        ✔ controller @done (7/9/2022, 11:55:22 PM)
+    Page:
+        ✔ services @done (7/9/2022, 11:55:23 PM)
+        ✔ controller @done (7/9/2022, 11:55:24 PM)
+    Db:
+        ✔ entity config @done (7/9/2022, 11:55:24 PM)
+        ✔ mapping @done (7/9/2022, 11:55:25 PM)
+    ✔ pagination @done (7/9/2022, 11:55:26 PM)
+    ✔ wrappers @done (7/9/2022, 11:55:27 PM)
+    ✔ Error handling @done (7/9/2022, 11:55:28 PM)
+    ☐ fix possible bugs
+    ☐ optimize
+    ☐ optimize but better
+Beyond Basics:
+    FrontEnd:
+        Reader:
+            ☐ chapter
+            ☐ pages
+            ☐ comfy list 
+        Basic UI:
+            ☐ home
+            ☐ Show Manga
+            ☐ show categories
+            ☐ Show chapter list
+            ☐ show page list 
+            ☐ user 
+    ☐ Search logic
+    ☐ User account with auth
+    ☐ make better endpoints
+    ☐ write tests
+
+
+    

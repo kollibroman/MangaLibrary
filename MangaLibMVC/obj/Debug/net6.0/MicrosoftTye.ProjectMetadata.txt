@@ -1,0 +1,21 @@
+AssemblyInformationalVersion:
+InformationalVersion: 1.0.0
+Version: 1.0.0
+TargetFrameworks:
+RunCommand: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/bin/Debug/net6.0/MangaLibMVC
+RunArguments:
+TargetPath: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/bin/Debug/net6.0/MangaLibMVC.dll
+PublishDir: bin/Debug/net6.0/publish/
+AssemblyName: MangaLibMVC
+IntermediateOutputPath: obj/Debug/net6.0/
+TargetFramework: net6.0
+_ShortFrameworkIdentifier:
+_ShortFrameworkVersion:
+_TargetFrameworkVersionWithoutV: 6.0
+FrameworkReference: Microsoft.NETCore.App;Microsoft.AspNetCore.App
+ContainerBaseImage:
+ContainerBaseTag:
+MicrosoftNETPlatformLibrary:
+_AspNetCoreAppSharedFxIsEnabled:
+UsingMicrosoftNETSdkWeb: true
+AzureFunctionsVersion:

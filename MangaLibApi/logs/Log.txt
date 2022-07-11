@@ -762,3 +762,23 @@ MangaLibCore.Entities.Page -> MangaLibApp.Models.PageDto
 2022-06-25 17:02:54.924 +02:00 [INF] Executed endpoint 'MangaLibApi.Controllers.ChapterController.GetChapterFromMangaName (MangaLibApi)'
 2022-06-25 17:02:54.938 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Chapter?MangaName=how%20I%20did%20ur%20mom - - - 200 - application/json;+charset=utf-8 2406.6055ms
 2022-06-25 17:03:26.476 +02:00 [INF] Application is shutting down...
+2022-07-11 22:20:07.976 +00:00 [INF] Starting web host
+2022-07-11 22:20:08.467 +00:00 [INF] Now listening on: http://localhost:37893
+2022-07-11 22:20:08.470 +00:00 [INF] Now listening on: https://localhost:38453
+2022-07-11 22:20:08.475 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 22:20:08.476 +00:00 [INF] Hosting environment: Development
+2022-07-11 22:20:08.476 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-07-11 22:20:33.753 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:37893/ - -
+2022-07-11 22:20:33.811 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:37893/ - - - 307 0 - 61.8422ms
+2022-07-11 22:20:36.961 +00:00 [INF] Request starting HTTP/2 GET https://localhost:38453/ - -
+2022-07-11 22:20:37.016 +00:00 [INF] Request finished HTTP/2 GET https://localhost:38453/ - - - 404 0 - 54.9348ms
+2022-07-11 22:20:37.183 +00:00 [INF] Request starting HTTP/2 GET https://localhost:38453/favicon.ico - -
+2022-07-11 22:20:37.184 +00:00 [INF] Request finished HTTP/2 GET https://localhost:38453/favicon.ico - - - 404 0 - 1.3902ms
+2022-07-11 22:20:42.431 +00:00 [INF] Application is shutting down...
+2022-07-11 22:20:49.264 +00:00 [INF] Starting web host
+2022-07-11 22:20:49.782 +00:00 [INF] Now listening on: http://localhost:43419
+2022-07-11 22:20:49.786 +00:00 [INF] Now listening on: https://localhost:40729
+2022-07-11 22:20:49.791 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 22:20:49.792 +00:00 [INF] Hosting environment: Development
+2022-07-11 22:20:49.792 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-07-11 22:21:15.449 +00:00 [INF] Application is shutting down...
