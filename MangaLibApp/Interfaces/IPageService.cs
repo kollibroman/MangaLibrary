@@ -6,7 +6,7 @@ namespace MangaLibApp.Interfaces
     public interface IPageService
     {
         Task<List<PageDto>> GetAllFromManga(string MangaName);
-        Task<PageDto> GetByName(int PageNumber);
+        Task<PageDto> GetByNumber(int PageNumber);
         Task<bool> Delete(int id);
         Task<int> GetTotalRecordsFromManga(string MangaName);
     }

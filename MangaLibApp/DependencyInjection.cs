@@ -6,6 +6,7 @@ using MangaLibApp.Services;
 using MangaLibApp.Services.Client;
 using MangaLibCore;
 using Microsoft.AspNetCore.Http;
+using System.Net.Http;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace MangaLibApp
@@ -31,6 +32,7 @@ namespace MangaLibApp
             services.AddScoped<ICoverClientService, CoverClientService>();
             services.AddScoped<IMangaClientService, MangaClientService>();
             services.AddScoped<IPageClientService, PageClientService>();
+
 
             services.AddHttpContextAccessor();
 

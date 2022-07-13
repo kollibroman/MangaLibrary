@@ -33,10 +33,10 @@ namespace MangaLibApp.Services
             return _dbcontext.Mangas.CountAsync();
         }
 
-        public async Task<MangaDto> GetByName(string Name)
+        public async Task<MangaDto> GetById(int id)
         {
             var manga = await _dbcontext.Mangas
-            .SingleOrDefaultAsync(i => i.Title == Name);
+            .SingleOrDefaultAsync(i => i.Id == id);
             return _mapper.Map<MangaDto>(manga);
         }
 

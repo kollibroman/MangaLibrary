@@ -5,6 +5,6 @@ namespace MangaLibApp.Interfaces.Client
     public interface IChapterClientService
     {
         Task<List<ChapterDto>> GetChaptersAsync();
-        Task<ChapterDto> GetChapterAsync(string Name);
+        Task<ChapterDto> GetChapterAsync(int id);
     }
 }

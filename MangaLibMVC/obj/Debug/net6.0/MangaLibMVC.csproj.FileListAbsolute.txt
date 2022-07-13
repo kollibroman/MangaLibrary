@@ -74,3 +74,4 @@
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/obj/Debug/net6.0/ref/MangaLibMVC.dll
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/obj/Debug/net6.0/MangaLibMVC.pdb
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/obj/Debug/net6.0/MangaLibMVC.genruntimeconfig.cache
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/bin/Debug/net6.0/Microsoft.Tye.Extensions.Configuration.dll

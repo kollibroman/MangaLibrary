@@ -5,6 +5,6 @@ namespace MangaLibApp.Interfaces.Client
     public interface ICategoryClientService
     {
         Task<List<CategoryDto>> GetCategoriesAsync();
-        Task<CategoryDto> GetCategoryAsync(string Name);
+        Task<CategoryDto> GetCategoryAsync(int id);
     }
 }

@@ -1,8 +1,6 @@
 using MangaLibApp;
-using Swashbuckle.AspNetCore.Swagger;
-using Swashbuckle.AspNetCore;
-using Serilog;
 using MangaLibApi.Middleware;
+using MangaLibApp.Services.Client;
 
 namespace MangaLibApi
 {
@@ -21,6 +19,32 @@ namespace MangaLibApi
             services.AddControllers();
             services.AddSwaggerGen();
             services.AddScoped<ErrorHandler>();
+
+            services.AddHttpClient<AuthorClientService>(client =>
+            {
+                client.BaseAddress = Configuration.GetServiceUri("MangaLibApi");
+            });
+            services.AddHttpClient<CategoryClientService>(client =>
+            {
+                client.BaseAddress = Configuration.GetServiceUri("MangaLibApi");
+            });
+            services.AddHttpClient<ChapterClientService>(client =>
+            {
+                client.BaseAddress = Configuration.GetServiceUri("MangaLibApi");
+            });
+            services.AddHttpClient<CoverClientService>(client =>
+            {
+                client.BaseAddress = Configuration.GetServiceUri("MangaLibApi");
+            });
+            services.AddHttpClient<MangaClientService>(client =>
+            {
+                client.BaseAddress = Configuration.GetServiceUri("MangaLibApi");
+            });
+            services.AddHttpClient<PageClientService>(client =>
+            {
+                client.BaseAddress = Configuration.GetServiceUri("MangaLibApi");
+            });
+
             services.AddApp();
         }
 

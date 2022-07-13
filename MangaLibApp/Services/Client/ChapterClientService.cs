@@ -1,3 +1,4 @@
+using System.Text.Json;
 using MangaLibApp.Interfaces.Client;
 using MangaLibApp.Models;
 
@@ -5,14 +6,30 @@ namespace MangaLibApp.Services.Client
 {
     public class ChapterClientService : IChapterClientService
     {
-        public Task<ChapterDto> GetChapterAsync(string Name)
+        private readonly JsonSerializerOptions options = new JsonSerializerOptions()
+         {
+             PropertyNameCaseInsensitive = true,
+             PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+         };
+         
+        private readonly HttpClient _client;
+        public ChapterClientService(HttpClient client)
         {
-            throw new NotImplementedException();
+            _client = client;
         }
-
-        public Task<List<ChapterDto>> GetChaptersAsync()
+        public async Task<List<ChapterDto>> GetChaptersAsync()
         {
-            throw new NotImplementedException();
+            var responseMsg = await _client.GetAsync("/chapter");
+            var stream = await responseMsg.Content.ReadAsStreamAsync();
+
+            return await JsonSerializer.DeserializeAsync<List<ChapterDto>>(stream, options);
+        }
+        public async Task<ChapterDto> GetChapterAsync(int id)
+        {
+            var responseMsg = await _client.GetAsync($"/author/{id}");
+            var stream = await responseMsg.Content.ReadAsStreamAsync();
+
+            return await JsonSerializer.DeserializeAsync<ChapterDto>(stream, options);
         }
     }
 }

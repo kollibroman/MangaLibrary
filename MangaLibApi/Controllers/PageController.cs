@@ -28,7 +28,7 @@ namespace MangaLibApi.Controllers
         [HttpGet("{ChapterName}")]
         public async Task<IActionResult> GetChapterByName([FromRoute]int PageNumber)
         {
-           var page = await _service.GetByName(PageNumber);
+           var page = await _service.GetByNumber(PageNumber);
            
            if(page is null)
            {

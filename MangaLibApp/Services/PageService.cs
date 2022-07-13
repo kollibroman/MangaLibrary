@@ -27,7 +27,7 @@ namespace MangaLibApp.Services
             return _mapper.Map<List<PageDto>>(pages);
         }
 
-        public async Task<PageDto> GetByName(int PageNumber)
+        public async Task<PageDto> GetByNumber(int PageNumber)
         {
              var page = await _db.Pages
                .SingleOrDefaultAsync(c => c.PageNumber == PageNumber);

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "44EIqgd1huBD17n8zFq1MpispneCr9wMZsAwl0tLg+OJrueb3yUWwdNfZlXg42x7qe7DcJvhteTW18jjaRKzRA==",
+  "dgSpecHash": "aMQFzvfPdR3rGD7/vFbkM+mIEy1MN8hkB6l/0eTmO8ERnA1uemmk5H89oYkbkrFMAx5xRchUk2ZYFBYcYjxMfw==",
   "success": true,
   "projectFilePath": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/MangaLibMVC.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "/home/kollibro_man/.nuget/packages/microsoft.extensions.dependencymodel/3.0.0/microsoft.extensions.dependencymodel.3.0.0.nupkg.sha512",
     "/home/kollibro_man/.nuget/packages/microsoft.extensions.fileproviders.abstractions/3.1.8/microsoft.extensions.fileproviders.abstractions.3.1.8.nupkg.sha512",
     "/home/kollibro_man/.nuget/packages/microsoft.extensions.hosting.abstractions/3.1.8/microsoft.extensions.hosting.abstractions.3.1.8.nupkg.sha512",
+    "/home/kollibro_man/.nuget/packages/microsoft.extensions.http/6.0.0/microsoft.extensions.http.6.0.0.nupkg.sha512",
     "/home/kollibro_man/.nuget/packages/microsoft.extensions.logging/6.0.0/microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "/home/kollibro_man/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "/home/kollibro_man/.nuget/packages/microsoft.extensions.objectpool/2.2.0/microsoft.extensions.objectpool.2.2.0.nupkg.sha512",

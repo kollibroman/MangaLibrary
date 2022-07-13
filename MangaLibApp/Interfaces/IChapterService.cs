@@ -7,7 +7,7 @@ namespace MangaLibApp.Interfaces
     public interface IChapterService
     {
         Task<List<ChapterDto>> GetAllFromManga(string MangaName);
-        Task<ChapterDto> GetByName(string Name);
+        Task<ChapterDto> GetById(int id);
         Task<bool> Delete(int id);
         Task<int> GetTotalRecordsFromManga(string MangaName);
     }

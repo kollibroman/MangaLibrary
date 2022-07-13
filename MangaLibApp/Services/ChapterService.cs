@@ -29,10 +29,10 @@ namespace MangaLibApp.Services
                 return _mapper.Map<List<ChapterDto>>(chapters);
         }
 
-        public async Task<ChapterDto> GetByName(string Name)
+        public async Task<ChapterDto> GetById(int id)
         {
             var chapter = await _db.Chapters
-               .SingleOrDefaultAsync(c => c.ChapterName == Name);
+               .SingleOrDefaultAsync(c => c.Id == id);
             return _mapper.Map<ChapterDto>(chapter);
         }
 

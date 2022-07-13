@@ -25,10 +25,10 @@ namespace MangaLibApi.Controllers
             return Ok(new Response<List<ChapterDto>>(chapters));
         }
 
-        [HttpGet("{ChapterName}")]
-        public async Task<IActionResult> GetChapterByName([FromRoute]string ChapterName)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetChapterByName([FromRoute]int id)
         {
-           var chapter = await _service.GetByName(ChapterName);
+           var chapter = await _service.GetById(id);
            
            if(chapter is null)
            {

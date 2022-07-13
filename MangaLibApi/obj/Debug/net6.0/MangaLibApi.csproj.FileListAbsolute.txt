@@ -239,3 +239,4 @@ C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApi/obj/Debug/net6.0/
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/obj/Debug/net6.0/ref/MangaLibApi.dll
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/obj/Debug/net6.0/MangaLibApi.pdb
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/obj/Debug/net6.0/MangaLibApi.genruntimeconfig.cache
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Microsoft.Tye.Extensions.Configuration.dll

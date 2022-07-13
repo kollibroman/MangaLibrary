@@ -34,7 +34,7 @@ namespace MangaLibApi.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetMangaById([FromRoute]int id)
+        public async Task<IActionResult> GetMangaByName([FromRoute]int id)
         {
             var manga = await _service.GetById(id);
 
