@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Views/Author/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aG9yL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Views/Author/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aG9yL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

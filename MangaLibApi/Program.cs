@@ -14,6 +14,9 @@ namespace MangaLibApi
             .WriteTo.File(Directory.GetCurrentDirectory() + "/logs/Log.txt")
             .CreateLogger();
 
+            System.Net.ServicePointManager.ServerCertificateValidationCallback += 
+            (s, cert, chain, sslPolicyErrors) => true;
+
             try
             {
                 Log.Information("Starting web host");

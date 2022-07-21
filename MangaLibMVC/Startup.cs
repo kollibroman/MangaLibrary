@@ -1,8 +1,5 @@
 using MangaLibApp;
-using Serilog;
 using MangaLibMVC.Middleware;
-using Microsoft.AspNetCore.Http.Connections;
-using MangaLibApp.Services.Client;
 
 namespace MangaLibMVC
 {
@@ -20,8 +17,8 @@ namespace MangaLibMVC
         {
             services.AddControllersWithViews();
             services.AddScoped<ErrorHandler>();
-            services.AddRazorPages();            
-            services.AddApp();
+            services.AddRazorPages();
+            services.AddApp();        
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

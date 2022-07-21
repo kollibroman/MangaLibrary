@@ -9,6 +9,7 @@ namespace MangaLibCore.Entities
         public string Name { get; set; }
         public string Surname { get; set; }
         public DateTime UpdatedAt { get; set; }
-        public List<string> WrittenMangas { get; set; }
+
+        public List<Manga> WrittenMangas { get; set; }
     }
 }

@@ -8,6 +8,7 @@ using MangaLibCore;
 using Microsoft.AspNetCore.Http;
 using System.Net.Http;
 using Microsoft.Extensions.DependencyInjection;
+using System.Net.Http.Headers;
 
 namespace MangaLibApp
 {
@@ -26,13 +27,14 @@ namespace MangaLibApp
             services.AddScoped<IApiConverter, ApiConverter>();
             services.AddScoped<IPageService, PageService>();
 
+            services.AddHttpClient();
+
             services.AddScoped<IAuthorClientService, AuthorClientService>();
             services.AddScoped<ICategoryClientService, CategoryClientService>();
             services.AddScoped<IChapterClientService, ChapterClientService>();
             services.AddScoped<ICoverClientService, CoverClientService>();
             services.AddScoped<IMangaClientService, MangaClientService>();
             services.AddScoped<IPageClientService, PageClientService>();
-
 
             services.AddHttpContextAccessor();
 

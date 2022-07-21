@@ -1,6 +1,6 @@
 namespace MangaLibCore.Enums
 {
-    public enum MangaType
+    public enum EntityType
     {
         Manga,
         Comix,

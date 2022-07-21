@@ -29,8 +29,9 @@ namespace MangaLibApp.Services
         public async Task<List<AuthorDto>> GetAll(PaginationFilter filter)
         {
             var validFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
-            var author = await _db.Authors.
-            Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
+            var author = await _db.Authors
+            .Include(w => w.WrittenMangas)
+            .Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
             .Take(validFilter.PageSize)
             .ToListAsync();
             return _mapper.Map<List<AuthorDto>>(author);
@@ -54,7 +55,7 @@ namespace MangaLibApp.Services
 
             if(dto.WrittenMangas is not null)
             {
-                author.WrittenMangas.AddRange(dto.WrittenMangas);
+                author.WrittenMangas.AddRange(_mapper.Map<List<Manga>>(dto.WrittenMangas));
             }
             await _db.SaveChangesAsync();
             return true;

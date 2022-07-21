@@ -8,6 +8,6 @@ namespace MangaLibApp.Models
         public string Name { get; set; }
         public string Surname { get; set; }
 
-        public List<string> WrittenMangas { get; set; }
+        public List<MangaDto> WrittenMangas { get; set; }
     }
 }

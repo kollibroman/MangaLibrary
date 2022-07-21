@@ -5,6 +5,6 @@ namespace MangaLibApp.Models
     public class UpdateAuthorDto
     {
         [Required]
-        public List<string> WrittenMangas { get; set; }
+        public List<MangaDto> WrittenMangas { get; set; }
     }
 }

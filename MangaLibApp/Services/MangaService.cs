@@ -21,8 +21,8 @@ namespace MangaLibApp.Services
         public async Task<List<MangaDto>> GetAll(PaginationFilter filter)
         {
             var validFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
-            var mangas = await _dbcontext.Mangas.
-            Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
+            var mangas = await _dbcontext.Mangas
+            .Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
             .Take(validFilter.PageSize)
             .ToListAsync();
             return _mapper.Map<List<MangaDto>>(mangas);
@@ -49,7 +49,6 @@ namespace MangaLibApp.Services
 
             manga.Title = dto.Title;
             manga.UpdatedAt = DateTime.Now;
-            manga.Author = dto.Author;
             manga.ChaptersCount = dto.ChaptersCount;
             await _dbcontext.SaveChangesAsync();
             

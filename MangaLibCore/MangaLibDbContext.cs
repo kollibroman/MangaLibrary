@@ -5,7 +5,7 @@ namespace MangaLibCore
 {
     public class MangaLibDbContext : DbContext
     {
-        private string _connectionstring = "Server=localhost;Database=myDataBase;User Id=SA;Password=Miau8888;";
+        private string _connectionstring = "Server=localhost;Database=MangaBaseBase;User Id=SA;Password=Miau8888;";
         public DbSet<Manga> Mangas { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Page> Pages { get; set; }

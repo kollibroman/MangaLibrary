@@ -12,18 +12,20 @@ namespace MangaLibMVC.Controllers
             _service = service;
         }
 
-        public async Task<IActionResult> Index()
+        [HttpGet]
+        public async Task<IActionResult> Index([FromQuery]int pageNumber)
         {  
-            var response = await _service.GetAuthorsAsync(); 
-        
-            return View(response);
+            var response = await _service.GetAuthorsAsync(1); 
+            Console.WriteLine(response);
+            return View("Index" ,response);
         }
 
-        public async Task<IActionResult> SearchedAuthor([FromServices]int id)
+        public async Task<IActionResult> Details([FromRoute]int id)
         {
            var response = await _service.GetAuthorAsync(id);
-            return View();
+            return View("Details", response);
         }
+        
         
     }
 }
