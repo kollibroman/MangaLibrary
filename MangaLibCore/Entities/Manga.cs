@@ -16,6 +16,8 @@ namespace MangaLibCore.Entities
 
         public int AuthorId { get; set; }
         public int CategoryId { get; set; }
+        public string CoverId { get; set; }
         public Author Author { get; set; }
+        public Cover Cover { get; set; }
     }
 }

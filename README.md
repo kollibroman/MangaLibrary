@@ -1,6 +1,6 @@
 ## MangaLibrary
 
-I still don't know if this will be just for storing mangas or to read them as well, but yeah some API project with some basic frontend
+I still don't know if this will be just for storing mangas or to read them as well, but yeah, this is some API project with basic frontend (in progress)
 
 ### Contributions
 

@@ -23098,3 +23098,10 @@ System.Net.Http.HttpRequestException: Response status code does not indicate suc
 2022-07-21 22:51:58.373 +00:00 [INF] Hosting environment: Development
 2022-07-21 22:51:58.373 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
 2022-07-21 22:52:29.283 +00:00 [INF] Application is shutting down...
+2022-07-25 23:32:08.348 +00:00 [INF] Starting web host
+2022-07-25 23:32:08.806 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-07-25 23:32:09.369 +00:00 [INF] Now listening on: https://localhost:5003
+2022-07-25 23:32:09.376 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-25 23:32:09.377 +00:00 [INF] Hosting environment: Development
+2022-07-25 23:32:09.378 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-07-25 23:33:01.919 +00:00 [INF] Application is shutting down...
