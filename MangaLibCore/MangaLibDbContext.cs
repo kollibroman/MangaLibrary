@@ -7,19 +7,16 @@ namespace MangaLibCore
     {
         private string _connectionstring = "Server=localhost;Database=MangaBaseBase;User Id=SA;Password=Miau8888;";
         public DbSet<Manga> Mangas { get; set; }
-        public DbSet<Category> Categories { get; set; }
         public DbSet<Page> Pages { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<Cover> Cover { get; set; }
         public DbSet<Chapter> Chapters { get; set; }
+        public DbSet<Tag> Tags { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Manga>()
                 .Property(t => t.Title)
-                .IsRequired();
-            modelBuilder.Entity<Category>()
-                .Property(n => n.Name)
                 .IsRequired();
             modelBuilder.Entity<Page>()
                 .Property(p => p.PageData)

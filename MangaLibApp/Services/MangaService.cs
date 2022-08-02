@@ -22,6 +22,7 @@ namespace MangaLibApp.Services
         {
             var validFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
             var mangas = await _dbcontext.Mangas
+            .Include(c => c.Cover)
             .Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
             .Take(validFilter.PageSize)
             .ToListAsync();
@@ -36,6 +37,8 @@ namespace MangaLibApp.Services
         public async Task<MangaDto> GetById(int id)
         {
             var manga = await _dbcontext.Mangas
+            .Include(c => c.Cover)
+            .Where(c => c.Cover.MangaName == c.Title)
             .SingleOrDefaultAsync(i => i.Id == id);
             return _mapper.Map<MangaDto>(manga);
         }

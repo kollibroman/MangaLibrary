@@ -11,35 +11,6 @@ namespace MangaLibCore
     {
         public static void Seed(this ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Category>()
-            .HasData(
-                new Category { 
-                    Id = 1, 
-                    Name = "Shounen", 
-                    UpdatedAt = DateTime.UtcNow, 
-                    },
-                new Category { 
-                    Id = 2, 
-                    Name = "Shoujo", 
-                    UpdatedAt = DateTime.UtcNow,                 
-                    },
-                new Category { 
-                    Id = 3, 
-                    Name = "Seinen",
-                    UpdatedAt = DateTime.UtcNow,  
-                    },
-                new Category { 
-                    Id = 4, 
-                    Name = "Comedy", 
-                    UpdatedAt = DateTime.UtcNow,  
-                    },
-                new Category { 
-                    Id = 5, 
-                    Name = "Action", 
-                    UpdatedAt = DateTime.UtcNow,        
-                    }
-            );
-
             modelBuilder.Entity<Author>().HasData(
                 new Author { 
                     Id = 1, 
@@ -78,7 +49,6 @@ namespace MangaLibCore
                 {
                     Id = 1,
                     AuthorId = 5,
-                    CategoryId = 3,
                     Type = EntityType.Manga,
                     Title = "The Fable",
                     PublishedAt = "01/11/2014",
@@ -90,7 +60,6 @@ namespace MangaLibCore
                 {
                     Id = 2,
                     AuthorId = 2,
-                    CategoryId = 5,
                     Type = EntityType.Manga,
                     Title = "Bocu no Pico Academia",
                     PublishedAt = "",
@@ -102,7 +71,6 @@ namespace MangaLibCore
                 {
                     Id = 3,
                     AuthorId = 3,
-                    CategoryId = 3,
                     Type = EntityType.Manga,
                     Title = "Goblin Slayer",
                     PublishedAt = "",
@@ -114,7 +82,6 @@ namespace MangaLibCore
                 {
                     Id = 4,
                     AuthorId = 4,
-                    CategoryId = 5,
                     Type = EntityType.Manga,
                     Title = "Kengan Ashua",
                     PublishedAt = "",
@@ -126,7 +93,6 @@ namespace MangaLibCore
                 {
                     Id = 5,
                     AuthorId = 1,
-                    CategoryId = 1,
                     Type = EntityType.Manga,
                     Title = "Fire Force",
                     PublishedAt = "",

@@ -19,18 +19,18 @@ namespace MangaLibApp
             services.AddDbContext<MangaLibDbContext>();
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddScoped<IMangaService, MangaService>();
-            services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IAuthorService, AuthorService>();
             services.AddScoped<IUploadService, UploadService>();
             services.AddScoped<ICoverService, CoverService>();
             services.AddScoped<IChapterService, ChapterService>();
             services.AddScoped<IApiConverter, ApiConverter>();
             services.AddScoped<IPageService, PageService>();
+            services.AddScoped<ITagService, TagService>();
 
             services.AddHttpClient();
+            services.AddScoped<IEfCoreExtensions, EfCoreExtensions>();
 
             services.AddScoped<IAuthorClientService, AuthorClientService>();
-            services.AddScoped<ICategoryClientService, CategoryClientService>();
             services.AddScoped<IChapterClientService, ChapterClientService>();
             services.AddScoped<ICoverClientService, CoverClientService>();
             services.AddScoped<IMangaClientService, MangaClientService>();

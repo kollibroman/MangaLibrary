@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+    web:
+        build: .
+        ports:
+            - "8000:80"
+        depends_on:
+            - db
+    db:
+        image: "mcr.microsoft.com/mssql/server"
+        environment:
+            SA_PASSWORD: "Miau8888"
+            ACCEPT_EULA: "Y"
+        ports:
+            - "1440:1433"
+
