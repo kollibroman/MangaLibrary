@@ -12,11 +12,13 @@ namespace MangaLibApp.Services
     {
         private readonly MangaLibDbContext _dbcontext;
         private readonly IMapper _mapper;
+        private readonly ITagService _service;
 
-        public MangaService(MangaLibDbContext dbcontext, IMapper  mapper)
+        public MangaService(MangaLibDbContext dbcontext, IMapper  mapper, ITagService service)
         {
             _dbcontext = dbcontext;
             _mapper = mapper;
+            _service = service;
         }
         public async Task<List<MangaDto>> GetAll(PaginationFilter filter)
         {
@@ -59,6 +61,7 @@ namespace MangaLibApp.Services
         }
         public async Task Create(CreateMangaDto dto)
         {
+
            var manga = _mapper.Map<Manga>(dto);
 
            await _dbcontext.AddAsync(manga);

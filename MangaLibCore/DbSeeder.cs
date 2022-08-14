@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System;
 using Microsoft.EntityFrameworkCore.Design;
+using System.Runtime.InteropServices;
 
 namespace MangaLibCore
 {
@@ -49,6 +50,7 @@ namespace MangaLibCore
                 {
                     Id = 1,
                     AuthorId = 5,
+                    CoverId = 1,
                     Type = EntityType.Manga,
                     Title = "The Fable",
                     PublishedAt = "01/11/2014",
@@ -60,6 +62,7 @@ namespace MangaLibCore
                 {
                     Id = 2,
                     AuthorId = 2,
+                    CoverId = 2,
                     Type = EntityType.Manga,
                     Title = "Bocu no Pico Academia",
                     PublishedAt = "",
@@ -71,6 +74,7 @@ namespace MangaLibCore
                 {
                     Id = 3,
                     AuthorId = 3,
+                    CoverId = 3,
                     Type = EntityType.Manga,
                     Title = "Goblin Slayer",
                     PublishedAt = "",
@@ -82,6 +86,7 @@ namespace MangaLibCore
                 {
                     Id = 4,
                     AuthorId = 4,
+                    CoverId = 4,
                     Type = EntityType.Manga,
                     Title = "Kengan Ashua",
                     PublishedAt = "",
@@ -93,6 +98,7 @@ namespace MangaLibCore
                 {
                     Id = 5,
                     AuthorId = 1,
+                    CoverId = 5,
                     Type = EntityType.Manga,
                     Title = "Fire Force",
                     PublishedAt = "",
@@ -100,6 +106,44 @@ namespace MangaLibCore
                     Description = " F I R E.",
                     ChaptersCount = 304
                 }
+            );
+
+            modelBuilder.Entity<Cover>().HasData(
+                new Cover
+                {
+                    Id = 1,
+                    Name = "",
+                    Data = Array.Empty<byte>(),
+                    MangaName = "The Fable"
+                },
+                new Cover
+                {
+                    Id = 2,
+                    Name = "",
+                    Data = Array.Empty<byte>(),
+                    MangaName = "Bocu no Pico Academia"
+                },
+                new Cover
+                {
+                    Id = 3,
+                    Name = "Goblin Slayer",
+                    Data = Array.Empty<byte>(),
+                    MangaName = "The Fable"
+                },
+                new Cover
+                {
+                    Id = 4,
+                    Name = "Kengan Ashua",
+                    Data = Array.Empty<byte>(),
+                    MangaName = "The Fable"
+                },
+                new Cover
+                {
+                    Id = 5,
+                    Name = "Fire Force",
+                    Data = Array.Empty<byte>(),
+                    MangaName = "The Fable"
+                }  
             );
         }
     }

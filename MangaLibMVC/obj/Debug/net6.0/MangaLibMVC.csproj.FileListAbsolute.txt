@@ -77,3 +77,5 @@
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/bin/Debug/net6.0/Microsoft.Tye.Extensions.Configuration.dll
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/bin/Debug/net6.0/System.Net.Http.Formatting.dll
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/bin/Debug/net6.0/Newtonsoft.Json.Bson.dll
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/bin/Debug/net6.0/Npgsql.dll
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll

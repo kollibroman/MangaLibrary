@@ -21,6 +21,7 @@ namespace MangaLibApp
             services.AddScoped<IMangaService, MangaService>();
             services.AddScoped<IAuthorService, AuthorService>();
             services.AddScoped<IUploadService, UploadService>();
+            services.AddScoped<IUpdateService, UpdateService>();
             services.AddScoped<ICoverService, CoverService>();
             services.AddScoped<IChapterService, ChapterService>();
             services.AddScoped<IApiConverter, ApiConverter>();

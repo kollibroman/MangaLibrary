@@ -5,13 +5,18 @@ namespace MangaLibCore
 {
     public class MangaLibDbContext : DbContext
     {
-        private string _connectionstring = "Server=localhost;Database=MangaBaseBase;User Id=SA;Password=Miau8888;";
+        private string _connectionstring = "Server=127.0.0.1;Port=5432;Database=MangaDb;User Id=postgres;Password=Miau8888; Include Error Detail=true;";
         public DbSet<Manga> Mangas { get; set; }
         public DbSet<Page> Pages { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<Cover> Cover { get; set; }
         public DbSet<Chapter> Chapters { get; set; }
         public DbSet<Tag> Tags { get; set; }
+
+        public MangaLibDbContext()
+        {
+            AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -35,7 +40,7 @@ namespace MangaLibCore
         }
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-            builder.UseSqlServer(_connectionstring);
+            builder.UseNpgsql(_connectionstring);
         }
     }
 }

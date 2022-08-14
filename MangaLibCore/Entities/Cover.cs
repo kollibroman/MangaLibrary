@@ -13,9 +13,6 @@ namespace MangaLibCore.Entities
         public DateTime UpdatedAt { get; set; }
         public string MangaName { get; set; }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int MangaId { get; set; }
-        [ForeignKey("MangaId")]
         public Manga Manga { get; set; }
     }
 }

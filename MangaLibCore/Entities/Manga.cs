@@ -15,7 +15,9 @@ namespace MangaLibCore.Entities
         public string Description { get; set; }
         public int ChaptersCount { get; set; }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int AuthorId { get; set; }
+        public int CoverId { get; set; }
         public Author Author { get; set; }
         public Cover Cover { get; set; }
     }
