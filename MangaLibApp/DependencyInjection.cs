@@ -28,14 +28,23 @@ namespace MangaLibApp
             services.AddScoped<IPageService, PageService>();
             services.AddScoped<ITagService, TagService>();
 
-            services.AddHttpClient();
-            services.AddScoped<IEfCoreExtensions, EfCoreExtensions>();
-
             services.AddScoped<IAuthorClientService, AuthorClientService>();
             services.AddScoped<IChapterClientService, ChapterClientService>();
             services.AddScoped<ICoverClientService, CoverClientService>();
             services.AddScoped<IMangaClientService, MangaClientService>();
             services.AddScoped<IPageClientService, PageClientService>();
+            services.AddScoped<IUpdateClientService, UpdateClientService>();
+            services.AddScoped<IUploadClientService, UploadClientService>();
+
+            services.AddHttpClient<IAuthorClientService, AuthorClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
+            services.AddHttpClient<IChapterClientService, ChapterClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
+            services.AddHttpClient<ICoverClientService, CoverClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
+            services.AddHttpClient<IMangaClientService, MangaClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
+            services.AddHttpClient<IPageClientService, PageClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
+            services.AddHttpClient<IUpdateClientService, UpdateClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
+            services.AddHttpClient<IUploadClientService, UploadClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
+
+            services.AddScoped<IEfCoreExtensions, EfCoreExtensions>();
 
             services.AddHttpContextAccessor();
 

@@ -1,17 +1,13 @@
 using System.Text.Json;
 using MangaLibApp.Interfaces.Client;
 using MangaLibApp.Models;
+using MangaLibApp.Wrappers;
+using Newtonsoft.Json;
 
 namespace MangaLibApp.Services.Client
 {
     public class ChapterClientService : IChapterClientService
     {
-        private readonly JsonSerializerOptions options = new JsonSerializerOptions()
-         {
-             PropertyNameCaseInsensitive = true,
-             PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-         };
-         
         private readonly HttpClient _client;
         public ChapterClientService(HttpClient client)
         {
@@ -19,17 +15,15 @@ namespace MangaLibApp.Services.Client
         }
         public async Task<List<ChapterDto>> GetChaptersAsync()
         {
-            var responseMsg = await _client.GetAsync("/chapter");
-            var stream = await responseMsg.Content.ReadAsStreamAsync();
-
-            return await JsonSerializer.DeserializeAsync<List<ChapterDto>>(stream, options);
+            var responseMsg = await _client.GetStringAsync("/api/chapter");
+    
+            return JsonConvert.DeserializeObject<PagedResponse<List<ChapterDto>>>(responseMsg).Data;
         }
         public async Task<ChapterDto> GetChapterAsync(int id)
         {
-            var responseMsg = await _client.GetAsync($"/author/{id}");
-            var stream = await responseMsg.Content.ReadAsStreamAsync();
+            var responseMsg = await _client.GetStringAsync($"/api/author/{id}");
 
-            return await JsonSerializer.DeserializeAsync<ChapterDto>(stream, options);
+            return JsonConvert.DeserializeObject<Response<ChapterDto>>(responseMsg).Data;
         }
     }
 }

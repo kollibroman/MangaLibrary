@@ -9755,3 +9755,141 @@ Cover
 2022-08-14 13:45:29.783 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.MangaController.GetAllMangas (MangaLibApi)'
 2022-08-14 13:45:29.784 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/manga?PageNumber=1&PageSize=10 - - - 200 - application/json;+charset=utf-8 11.2590ms
 2022-08-14 13:45:51.950 +00:00 [INF] Application is shutting down...
+2022-08-17 20:02:33.205 +00:00 [INF] Starting web host
+2022-08-17 20:02:33.976 +00:00 [INF] Now listening on: https://[::]:5001
+2022-08-17 20:02:33.987 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 20:02:33.988 +00:00 [INF] Hosting environment: Development
+2022-08-17 20:02:33.988 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-08-17 20:03:02.568 +00:00 [INF] Application is shutting down...
+2022-08-17 20:03:22.518 +00:00 [INF] Starting web host
+2022-08-17 20:03:23.209 +00:00 [INF] Now listening on: https://localhost:7143
+2022-08-17 20:03:23.215 +00:00 [INF] Now listening on: http://localhost:5106
+2022-08-17 20:03:23.222 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 20:03:23.223 +00:00 [INF] Hosting environment: Development
+2022-08-17 20:03:23.223 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-08-17 20:03:28.872 +00:00 [INF] Application is shutting down...
+2022-08-17 20:07:45.853 +00:00 [INF] Starting web host
+2022-08-17 20:07:46.633 +00:00 [INF] Now listening on: https://[::]:5001
+2022-08-17 20:07:46.644 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 20:07:46.645 +00:00 [INF] Hosting environment: Development
+2022-08-17 20:07:46.645 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-08-17 20:08:28.612 +00:00 [INF] Application is shutting down...
+2022-08-17 20:09:35.343 +00:00 [INF] Starting web host
+2022-08-17 20:09:36.113 +00:00 [INF] Now listening on: https://[::]:5001
+2022-08-17 20:09:36.124 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 20:09:36.125 +00:00 [INF] Hosting environment: Development
+2022-08-17 20:09:36.125 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-08-17 20:10:15.398 +00:00 [INF] Application is shutting down...
+2022-08-17 20:12:34.979 +00:00 [INF] Starting web host
+2022-08-17 20:12:35.701 +00:00 [INF] Now listening on: https://[::]:5001
+2022-08-17 20:12:35.713 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 20:12:35.714 +00:00 [INF] Hosting environment: Development
+2022-08-17 20:12:35.715 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-08-17 20:13:02.772 +00:00 [INF] Application is shutting down...
+2022-08-17 20:22:42.562 +00:00 [INF] Starting web host
+2022-08-17 20:22:43.048 +00:00 [FTL] Host terminated unexpectedly
+System.Security.Cryptography.CryptographicException: The certificate data cannot be read with the provided password, the password may be incorrect.
+ ---> System.Security.Cryptography.CryptographicException: The certificate data cannot be read with the provided password, the password may be incorrect.
+   at Internal.Cryptography.Pal.UnixPkcs12Reader.VerifyAndDecrypt(ReadOnlySpan`1 password, ReadOnlyMemory`1 authSafeContents)
+   at Internal.Cryptography.Pal.UnixPkcs12Reader.Decrypt(SafePasswordHandle password, Boolean ephemeralSpecified)
+   --- End of inner exception stack trace ---
+   at Internal.Cryptography.Pal.UnixPkcs12Reader.Decrypt(SafePasswordHandle password, Boolean ephemeralSpecified)
+   at Internal.Cryptography.Pal.PkcsFormatReader.TryReadPkcs12(OpenSslPkcs12Reader pfx, SafePasswordHandle password, Boolean single, Boolean ephemeralSpecified, ICertificatePal& readPal, List`1& readCerts)
+   at Internal.Cryptography.Pal.PkcsFormatReader.TryReadPkcs12(ReadOnlySpan`1 rawData, SafePasswordHandle password, Boolean single, Boolean ephemeralSpecified, ICertificatePal& readPal, List`1& readCerts, Exception& openSslException)
+   at Internal.Cryptography.Pal.OpenSslX509CertificateReader.FromFile(String fileName, SafePasswordHandle password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Certificates.CertificateConfigLoader.LoadCertificate(CertificateConfig certInfo, String endpointName)
+   at Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader.LoadDefaultCert()
+   at Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader.Reload()
+   at Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader.Load()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at MangaLibApi.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/Program.cs:line 23
+2022-08-17 20:23:22.565 +00:00 [INF] Starting web host
+2022-08-17 20:23:23.051 +00:00 [FTL] Host terminated unexpectedly
+System.Security.Cryptography.CryptographicException: The certificate data cannot be read with the provided password, the password may be incorrect.
+ ---> System.Security.Cryptography.CryptographicException: The certificate data cannot be read with the provided password, the password may be incorrect.
+   at Internal.Cryptography.Pal.UnixPkcs12Reader.VerifyAndDecrypt(ReadOnlySpan`1 password, ReadOnlyMemory`1 authSafeContents)
+   at Internal.Cryptography.Pal.UnixPkcs12Reader.Decrypt(SafePasswordHandle password, Boolean ephemeralSpecified)
+   --- End of inner exception stack trace ---
+   at Internal.Cryptography.Pal.UnixPkcs12Reader.Decrypt(SafePasswordHandle password, Boolean ephemeralSpecified)
+   at Internal.Cryptography.Pal.PkcsFormatReader.TryReadPkcs12(OpenSslPkcs12Reader pfx, SafePasswordHandle password, Boolean single, Boolean ephemeralSpecified, ICertificatePal& readPal, List`1& readCerts)
+   at Internal.Cryptography.Pal.PkcsFormatReader.TryReadPkcs12(ReadOnlySpan`1 rawData, SafePasswordHandle password, Boolean single, Boolean ephemeralSpecified, ICertificatePal& readPal, List`1& readCerts, Exception& openSslException)
+   at Internal.Cryptography.Pal.OpenSslX509CertificateReader.FromFile(String fileName, SafePasswordHandle password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Certificates.CertificateConfigLoader.LoadCertificate(CertificateConfig certInfo, String endpointName)
+   at Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader.LoadDefaultCert()
+   at Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader.Reload()
+   at Microsoft.AspNetCore.Server.Kestrel.KestrelConfigurationLoader.Load()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at MangaLibApi.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/Program.cs:line 23
+2022-08-17 20:23:53.080 +00:00 [INF] Starting web host
+2022-08-17 20:23:53.852 +00:00 [INF] Now listening on: https://[::]:5001
+2022-08-17 20:23:53.865 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 20:23:53.866 +00:00 [INF] Hosting environment: Development
+2022-08-17 20:23:53.867 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-08-17 20:24:49.113 +00:00 [INF] Application is shutting down...
+2022-08-17 20:25:27.428 +00:00 [INF] Starting web host
+2022-08-17 20:25:28.194 +00:00 [INF] Now listening on: https://[::]:5001
+2022-08-17 20:25:28.205 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 20:25:28.211 +00:00 [INF] Hosting environment: Development
+2022-08-17 20:25:28.212 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-08-17 20:25:51.447 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/author?PageNumber=1&PageSize=10 - -
+2022-08-17 20:25:51.582 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-08-17 20:25:51.640 +00:00 [INF] Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAuthors(MangaLibApp.Filter.PaginationFilter) on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-08-17 20:25:52.053 +00:00 [INF] Executing action method MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi) - Validation state: "Valid"
+2022-08-17 20:25:55.302 +00:00 [INF] Executed action method MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3236.0611ms.
+2022-08-17 20:25:55.319 +00:00 [INF] Executing OkObjectResult, writing value of type 'MangaLibApp.Wrappers.PagedResponse`1[[System.Collections.Generic.List`1[[MangaLibApp.Models.AuthorDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-08-17 20:25:55.381 +00:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi) in 3730.808ms
+2022-08-17 20:25:55.382 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-08-17 20:25:55.397 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/author?PageNumber=1&PageSize=10 - - - 200 - application/json;+charset=utf-8 3955.7043ms
+2022-08-17 20:26:03.993 +00:00 [INF] Application is shutting down...
+2022-08-17 22:20:31.609 +00:00 [INF] Starting web host
+2022-08-17 22:20:32.063 +00:00 [INF] Now listening on: https://[::]:5001
+2022-08-17 22:20:32.071 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 22:20:32.071 +00:00 [INF] Hosting environment: Development
+2022-08-17 22:20:32.071 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-08-17 22:22:01.620 +00:00 [INF] Application is shutting down...
+2022-08-17 22:23:38.705 +00:00 [INF] Starting web host
+2022-08-17 22:23:39.129 +00:00 [INF] Now listening on: https://[::]:5001
+2022-08-17 22:23:39.140 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 22:23:39.140 +00:00 [INF] Hosting environment: Development
+2022-08-17 22:23:39.141 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-08-17 22:28:53.519 +00:00 [INF] Application is shutting down...
+2022-08-17 22:29:03.027 +00:00 [INF] Starting web host
+2022-08-17 22:29:03.441 +00:00 [INF] Now listening on: https://[::]:5001
+2022-08-17 22:29:03.450 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 22:29:03.450 +00:00 [INF] Hosting environment: Development
+2022-08-17 22:29:03.451 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-08-17 22:29:18.301 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/author?PageNumber=1&PageSize=10 - -
+2022-08-17 22:29:18.390 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-08-17 22:29:18.421 +00:00 [INF] Route matched with {action = "GetAuthors", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAuthors(MangaLibApp.Filter.PaginationFilter) on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-08-17 22:29:18.682 +00:00 [INF] Executing action method MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi) - Validation state: "Valid"
+2022-08-17 22:29:20.699 +00:00 [INF] Executed action method MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2009.2733ms.
+2022-08-17 22:29:20.709 +00:00 [INF] Executing OkObjectResult, writing value of type 'MangaLibApp.Wrappers.PagedResponse`1[[System.Collections.Generic.List`1[[MangaLibApp.Models.AuthorDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-08-17 22:29:20.748 +00:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi) in 2318.9498ms
+2022-08-17 22:29:20.749 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthors (MangaLibApi)'
+2022-08-17 22:29:20.758 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/author?PageNumber=1&PageSize=10 - - - 200 - application/json;+charset=utf-8 2460.2156ms
+2022-08-17 22:29:29.542 +00:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/author/1 - -
+2022-08-17 22:29:29.545 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi)'
+2022-08-17 22:29:29.551 +00:00 [INF] Route matched with {action = "GetAuthorById", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAuthorById(Int32) on controller MangaLibApi.Controllers.AuthorController (MangaLibApi).
+2022-08-17 22:29:29.558 +00:00 [INF] Executing action method MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi) - Validation state: "Valid"
+2022-08-17 22:29:29.592 +00:00 [INF] Executed action method MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 34.3893ms.
+2022-08-17 22:29:29.593 +00:00 [INF] Executing OkObjectResult, writing value of type 'MangaLibApp.Wrappers.Response`1[[MangaLibApp.Models.AuthorDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-17 22:29:29.594 +00:00 [INF] Executed action MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi) in 42.7032ms
+2022-08-17 22:29:29.595 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AuthorController.GetAuthorById (MangaLibApi)'
+2022-08-17 22:29:29.595 +00:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/author/1 - - - 200 - application/json;+charset=utf-8 52.5218ms
+2022-08-17 22:30:01.326 +00:00 [INF] Application is shutting down...
