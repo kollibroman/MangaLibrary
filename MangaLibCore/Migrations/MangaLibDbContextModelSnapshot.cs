@@ -38,6 +38,9 @@ namespace MangaLibCore.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("Type")
+                        .HasColumnType("integer");
+
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("timestamp without time zone");
 
@@ -51,35 +54,40 @@ namespace MangaLibCore.Migrations
                             Id = 1,
                             Name = "Kei",
                             Surname = "Urana",
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9320)
+                            Type = 7,
+                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Utc).AddTicks(282)
                         },
                         new
                         {
                             Id = 2,
                             Name = "Kouhei",
                             Surname = "Horikoshi",
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9324)
+                            Type = 7,
+                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Utc).AddTicks(283)
                         },
                         new
                         {
                             Id = 3,
                             Name = "KAGYU",
                             Surname = "Kumo",
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9326)
+                            Type = 7,
+                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Utc).AddTicks(284)
                         },
                         new
                         {
                             Id = 4,
                             Name = "Yabako",
                             Surname = "Sandrovich",
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9328)
+                            Type = 7,
+                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Utc).AddTicks(286)
                         },
                         new
                         {
                             Id = 5,
                             Name = "Minami",
                             Surname = "Katsuhisa",
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9329)
+                            Type = 7,
+                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Utc).AddTicks(287)
                         });
                 });
 
@@ -109,6 +117,9 @@ namespace MangaLibCore.Migrations
                     b.Property<int>("PagesCount")
                         .HasColumnType("integer");
 
+                    b.Property<int>("Type")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.ToTable("Chapters");
@@ -134,6 +145,9 @@ namespace MangaLibCore.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("Type")
+                        .HasColumnType("integer");
+
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("timestamp without time zone");
 
@@ -148,6 +162,7 @@ namespace MangaLibCore.Migrations
                             Data = new byte[0],
                             MangaName = "The Fable",
                             Name = "",
+                            Type = 8,
                             UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
@@ -156,6 +171,7 @@ namespace MangaLibCore.Migrations
                             Data = new byte[0],
                             MangaName = "Bocu no Pico Academia",
                             Name = "",
+                            Type = 8,
                             UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
@@ -164,6 +180,7 @@ namespace MangaLibCore.Migrations
                             Data = new byte[0],
                             MangaName = "The Fable",
                             Name = "Goblin Slayer",
+                            Type = 8,
                             UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
@@ -172,6 +189,7 @@ namespace MangaLibCore.Migrations
                             Data = new byte[0],
                             MangaName = "The Fable",
                             Name = "Kengan Ashua",
+                            Type = 8,
                             UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
@@ -180,6 +198,7 @@ namespace MangaLibCore.Migrations
                             Data = new byte[0],
                             MangaName = "The Fable",
                             Name = "Fire Force",
+                            Type = 8,
                             UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
@@ -240,7 +259,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "01/11/2014",
                             Title = "The Fable",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9582)
+                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Utc).AddTicks(411)
                         },
                         new
                         {
@@ -252,7 +271,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Bocu no Pico Academia",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Local).AddTicks(9592)
+                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Local).AddTicks(417)
                         },
                         new
                         {
@@ -264,7 +283,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Goblin Slayer",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Local).AddTicks(9623)
+                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Local).AddTicks(430)
                         },
                         new
                         {
@@ -276,7 +295,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Kengan Ashua",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Local).AddTicks(9625)
+                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Local).AddTicks(432)
                         },
                         new
                         {
@@ -288,7 +307,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Fire Force",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Local).AddTicks(9628)
+                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Local).AddTicks(434)
                         });
                 });
 
@@ -312,6 +331,9 @@ namespace MangaLibCore.Migrations
                         .HasColumnType("bytea");
 
                     b.Property<int>("PageNumber")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Type")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");

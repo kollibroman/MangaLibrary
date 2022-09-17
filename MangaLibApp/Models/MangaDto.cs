@@ -11,7 +11,6 @@ namespace MangaLibApp.Models
         public int PagesCount { get; set; }
         public int ChaptersCount { get; set; }
         public string Description { get; set; }
-        public string Category { get; set; }
 
         public CoverDto Cover { get; set; }
     }
