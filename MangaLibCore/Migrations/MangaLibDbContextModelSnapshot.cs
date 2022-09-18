@@ -55,7 +55,7 @@ namespace MangaLibCore.Migrations
                             Name = "Kei",
                             Surname = "Urana",
                             Type = 7,
-                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Utc).AddTicks(282)
+                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Utc).AddTicks(2217)
                         },
                         new
                         {
@@ -63,7 +63,7 @@ namespace MangaLibCore.Migrations
                             Name = "Kouhei",
                             Surname = "Horikoshi",
                             Type = 7,
-                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Utc).AddTicks(283)
+                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Utc).AddTicks(2219)
                         },
                         new
                         {
@@ -71,7 +71,7 @@ namespace MangaLibCore.Migrations
                             Name = "KAGYU",
                             Surname = "Kumo",
                             Type = 7,
-                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Utc).AddTicks(284)
+                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Utc).AddTicks(2220)
                         },
                         new
                         {
@@ -79,7 +79,7 @@ namespace MangaLibCore.Migrations
                             Name = "Yabako",
                             Surname = "Sandrovich",
                             Type = 7,
-                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Utc).AddTicks(286)
+                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Utc).AddTicks(2221)
                         },
                         new
                         {
@@ -87,7 +87,7 @@ namespace MangaLibCore.Migrations
                             Name = "Minami",
                             Surname = "Katsuhisa",
                             Type = 7,
-                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Utc).AddTicks(287)
+                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Utc).AddTicks(2222)
                         });
                 });
 
@@ -259,7 +259,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "01/11/2014",
                             Title = "The Fable",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Utc).AddTicks(411)
+                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Utc).AddTicks(2350)
                         },
                         new
                         {
@@ -271,7 +271,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Bocu no Pico Academia",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Local).AddTicks(417)
+                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Local).AddTicks(2356)
                         },
                         new
                         {
@@ -283,7 +283,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Goblin Slayer",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Local).AddTicks(430)
+                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Local).AddTicks(2369)
                         },
                         new
                         {
@@ -295,7 +295,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Kengan Ashua",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Local).AddTicks(432)
+                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Local).AddTicks(2371)
                         },
                         new
                         {
@@ -307,7 +307,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Fire Force",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 8, 26, 14, 21, 47, 839, DateTimeKind.Local).AddTicks(434)
+                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Local).AddTicks(2373)
                         });
                 });
 
@@ -358,6 +358,42 @@ namespace MangaLibCore.Migrations
                     b.HasKey("TagId");
 
                     b.ToTable("Tags");
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("DateOfBirth")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("MangaTag", b =>

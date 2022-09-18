@@ -12,6 +12,7 @@ namespace MangaLibCore
         public DbSet<Cover> Cover { get; set; }
         public DbSet<Chapter> Chapters { get; set; }
         public DbSet<Tag> Tags { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public MangaLibDbContext()
         {
@@ -35,6 +36,10 @@ namespace MangaLibCore
             modelBuilder.Entity<Chapter>()
                 .HasMany(p => p.Pages)
                 .WithOne();
+
+            modelBuilder.Entity<User>()
+                .Property(u => u.Email)
+                .IsRequired();
                 
             modelBuilder.Seed();
         }
