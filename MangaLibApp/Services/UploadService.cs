@@ -15,13 +15,15 @@ namespace MangaLibApp.Services
         private readonly IMapper _mapper;
         private readonly IApiConverter _converter;
         private readonly ILogger<UploadService> _logger;
+        private readonly ICoverService _service;
 
-        public UploadService(MangaLibDbContext db, IMapper mapper, IApiConverter converter, ILogger<UploadService> logger)
+        public UploadService(MangaLibDbContext db, IMapper mapper, IApiConverter converter, ILogger<UploadService> logger, ICoverService service)
         {
             _db = db;
             _mapper = mapper;
             _converter = converter;
             _logger = logger;
+            _service = service;
         }
         public async Task UploadCoverAsync(IFormFile file, string fileName, string mangaName)
         {

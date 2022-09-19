@@ -19,22 +19,32 @@ namespace MangaLibApp
             services.AddDbContext<MangaLibDbContext>();
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddScoped<IMangaService, MangaService>();
-            services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IAuthorService, AuthorService>();
             services.AddScoped<IUploadService, UploadService>();
+            services.AddScoped<IUpdateService, UpdateService>();
             services.AddScoped<ICoverService, CoverService>();
             services.AddScoped<IChapterService, ChapterService>();
             services.AddScoped<IApiConverter, ApiConverter>();
             services.AddScoped<IPageService, PageService>();
-
-            services.AddHttpClient();
+            services.AddScoped<ITagService, TagService>();
 
             services.AddScoped<IAuthorClientService, AuthorClientService>();
-            services.AddScoped<ICategoryClientService, CategoryClientService>();
             services.AddScoped<IChapterClientService, ChapterClientService>();
             services.AddScoped<ICoverClientService, CoverClientService>();
             services.AddScoped<IMangaClientService, MangaClientService>();
             services.AddScoped<IPageClientService, PageClientService>();
+            services.AddScoped<IUpdateClientService, UpdateClientService>();
+            services.AddScoped<IUploadClientService, UploadClientService>();
+
+            services.AddHttpClient<IAuthorClientService, AuthorClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
+            services.AddHttpClient<IChapterClientService, ChapterClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
+            services.AddHttpClient<ICoverClientService, CoverClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
+            services.AddHttpClient<IMangaClientService, MangaClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
+            services.AddHttpClient<IPageClientService, PageClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
+            services.AddHttpClient<IUpdateClientService, UpdateClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
+            services.AddHttpClient<IUploadClientService, UploadClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
+
+            services.AddScoped<IEfCoreExtensions, EfCoreExtensions>();
 
             services.AddHttpContextAccessor();
 

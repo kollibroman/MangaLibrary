@@ -25,8 +25,8 @@ namespace MangaLibApp.Services
         public async Task<List<CoverDto>> GetAll(PaginationFilter filter)
         {
             var validFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
-            var covers = await  _db.Cover.
-            Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
+            var covers = await  _db.Cover
+            .Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
             .Take(validFilter.PageSize)
             .ToListAsync();
             return _mapper.Map<List<CoverDto>>(covers);

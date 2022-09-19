@@ -6,12 +6,13 @@ namespace MangaLibApp.Models
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public byte[] Cover { get; set; }
         public DateTime AddedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
         public int PagesCount { get; set; }
         public int ChaptersCount { get; set; }
         public string Description { get; set; }
         public string Category { get; set; }
+
+        public CoverDto Cover { get; set; }
     }
 }

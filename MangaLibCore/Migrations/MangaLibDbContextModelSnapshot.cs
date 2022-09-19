@@ -3,8 +3,8 @@ using System;
 using MangaLibCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
@@ -18,28 +18,28 @@ namespace MangaLibCore.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "6.0.6")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+                .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+            NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
             modelBuilder.Entity("MangaLibCore.Entities.Author", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Surname")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp without time zone");
 
                     b.HasKey("Id");
 
@@ -51,87 +51,35 @@ namespace MangaLibCore.Migrations
                             Id = 1,
                             Name = "Kei",
                             Surname = "Urana",
-                            UpdatedAt = new DateTime(2022, 7, 21, 22, 55, 45, 805, DateTimeKind.Utc).AddTicks(7492)
+                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9320)
                         },
                         new
                         {
                             Id = 2,
                             Name = "Kouhei",
                             Surname = "Horikoshi",
-                            UpdatedAt = new DateTime(2022, 7, 21, 22, 55, 45, 805, DateTimeKind.Utc).AddTicks(7494)
+                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9324)
                         },
                         new
                         {
                             Id = 3,
                             Name = "KAGYU",
                             Surname = "Kumo",
-                            UpdatedAt = new DateTime(2022, 7, 21, 22, 55, 45, 805, DateTimeKind.Utc).AddTicks(7495)
+                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9326)
                         },
                         new
                         {
                             Id = 4,
                             Name = "Yabako",
                             Surname = "Sandrovich",
-                            UpdatedAt = new DateTime(2022, 7, 21, 22, 55, 45, 805, DateTimeKind.Utc).AddTicks(7496)
+                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9328)
                         },
                         new
                         {
                             Id = 5,
                             Name = "Minami",
                             Surname = "Katsuhisa",
-                            UpdatedAt = new DateTime(2022, 7, 21, 22, 55, 45, 805, DateTimeKind.Utc).AddTicks(7497)
-                        });
-                });
-
-            modelBuilder.Entity("MangaLibCore.Entities.Category", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Categories");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Shounen",
-                            UpdatedAt = new DateTime(2022, 7, 21, 22, 55, 45, 805, DateTimeKind.Utc).AddTicks(7354)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Shoujo",
-                            UpdatedAt = new DateTime(2022, 7, 21, 22, 55, 45, 805, DateTimeKind.Utc).AddTicks(7356)
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Seinen",
-                            UpdatedAt = new DateTime(2022, 7, 21, 22, 55, 45, 805, DateTimeKind.Utc).AddTicks(7357)
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Name = "Comedy",
-                            UpdatedAt = new DateTime(2022, 7, 21, 22, 55, 45, 805, DateTimeKind.Utc).AddTicks(7358)
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Name = "Action",
-                            UpdatedAt = new DateTime(2022, 7, 21, 22, 55, 45, 805, DateTimeKind.Utc).AddTicks(7359)
+                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9329)
                         });
                 });
 
@@ -139,27 +87,27 @@ namespace MangaLibCore.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<int>("ChapterIndex")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<string>("ChapterName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("MangaName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<int>("PagesCount")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -170,70 +118,114 @@ namespace MangaLibCore.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<byte[]>("Data")
                         .IsRequired()
-                        .HasColumnType("varbinary(max)");
+                        .HasColumnType("bytea");
 
                     b.Property<string>("MangaName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp without time zone");
 
                     b.HasKey("Id");
 
                     b.ToTable("Cover");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Data = new byte[0],
+                            MangaName = "The Fable",
+                            Name = "",
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Data = new byte[0],
+                            MangaName = "Bocu no Pico Academia",
+                            Name = "",
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Data = new byte[0],
+                            MangaName = "The Fable",
+                            Name = "Goblin Slayer",
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Data = new byte[0],
+                            MangaName = "The Fable",
+                            Name = "Kengan Ashua",
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Data = new byte[0],
+                            MangaName = "The Fable",
+                            Name = "Fire Force",
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("MangaLibCore.Entities.Manga", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<int>("AuthorId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
 
                     b.Property<int>("ChaptersCount")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
+
+                    b.Property<int>("CoverId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("PublishedAt")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<int>("Type")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp without time zone");
 
                     b.HasKey("Id");
 
                     b.HasIndex("AuthorId");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex("CoverId")
+                        .IsUnique();
 
                     b.ToTable("Mangas");
 
@@ -242,61 +234,61 @@ namespace MangaLibCore.Migrations
                         {
                             Id = 1,
                             AuthorId = 5,
-                            CategoryId = 3,
                             ChaptersCount = 206,
+                            CoverId = 1,
                             Description = "some description",
                             PublishedAt = "01/11/2014",
                             Title = "The Fable",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 7, 21, 22, 55, 45, 805, DateTimeKind.Utc).AddTicks(7516)
+                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9582)
                         },
                         new
                         {
                             Id = 2,
                             AuthorId = 2,
-                            CategoryId = 5,
                             ChaptersCount = 355,
+                            CoverId = 2,
                             Description = "MIDORYA MY BOI, LISTEN I HAVE MY ANUS SORE, PLEASE LUBE IT",
                             PublishedAt = "",
                             Title = "Bocu no Pico Academia",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 7, 21, 22, 55, 45, 805, DateTimeKind.Local).AddTicks(7521)
+                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Local).AddTicks(9592)
                         },
                         new
                         {
                             Id = 3,
                             AuthorId = 3,
-                            CategoryId = 3,
                             ChaptersCount = 58,
+                            CoverId = 3,
                             Description = "Golin. Dead. Yes.",
                             PublishedAt = "",
                             Title = "Goblin Slayer",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 7, 21, 22, 55, 45, 805, DateTimeKind.Local).AddTicks(7537)
+                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Local).AddTicks(9623)
                         },
                         new
                         {
                             Id = 4,
                             AuthorId = 4,
-                            CategoryId = 5,
                             ChaptersCount = 236,
+                            CoverId = 4,
                             Description = "They beat the shit out of each other",
                             PublishedAt = "",
                             Title = "Kengan Ashua",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 7, 21, 22, 55, 45, 805, DateTimeKind.Local).AddTicks(7539)
+                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Local).AddTicks(9625)
                         },
                         new
                         {
                             Id = 5,
                             AuthorId = 1,
-                            CategoryId = 1,
                             ChaptersCount = 304,
+                            CoverId = 5,
                             Description = " F I R E.",
                             PublishedAt = "",
                             Title = "Fire Force",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 7, 21, 22, 55, 45, 805, DateTimeKind.Local).AddTicks(7540)
+                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Local).AddTicks(9628)
                         });
                 });
 
@@ -304,29 +296,61 @@ namespace MangaLibCore.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<int?>("ChapterId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<string>("MangaName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<byte[]>("PageData")
                         .IsRequired()
-                        .HasColumnType("varbinary(max)");
+                        .HasColumnType("bytea");
 
                     b.Property<int>("PageNumber")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ChapterId");
 
                     b.ToTable("Pages");
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.Tag", b =>
+                {
+                    b.Property<int>("TagId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("TagId"));
+
+                    b.Property<string>("TagName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("TagId");
+
+                    b.ToTable("Tags");
+                });
+
+            modelBuilder.Entity("MangaTag", b =>
+                {
+                    b.Property<int>("MangasId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("TagsTagId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("MangasId", "TagsTagId");
+
+                    b.HasIndex("TagsTagId");
+
+                    b.ToTable("MangaTag");
                 });
 
             modelBuilder.Entity("MangaLibCore.Entities.Manga", b =>
@@ -337,13 +361,15 @@ namespace MangaLibCore.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MangaLibCore.Entities.Category", null)
-                        .WithMany("Mangas")
-                        .HasForeignKey("CategoryId")
+                    b.HasOne("MangaLibCore.Entities.Cover", "Cover")
+                        .WithOne("Manga")
+                        .HasForeignKey("MangaLibCore.Entities.Manga", "CoverId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Author");
+
+                    b.Navigation("Cover");
                 });
 
             modelBuilder.Entity("MangaLibCore.Entities.Page", b =>
@@ -353,19 +379,35 @@ namespace MangaLibCore.Migrations
                         .HasForeignKey("ChapterId");
                 });
 
+            modelBuilder.Entity("MangaTag", b =>
+                {
+                    b.HasOne("MangaLibCore.Entities.Manga", null)
+                        .WithMany()
+                        .HasForeignKey("MangasId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MangaLibCore.Entities.Tag", null)
+                        .WithMany()
+                        .HasForeignKey("TagsTagId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("MangaLibCore.Entities.Author", b =>
                 {
                     b.Navigation("WrittenMangas");
                 });
 
-            modelBuilder.Entity("MangaLibCore.Entities.Category", b =>
-                {
-                    b.Navigation("Mangas");
-                });
-
             modelBuilder.Entity("MangaLibCore.Entities.Chapter", b =>
                 {
                     b.Navigation("Pages");
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.Cover", b =>
+                {
+                    b.Navigation("Manga")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
