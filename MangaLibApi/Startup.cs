@@ -20,6 +20,7 @@ namespace MangaLibApi
             var AuthSettings = new AuthenticationSettings();
             Configuration.GetSection("Authentication").Bind(AuthSettings);
 
+            services.AddSingleton(AuthSettings);
             services.AddAuthentication(option =>
             {
                 option.DefaultAuthenticateScheme = "Bearer";

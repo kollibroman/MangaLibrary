@@ -1,4 +1,4 @@
-namespace MangaLibApi;
+namespace MangaLibApp;
 
 public class AuthenticationSettings
 {

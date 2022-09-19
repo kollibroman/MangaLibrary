@@ -244,3 +244,7 @@ C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApi/obj/Debug/net6.0/
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Newtonsoft.Json.Bson.dll
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Npgsql.dll
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/FluentValidation.dll
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/FluentValidation.AspNetCore.dll
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/FluentValidation.DependencyInjectionExtensions.dll
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
