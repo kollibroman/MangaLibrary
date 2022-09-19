@@ -8,5 +8,11 @@ namespace MangaLibCore.Enums
         Manhwa,
         Manhua,
         Doujin,
+        Tag,
+        Author,
+        Cover,
+        Page,
+        Chapter,
+        Account
     }
 }

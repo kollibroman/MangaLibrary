@@ -1,8 +1,12 @@
+using AutoMapper;
 using MangaLibApp.Helpers;
 using MangaLibApp.Interfaces;
+using MangaLibApp.Models;
+using MangaLibApp.Wrappers;
 using MangaLibCore;
 using MangaLibCore.Entities;
 using MangaLibCore.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace MangaLibApp.Services
 {
@@ -10,14 +14,23 @@ namespace MangaLibApp.Services
     {
         private readonly MangaLibDbContext _db;
         private readonly IEfCoreExtensions _ext;
+        private readonly IMapper _mapper;
 
-        public TagService(MangaLibDbContext db, IEfCoreExtensions ext)
+        public TagService(MangaLibDbContext db, IEfCoreExtensions ext, IMapper mapper)
         {
             _db = db;
             _ext = ext;
+            _mapper = mapper;
         }
 
-        public async Task<TEntity> Tag<TEntity>(TEntity entity, string str) where TEntity : ITaggable
+        public async Task<TagDto> GetTagsAsync()
+        {
+            var Tags = await  _db.Tags.ToListAsync();
+
+            return _mapper.Map<TagDto>(Tags);
+        }
+
+        public async Task<TEntity> TagAsync<TEntity>(TEntity entity, string str) where TEntity : ITaggable
         {
             string tag = str.Trim();
 
@@ -32,7 +45,7 @@ namespace MangaLibApp.Services
             return entity;
         }
 
-        public async Task<TEntity> Untag<TEntity>(TEntity entity, string str) where TEntity : ITaggable
+        public async Task<TEntity> UntagAsync<TEntity>(TEntity entity, string str) where TEntity : ITaggable
         {
             Tag tag = entity.Tags.FirstOrDefault(x => x.TagName == str);
 

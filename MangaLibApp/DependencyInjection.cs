@@ -9,6 +9,12 @@ using Microsoft.AspNetCore.Http;
 using System.Net.Http;
 using Microsoft.Extensions.DependencyInjection;
 using System.Net.Http.Headers;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using MangaLibApp.Models;
+using MangaLibApp.Models.Validators;
+using MangaLibCore.Entities;
+using Microsoft.AspNetCore.Identity;
 
 namespace MangaLibApp
 {
@@ -17,6 +23,8 @@ namespace MangaLibApp
         public static IServiceCollection AddApp(this IServiceCollection services)
         {
             services.AddDbContext<MangaLibDbContext>();
+            services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
+
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddScoped<IMangaService, MangaService>();
             services.AddScoped<IAuthorService, AuthorService>();
@@ -27,6 +35,10 @@ namespace MangaLibApp
             services.AddScoped<IApiConverter, ApiConverter>();
             services.AddScoped<IPageService, PageService>();
             services.AddScoped<ITagService, TagService>();
+            services.AddScoped<IRegisterService, RegisterService>();
+
+            services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
+            services.AddScoped<IValidator<RegisterUserDto>, RegisterUserDtoValidator>();
 
             services.AddScoped<IAuthorClientService, AuthorClientService>();
             services.AddScoped<IChapterClientService, ChapterClientService>();

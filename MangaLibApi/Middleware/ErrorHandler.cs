@@ -1,3 +1,5 @@
+using MangaLibApp.Exceptions;
+
 namespace MangaLibApi.Middleware
 {
     public class ErrorHandler : IMiddleware
@@ -12,6 +14,16 @@ namespace MangaLibApi.Middleware
             try
             {
                 await next.Invoke(context);
+            }
+            catch (BadRequestException badRequestException)
+            {
+                context.Response.StatusCode = 400;
+                await context.Response.WriteAsync(badRequestException.Message);
+            }
+            catch (NotFoundException notFoundException)
+            {
+                context.Response.StatusCode = 404;
+                await context.Response.WriteAsync(notFoundException.Message);
             }
             catch(Exception e)
             {

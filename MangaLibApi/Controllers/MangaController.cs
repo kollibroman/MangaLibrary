@@ -13,11 +13,13 @@ namespace MangaLibApi.Controllers
     {
         private readonly IMangaService _service;
         private readonly IUriService _uriService;
+        private readonly ITagService _tagService;
 
-        public MangaController(IMangaService service, IUriService uriService)
+        public MangaController(IMangaService service, IUriService uriService, ITagService tagService)
         {
             _service = service;
             _uriService = uriService;
+            _tagService = tagService;
         }
 
         [HttpGet]
@@ -46,11 +48,32 @@ namespace MangaLibApi.Controllers
             return Ok(new Response<MangaDto>(manga));
         }
 
+        // [HttpGet("tags")]
+        // public async Task<IActionResult> GetTags()
+        // {
+        //     var Tags = await _tagService.GetTagsAsync();
+
+        //     return Ok(new Response<TagDto>());
+        // }
+
+        // [HttpPut("tag/{id}")]
+        // public async Task<IActionResult> Tag([FromRoute] int id, [FromBody] string TagName)
+        // {
+        //     var
+        // }
+                
+        // [HttpPut("untag/{id}")]
+        // public async Task<IActionResult> UnTag()
+        // {
+            
+        // }
+        
+
         [HttpPost]
         public async Task<IActionResult> CreateManga([FromBody] CreateMangaDto dto)
         {
             await _service.Create(dto);
-            return Created($"api/manga/{dto.Id}", null);
+            return Created($"api/manga/title/{dto.Title}", null);
         }
 
         [HttpPut("{id}")]

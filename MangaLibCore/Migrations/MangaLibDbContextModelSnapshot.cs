@@ -38,6 +38,9 @@ namespace MangaLibCore.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("Type")
+                        .HasColumnType("integer");
+
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("timestamp without time zone");
 
@@ -51,35 +54,40 @@ namespace MangaLibCore.Migrations
                             Id = 1,
                             Name = "Kei",
                             Surname = "Urana",
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9320)
+                            Type = 7,
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(7736)
                         },
                         new
                         {
                             Id = 2,
                             Name = "Kouhei",
                             Surname = "Horikoshi",
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9324)
+                            Type = 7,
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(7760)
                         },
                         new
                         {
                             Id = 3,
                             Name = "KAGYU",
                             Surname = "Kumo",
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9326)
+                            Type = 7,
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(7774)
                         },
                         new
                         {
                             Id = 4,
                             Name = "Yabako",
                             Surname = "Sandrovich",
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9328)
+                            Type = 7,
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(7792)
                         },
                         new
                         {
                             Id = 5,
                             Name = "Minami",
                             Surname = "Katsuhisa",
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9329)
+                            Type = 7,
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(7811)
                         });
                 });
 
@@ -109,6 +117,9 @@ namespace MangaLibCore.Migrations
                     b.Property<int>("PagesCount")
                         .HasColumnType("integer");
 
+                    b.Property<int>("Type")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.ToTable("Chapters");
@@ -134,6 +145,9 @@ namespace MangaLibCore.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("Type")
+                        .HasColumnType("integer");
+
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("timestamp without time zone");
 
@@ -148,6 +162,7 @@ namespace MangaLibCore.Migrations
                             Data = new byte[0],
                             MangaName = "The Fable",
                             Name = "",
+                            Type = 8,
                             UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
@@ -156,6 +171,7 @@ namespace MangaLibCore.Migrations
                             Data = new byte[0],
                             MangaName = "Bocu no Pico Academia",
                             Name = "",
+                            Type = 8,
                             UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
@@ -164,6 +180,7 @@ namespace MangaLibCore.Migrations
                             Data = new byte[0],
                             MangaName = "The Fable",
                             Name = "Goblin Slayer",
+                            Type = 8,
                             UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
@@ -172,6 +189,7 @@ namespace MangaLibCore.Migrations
                             Data = new byte[0],
                             MangaName = "The Fable",
                             Name = "Kengan Ashua",
+                            Type = 8,
                             UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
@@ -180,6 +198,7 @@ namespace MangaLibCore.Migrations
                             Data = new byte[0],
                             MangaName = "The Fable",
                             Name = "Fire Force",
+                            Type = 8,
                             UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
@@ -240,7 +259,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "01/11/2014",
                             Title = "The Fable",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Utc).AddTicks(9582)
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(8178)
                         },
                         new
                         {
@@ -252,7 +271,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Bocu no Pico Academia",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Local).AddTicks(9592)
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Local).AddTicks(8225)
                         },
                         new
                         {
@@ -264,7 +283,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Goblin Slayer",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Local).AddTicks(9623)
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Local).AddTicks(8274)
                         },
                         new
                         {
@@ -276,7 +295,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Kengan Ashua",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Local).AddTicks(9625)
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Local).AddTicks(8292)
                         },
                         new
                         {
@@ -288,7 +307,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Fire Force",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 8, 13, 23, 0, 0, 747, DateTimeKind.Local).AddTicks(9628)
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Local).AddTicks(8312)
                         });
                 });
 
@@ -314,11 +333,43 @@ namespace MangaLibCore.Migrations
                     b.Property<int>("PageNumber")
                         .HasColumnType("integer");
 
+                    b.Property<int>("Type")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ChapterId");
 
                     b.ToTable("Pages");
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "User"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Admin"
+                        });
                 });
 
             modelBuilder.Entity("MangaLibCore.Entities.Tag", b =>
@@ -336,6 +387,47 @@ namespace MangaLibCore.Migrations
                     b.HasKey("TagId");
 
                     b.ToTable("Tags");
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("DateOfBirth")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("MangaTag", b =>
@@ -377,6 +469,17 @@ namespace MangaLibCore.Migrations
                     b.HasOne("MangaLibCore.Entities.Chapter", null)
                         .WithMany("Pages")
                         .HasForeignKey("ChapterId");
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.User", b =>
+                {
+                    b.HasOne("MangaLibCore.Entities.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("MangaTag", b =>

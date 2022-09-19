@@ -18,30 +18,35 @@ namespace MangaLibCore
                     Name = "Kei", 
                     Surname = "Urana", 
                     UpdatedAt = DateTime.UtcNow, 
+                    Type = EntityType.Author
                     },
                 new Author { 
                     Id = 2, 
                     Name = "Kouhei", 
                     Surname = "Horikoshi", 
-                    UpdatedAt = DateTime.UtcNow, 
+                    UpdatedAt = DateTime.UtcNow,
+                    Type = EntityType.Author 
                     },
                 new Author { 
                     Id = 3, 
                     Name = "KAGYU", 
                     Surname = "Kumo", 
                     UpdatedAt = DateTime.UtcNow, 
+                    Type = EntityType.Author
                     },
                 new Author { 
                     Id = 4, 
                     Name = "Yabako", 
                     Surname = "Sandrovich", 
                     UpdatedAt = DateTime.UtcNow, 
+                    Type = EntityType.Author
                     },
                 new Author { 
                     Id = 5,
                     Name = "Minami", 
                     Surname = "Katsuhisa", 
-                    UpdatedAt = DateTime.UtcNow, 
+                    UpdatedAt = DateTime.UtcNow,
+                    Type = EntityType.Author 
                     }
             );
 
@@ -113,6 +118,7 @@ namespace MangaLibCore
                 {
                     Id = 1,
                     Name = "",
+                    Type = EntityType.Cover,
                     Data = Array.Empty<byte>(),
                     MangaName = "The Fable"
                 },
@@ -120,6 +126,7 @@ namespace MangaLibCore
                 {
                     Id = 2,
                     Name = "",
+                    Type = EntityType.Cover,
                     Data = Array.Empty<byte>(),
                     MangaName = "Bocu no Pico Academia"
                 },
@@ -127,6 +134,7 @@ namespace MangaLibCore
                 {
                     Id = 3,
                     Name = "Goblin Slayer",
+                    Type = EntityType.Cover,
                     Data = Array.Empty<byte>(),
                     MangaName = "The Fable"
                 },
@@ -134,6 +142,7 @@ namespace MangaLibCore
                 {
                     Id = 4,
                     Name = "Kengan Ashua",
+                    Type = EntityType.Cover,
                     Data = Array.Empty<byte>(),
                     MangaName = "The Fable"
                 },
@@ -141,9 +150,22 @@ namespace MangaLibCore
                 {
                     Id = 5,
                     Name = "Fire Force",
+                    Type = EntityType.Cover,
                     Data = Array.Empty<byte>(),
                     MangaName = "The Fable"
                 }  
+            );
+            modelBuilder.Entity<Role>().HasData(
+                new Role
+                {
+                    Id = 1,
+                    Name = "User"
+                },
+                new Role
+                {
+                    Id = 2,
+                    Name = "Admin"
+                }
             );
         }
     }

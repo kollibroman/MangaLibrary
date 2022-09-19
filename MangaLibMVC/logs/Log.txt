@@ -23644,3 +23644,1421 @@ System.InvalidOperationException: An invalid request URI was provided. Either th
 2022-08-17 22:29:29.612 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC)'
 2022-08-17 22:29:29.612 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Author/Details/1 - - - 200 - text/html;+charset=utf-8 88.5681ms
 2022-08-17 22:30:01.325 +00:00 [INF] Application is shutting down...
+2022-08-17 22:33:50.611 +00:00 [INF] Starting web host
+2022-08-17 22:33:50.824 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-17 22:33:51.102 +00:00 [INF] Now listening on: https://[::]:5003
+2022-08-17 22:33:51.105 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-17 22:33:51.106 +00:00 [INF] Hosting environment: Development
+2022-08-17 22:33:51.106 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-08-17 22:34:34.505 +00:00 [INF] Application is shutting down...
+2022-08-26 13:11:39.110 +00:00 [INF] Starting web host
+2022-08-26 13:11:39.349 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-26 13:11:39.650 +00:00 [INF] Now listening on: https://[::]:5003
+2022-08-26 13:11:39.654 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 13:11:39.654 +00:00 [INF] Hosting environment: Development
+2022-08-26 13:11:39.654 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-08-26 13:11:51.031 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/ - -
+2022-08-26 13:11:51.081 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 13:11:51.112 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-08-26 13:11:51.119 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 13:11:51.128 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6846ms.
+2022-08-26 13:11:51.137 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 13:11:51.217 +00:00 [INF] Executed ViewResult - view Index executed in 78.8431ms.
+2022-08-26 13:11:51.219 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 106.7226ms
+2022-08-26 13:11:51.220 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 13:11:51.226 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/ - - - 200 - text/html;+charset=utf-8 198.6492ms
+2022-08-26 13:11:51.349 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-08-26 13:11:51.349 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2022-08-26 13:11:51.349 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2022-08-26 13:11:51.349 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/MangaLibMVC.styles.css?v=6GzMGlD041XkM1O-dMCC-wJgg1oUsHyhkQABPiIRCk4 - -
+2022-08-26 13:11:51.349 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/lib/jquery/dist/jquery.min.js - -
+2022-08-26 13:11:51.349 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-08-26 13:11:51.365 +00:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2022-08-26 13:11:51.365 +00:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2022-08-26 13:11:51.365 +00:00 [INF] The file /css/site.css was not modified
+2022-08-26 13:11:51.364 +00:00 [INF] The file /MangaLibMVC.styles.css was not modified
+2022-08-26 13:11:51.365 +00:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2022-08-26 13:11:51.365 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 16.5988ms
+2022-08-26 13:11:51.365 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/MangaLibMVC.styles.css?v=6GzMGlD041XkM1O-dMCC-wJgg1oUsHyhkQABPiIRCk4 - - - 304 - text/css 16.7546ms
+2022-08-26 13:11:51.366 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 16.6940ms
+2022-08-26 13:11:51.365 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 304 - text/css 16.7372ms
+2022-08-26 13:11:51.366 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 16.9521ms
+2022-08-26 13:11:51.369 +00:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/js/site.js'
+2022-08-26 13:11:51.371 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 22.6597ms
+2022-08-26 13:11:51.511 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/favicon.ico - -
+2022-08-26 13:11:51.513 +00:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/favicon.ico'
+2022-08-26 13:11:51.513 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/favicon.ico - - - 0 5430 image/x-icon 1.6059ms
+2022-08-26 13:11:53.994 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/ - -
+2022-08-26 13:11:53.995 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 13:11:53.995 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-08-26 13:11:53.996 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 13:11:53.996 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0256ms.
+2022-08-26 13:11:53.996 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 13:11:54.000 +00:00 [INF] Executed ViewResult - view Index executed in 3.9879ms.
+2022-08-26 13:11:54.000 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 4.6669ms
+2022-08-26 13:11:54.000 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 13:11:54.001 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/ - - - 200 - text/html;+charset=utf-8 6.2012ms
+2022-08-26 13:11:57.529 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/Home/Privacy - -
+2022-08-26 13:11:57.531 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Privacy (MangaLibMVC)'
+2022-08-26 13:11:57.532 +00:00 [INF] Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-08-26 13:11:57.532 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Privacy (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 13:11:57.533 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Privacy (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1842ms.
+2022-08-26 13:11:57.534 +00:00 [INF] Executing ViewResult, running view Privacy.
+2022-08-26 13:11:57.537 +00:00 [INF] Executed ViewResult - view Privacy executed in 3.8214ms.
+2022-08-26 13:11:57.537 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Privacy (MangaLibMVC) in 4.5855ms
+2022-08-26 13:11:57.537 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Privacy (MangaLibMVC)'
+2022-08-26 13:11:57.537 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Home/Privacy - - - 200 - text/html;+charset=utf-8 8.5274ms
+2022-08-26 13:12:00.950 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/ - -
+2022-08-26 13:12:00.951 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 13:12:00.951 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-08-26 13:12:00.951 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 13:12:00.951 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0119ms.
+2022-08-26 13:12:00.951 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 13:12:00.952 +00:00 [INF] Executed ViewResult - view Index executed in 0.8572ms.
+2022-08-26 13:12:00.952 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 1.1943ms
+2022-08-26 13:12:00.952 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 13:12:00.952 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/ - - - 200 - text/html;+charset=utf-8 1.8369ms
+2022-08-26 13:12:06.915 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/author - -
+2022-08-26 13:12:06.916 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 13:12:06.942 +00:00 [INF] Route matched with {action = "Index", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(Int32) on controller MangaLibMVC.Controllers.AuthorController (MangaLibMVC).
+2022-08-26 13:12:06.953 +00:00 [INF] Executing action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 13:12:06.960 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 13:12:06.961 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 13:12:09.697 +00:00 [INF] Received HTTP response headers after 2731.0616ms - 200
+2022-08-26 13:12:09.698 +00:00 [INF] End processing HTTP request after 2739.2984ms - 200
+2022-08-26 13:12:09.883 +00:00 [INF] Executed action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2929.525ms.
+2022-08-26 13:12:09.886 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 13:12:09.961 +00:00 [INF] Executed ViewResult - view Index executed in 75.7042ms.
+2022-08-26 13:12:09.962 +00:00 [INF] Executed action MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) in 3020.1205ms
+2022-08-26 13:12:09.963 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 13:12:09.964 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/author - - - 200 - text/html;+charset=utf-8 3048.5381ms
+2022-08-26 13:12:27.287 +00:00 [INF] Application is shutting down...
+2022-08-26 13:49:05.288 +00:00 [INF] Starting web host
+2022-08-26 13:49:05.543 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-26 13:49:05.822 +00:00 [INF] Now listening on: https://[::]:5003
+2022-08-26 13:49:05.825 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 13:49:05.826 +00:00 [INF] Hosting environment: Development
+2022-08-26 13:49:05.826 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-08-26 13:49:16.129 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/ - -
+2022-08-26 13:49:16.169 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 13:49:16.193 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-08-26 13:49:16.200 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 13:49:16.209 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4858ms.
+2022-08-26 13:49:16.222 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 13:49:16.317 +00:00 [INF] Executed ViewResult - view Index executed in 98.7139ms.
+2022-08-26 13:49:16.318 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 124.859ms
+2022-08-26 13:49:16.319 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 13:49:16.326 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/ - - - 200 - text/html;+charset=utf-8 200.3042ms
+2022-08-26 13:49:16.448 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/lib/bootstrap/dist/css/bootstrap.min.css - -
+2022-08-26 13:49:16.448 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/MangaLibMVC.styles.css?v=6GzMGlD041XkM1O-dMCC-wJgg1oUsHyhkQABPiIRCk4 - -
+2022-08-26 13:49:16.448 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2022-08-26 13:49:16.458 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-08-26 13:49:16.463 +00:00 [INF] Sending file. Request path: '/MangaLibMVC.styles.css'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/obj/Debug/net6.0/scopedcss/bundle/MangaLibMVC.styles.css'
+2022-08-26 13:49:16.463 +00:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/css/site.css'
+2022-08-26 13:49:16.463 +00:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2022-08-26 13:49:16.464 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 0 194 text/css 15.0586ms
+2022-08-26 13:49:16.464 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/lib/bootstrap/dist/css/bootstrap.min.css - - - 0 162720 text/css 15.3657ms
+2022-08-26 13:49:16.464 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/MangaLibMVC.styles.css?v=6GzMGlD041XkM1O-dMCC-wJgg1oUsHyhkQABPiIRCk4 - - - 0 1079 text/css 15.0282ms
+2022-08-26 13:49:16.468 +00:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/js/site.js'
+2022-08-26 13:49:16.470 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 11.6511ms
+2022-08-26 13:49:16.608 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/favicon.ico - -
+2022-08-26 13:49:16.609 +00:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/favicon.ico'
+2022-08-26 13:49:16.609 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/favicon.ico - - - 0 5430 image/x-icon 1.0250ms
+2022-08-26 13:49:20.208 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/maga - -
+2022-08-26 13:49:20.212 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/maga - - - 404 0 - 3.6775ms
+2022-08-26 13:49:25.359 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/manga - -
+2022-08-26 13:49:25.361 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.MangaController.Index (MangaLibMVC)'
+2022-08-26 13:49:25.373 +00:00 [INF] Route matched with {action = "Index", controller = "Manga"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MangaLibMVC.Controllers.MangaController (MangaLibMVC).
+2022-08-26 13:49:25.378 +00:00 [INF] Executing action method MangaLibMVC.Controllers.MangaController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 13:49:25.386 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/manga"
+2022-08-26 13:49:25.388 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/manga"
+2022-08-26 13:49:27.952 +00:00 [INF] Received HTTP response headers after 2560.0384ms - 200
+2022-08-26 13:49:27.953 +00:00 [INF] End processing HTTP request after 2568.2423ms - 200
+2022-08-26 13:49:28.115 +00:00 [INF] Executed action method MangaLibMVC.Controllers.MangaController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2737.5792ms.
+2022-08-26 13:49:28.122 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 13:49:28.195 +00:00 [INF] Executed ViewResult - view Index executed in 74.5628ms.
+2022-08-26 13:49:28.196 +00:00 [INF] Executed action MangaLibMVC.Controllers.MangaController.Index (MangaLibMVC) in 2823.1743ms
+2022-08-26 13:49:28.196 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.MangaController.Index (MangaLibMVC)'
+2022-08-26 13:49:28.197 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/manga - - - 200 - text/html;+charset=utf-8 2838.7414ms
+2022-08-26 13:50:02.637 +00:00 [INF] Application is shutting down...
+2022-08-26 13:52:45.558 +00:00 [INF] Starting web host
+2022-08-26 13:52:45.783 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-26 13:52:46.116 +00:00 [INF] Now listening on: https://[::]:5003
+2022-08-26 13:52:46.119 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 13:52:46.120 +00:00 [INF] Hosting environment: Development
+2022-08-26 13:52:46.120 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-08-26 13:52:50.604 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/ - -
+2022-08-26 13:52:50.644 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 13:52:50.664 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-08-26 13:52:50.674 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 13:52:50.683 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.482ms.
+2022-08-26 13:52:50.694 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 13:52:50.785 +00:00 [INF] Executed ViewResult - view Index executed in 93.8058ms.
+2022-08-26 13:52:50.787 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 122.6782ms
+2022-08-26 13:52:50.787 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 13:52:50.794 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/ - - - 200 - text/html;+charset=utf-8 193.2289ms
+2022-08-26 13:53:01.182 +00:00 [INF] Application is shutting down...
+2022-08-26 13:55:38.082 +00:00 [INF] Starting web host
+2022-08-26 13:55:38.297 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-26 13:55:38.598 +00:00 [INF] Now listening on: https://[::]:5003
+2022-08-26 13:55:38.601 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 13:55:38.601 +00:00 [INF] Hosting environment: Development
+2022-08-26 13:55:38.601 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-08-26 13:55:44.832 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/ - -
+2022-08-26 13:55:44.872 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 13:55:44.891 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-08-26 13:55:44.901 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 13:55:44.910 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5333ms.
+2022-08-26 13:55:44.923 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 13:55:45.014 +00:00 [INF] Executed ViewResult - view Index executed in 88.3721ms.
+2022-08-26 13:55:45.015 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 123.635ms
+2022-08-26 13:55:45.016 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 13:55:45.022 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/ - - - 200 - text/html;+charset=utf-8 192.7124ms
+2022-08-26 13:55:46.855 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/Author - -
+2022-08-26 13:55:46.857 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 13:55:46.878 +00:00 [INF] Route matched with {action = "Index", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(Int32) on controller MangaLibMVC.Controllers.AuthorController (MangaLibMVC).
+2022-08-26 13:55:46.890 +00:00 [INF] Executing action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 13:55:46.901 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 13:55:46.902 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 13:55:49.475 +00:00 [INF] Received HTTP response headers after 2568.6373ms - 200
+2022-08-26 13:55:49.476 +00:00 [INF] End processing HTTP request after 2579.4014ms - 200
+2022-08-26 13:55:49.655 +00:00 [INF] Executed action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2764.1508ms.
+2022-08-26 13:55:49.658 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 13:55:49.718 +00:00 [INF] Executed ViewResult - view Index executed in 60.6879ms.
+2022-08-26 13:55:49.719 +00:00 [INF] Executed action MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) in 2840.6794ms
+2022-08-26 13:55:49.720 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 13:55:49.725 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Author - - - 200 - text/html;+charset=utf-8 2870.4447ms
+2022-08-26 13:55:52.816 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/Manga - -
+2022-08-26 13:55:52.818 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.MangaController.Index (MangaLibMVC)'
+2022-08-26 13:55:52.821 +00:00 [INF] Route matched with {action = "Index", controller = "Manga"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MangaLibMVC.Controllers.MangaController (MangaLibMVC).
+2022-08-26 13:55:52.822 +00:00 [INF] Executing action method MangaLibMVC.Controllers.MangaController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 13:55:52.823 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/manga"
+2022-08-26 13:55:52.823 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/manga"
+2022-08-26 13:55:52.916 +00:00 [INF] Received HTTP response headers after 92.0262ms - 200
+2022-08-26 13:55:52.916 +00:00 [INF] End processing HTTP request after 92.597ms - 200
+2022-08-26 13:55:52.935 +00:00 [INF] Executed action method MangaLibMVC.Controllers.MangaController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 112.9664ms.
+2022-08-26 13:55:52.936 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 13:55:52.952 +00:00 [INF] Executed ViewResult - view Index executed in 16.488ms.
+2022-08-26 13:55:52.952 +00:00 [INF] Executed action MangaLibMVC.Controllers.MangaController.Index (MangaLibMVC) in 131.1468ms
+2022-08-26 13:55:52.952 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.MangaController.Index (MangaLibMVC)'
+2022-08-26 13:55:52.952 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Manga - - - 200 - text/html;+charset=utf-8 136.3009ms
+2022-08-26 13:56:01.021 +00:00 [INF] Application is shutting down...
+2022-08-26 14:01:28.616 +00:00 [INF] Starting web host
+2022-08-26 14:01:28.863 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-26 14:01:29.177 +00:00 [INF] Now listening on: https://[::]:5003
+2022-08-26 14:01:29.184 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 14:01:29.185 +00:00 [INF] Hosting environment: Development
+2022-08-26 14:01:29.185 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-08-26 14:01:29.979 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/ - -
+2022-08-26 14:01:30.024 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 14:01:30.051 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-08-26 14:01:30.059 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 14:01:30.070 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5453ms.
+2022-08-26 14:01:30.078 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 14:01:30.162 +00:00 [INF] Executed ViewResult - view Index executed in 84.4976ms.
+2022-08-26 14:01:30.163 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 111.4432ms
+2022-08-26 14:01:30.164 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 14:01:30.172 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/ - - - 200 - text/html;+charset=utf-8 196.5202ms
+2022-08-26 14:01:32.232 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/Author - -
+2022-08-26 14:01:32.235 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 14:01:32.260 +00:00 [INF] Route matched with {action = "Index", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(Int32) on controller MangaLibMVC.Controllers.AuthorController (MangaLibMVC).
+2022-08-26 14:01:32.272 +00:00 [INF] Executing action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 14:01:32.283 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 14:01:32.284 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 14:01:34.961 +00:00 [INF] Received HTTP response headers after 2669.7154ms - 200
+2022-08-26 14:01:34.962 +00:00 [INF] End processing HTTP request after 2685.7674ms - 200
+2022-08-26 14:01:35.140 +00:00 [INF] Executed action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2867.6822ms.
+2022-08-26 14:01:35.143 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 14:01:35.202 +00:00 [INF] Executed ViewResult - view Index executed in 60.1602ms.
+2022-08-26 14:01:35.203 +00:00 [INF] Executed action MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) in 2943.3071ms
+2022-08-26 14:01:35.204 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 14:01:35.206 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Author - - - 200 - text/html;+charset=utf-8 2973.7850ms
+2022-08-26 14:01:37.817 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/Author/Details/1 - -
+2022-08-26 14:01:37.819 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC)'
+2022-08-26 14:01:37.823 +00:00 [INF] Route matched with {action = "Details", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32) on controller MangaLibMVC.Controllers.AuthorController (MangaLibMVC).
+2022-08-26 14:01:37.824 +00:00 [INF] Executing action method MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 14:01:37.826 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/author/1"
+2022-08-26 14:01:37.826 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/author/1"
+2022-08-26 14:01:37.877 +00:00 [INF] Received HTTP response headers after 50.9015ms - 200
+2022-08-26 14:01:37.877 +00:00 [INF] End processing HTTP request after 51.3848ms - 200
+2022-08-26 14:01:37.884 +00:00 [INF] Executed action method MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 59.4573ms.
+2022-08-26 14:01:37.885 +00:00 [INF] Executing ViewResult, running view Details.
+2022-08-26 14:01:37.895 +00:00 [INF] Executed ViewResult - view Details executed in 10.4588ms.
+2022-08-26 14:01:37.895 +00:00 [INF] Executed action MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC) in 71.6603ms
+2022-08-26 14:01:37.895 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC)'
+2022-08-26 14:01:37.896 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Author/Details/1 - - - 200 - text/html;+charset=utf-8 79.0258ms
+2022-08-26 14:01:45.373 +00:00 [INF] Application is shutting down...
+2022-08-26 14:02:11.678 +00:00 [INF] Starting web host
+2022-08-26 14:02:11.929 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-26 14:02:12.236 +00:00 [INF] Now listening on: https://[::]:5003
+2022-08-26 14:02:12.239 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 14:02:12.239 +00:00 [INF] Hosting environment: Development
+2022-08-26 14:02:12.239 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-08-26 14:02:14.997 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/ - -
+2022-08-26 14:02:15.043 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 14:02:15.070 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-08-26 14:02:15.077 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 14:02:15.087 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.0801ms.
+2022-08-26 14:02:15.097 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 14:02:15.181 +00:00 [INF] Executed ViewResult - view Index executed in 84.5355ms.
+2022-08-26 14:02:15.183 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 112.8789ms
+2022-08-26 14:02:15.184 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 14:02:15.192 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/ - - - 200 - text/html;+charset=utf-8 198.9067ms
+2022-08-26 14:02:16.826 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/Author - -
+2022-08-26 14:02:16.828 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 14:02:16.852 +00:00 [INF] Route matched with {action = "Index", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(Int32) on controller MangaLibMVC.Controllers.AuthorController (MangaLibMVC).
+2022-08-26 14:02:16.866 +00:00 [INF] Executing action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 14:02:16.878 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 14:02:16.879 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 14:02:19.544 +00:00 [INF] Received HTTP response headers after 2656.1424ms - 200
+2022-08-26 14:02:19.546 +00:00 [INF] End processing HTTP request after 2671.9101ms - 200
+2022-08-26 14:02:19.725 +00:00 [INF] Executed action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2859.1538ms.
+2022-08-26 14:02:19.728 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 14:02:19.789 +00:00 [INF] Executed ViewResult - view Index executed in 61.8976ms.
+2022-08-26 14:02:19.791 +00:00 [INF] Executed action MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) in 2939.0043ms
+2022-08-26 14:02:19.792 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 14:02:19.794 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Author - - - 200 - text/html;+charset=utf-8 2968.0383ms
+2022-08-26 14:02:21.631 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/Author/Details/1 - -
+2022-08-26 14:02:21.633 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC)'
+2022-08-26 14:02:21.638 +00:00 [INF] Route matched with {action = "Details", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32) on controller MangaLibMVC.Controllers.AuthorController (MangaLibMVC).
+2022-08-26 14:02:21.639 +00:00 [INF] Executing action method MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 14:02:21.640 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/author/1"
+2022-08-26 14:02:21.641 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/author/1"
+2022-08-26 14:02:21.693 +00:00 [INF] Received HTTP response headers after 52.7078ms - 200
+2022-08-26 14:02:21.694 +00:00 [INF] End processing HTTP request after 53.2098ms - 200
+2022-08-26 14:02:21.696 +00:00 [INF] Executed action method MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 57.32ms.
+2022-08-26 14:02:21.697 +00:00 [INF] Executing ViewResult, running view Details.
+2022-08-26 14:02:21.707 +00:00 [INF] Executed ViewResult - view Details executed in 10.8813ms.
+2022-08-26 14:02:21.708 +00:00 [INF] Executed action MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC) in 69.831ms
+2022-08-26 14:02:21.708 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC)'
+2022-08-26 14:02:21.708 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Author/Details/1 - - - 200 - text/html;+charset=utf-8 77.2148ms
+2022-08-26 14:02:26.038 +00:00 [INF] Application is shutting down...
+2022-08-26 15:03:24.470 +00:00 [INF] Starting web host
+2022-08-26 15:03:24.708 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-26 15:03:25.021 +00:00 [INF] Now listening on: https://[::]:5003
+2022-08-26 15:03:25.028 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 15:03:25.028 +00:00 [INF] Hosting environment: Development
+2022-08-26 15:03:25.028 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-08-26 15:04:02.904 +00:00 [INF] Application is shutting down...
+2022-08-26 15:05:28.101 +00:00 [INF] Starting web host
+2022-08-26 15:05:28.366 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-26 15:05:28.696 +00:00 [INF] Now listening on: https://[::]:5003
+2022-08-26 15:05:28.699 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 15:05:28.699 +00:00 [INF] Hosting environment: Development
+2022-08-26 15:05:28.699 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-08-26 15:05:38.069 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/ - -
+2022-08-26 15:05:38.110 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 15:05:38.134 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-08-26 15:05:38.143 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 15:05:38.152 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6308ms.
+2022-08-26 15:05:38.161 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 15:05:38.282 +00:00 [INF] Executed ViewResult - view Index executed in 119.3633ms.
+2022-08-26 15:05:38.284 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 148.5247ms
+2022-08-26 15:05:38.285 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 15:05:38.292 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/ - - - 200 - text/html;+charset=utf-8 226.6768ms
+2022-08-26 15:05:38.499 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2022-08-26 15:05:38.513 +00:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/js/site.js'
+2022-08-26 15:05:38.513 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 0 230 application/javascript 14.3497ms
+2022-08-26 15:05:38.585 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/favicon.ico - -
+2022-08-26 15:05:38.595 +00:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/wwwroot/favicon.ico'
+2022-08-26 15:05:38.597 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/favicon.ico - - - 200 5430 image/x-icon 12.1502ms
+2022-08-26 15:05:41.508 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/Author - -
+2022-08-26 15:05:41.512 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 15:05:41.533 +00:00 [INF] Route matched with {action = "Index", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(Int32) on controller MangaLibMVC.Controllers.AuthorController (MangaLibMVC).
+2022-08-26 15:05:41.545 +00:00 [INF] Executing action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 15:05:41.575 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 15:05:41.576 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 15:05:41.680 +00:00 [INF] Executed action MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) in 146.4904ms
+2022-08-26 15:05:41.681 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 15:05:41.686 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at MangaLibApp.Services.Client.AuthorClientService.GetAuthorsAsync(Int32 pageNumber) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/Services/Client/AuthorClientService.cs:line 20
+   at MangaLibMVC.Controllers.AuthorController.Index(Int32 pageNumber) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Controllers/AuthorController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-26 15:05:41.756 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Author - - - 500 - text/html;+charset=utf-8 247.9072ms
+2022-08-26 15:05:50.900 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/Manga - -
+2022-08-26 15:05:50.903 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.MangaController.Index (MangaLibMVC)'
+2022-08-26 15:05:50.906 +00:00 [INF] Route matched with {action = "Index", controller = "Manga"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller MangaLibMVC.Controllers.MangaController (MangaLibMVC).
+2022-08-26 15:05:50.908 +00:00 [INF] Executing action method MangaLibMVC.Controllers.MangaController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 15:05:50.909 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/manga"
+2022-08-26 15:05:50.909 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/manga"
+2022-08-26 15:05:50.917 +00:00 [INF] Executed action MangaLibMVC.Controllers.MangaController.Index (MangaLibMVC) in 10.8166ms
+2022-08-26 15:05:50.918 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.MangaController.Index (MangaLibMVC)'
+2022-08-26 15:05:50.918 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at MangaLibApp.Services.Client.MangaClientService.GetMangasAsync() in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/Services/Client/MangaClientService.cs:line 20
+   at MangaLibMVC.Controllers.MangaController.Index() in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Controllers/MangaController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-26 15:05:50.927 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Manga - - - 500 - text/html;+charset=utf-8 27.4579ms
+2022-08-26 15:06:02.294 +00:00 [INF] Application is shutting down...
+2022-08-26 15:36:46.966 +00:00 [INF] Starting web host
+2022-08-26 15:36:47.208 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-26 15:36:47.533 +00:00 [INF] Now listening on: https://[::]:5003
+2022-08-26 15:36:47.537 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 15:36:47.537 +00:00 [INF] Hosting environment: Development
+2022-08-26 15:36:47.538 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-08-26 15:36:51.864 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/ - -
+2022-08-26 15:36:51.907 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 15:36:51.931 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-08-26 15:36:51.939 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 15:36:51.949 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5303ms.
+2022-08-26 15:36:51.958 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 15:36:52.042 +00:00 [INF] Executed ViewResult - view Index executed in 85.5206ms.
+2022-08-26 15:36:52.045 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 112.7419ms
+2022-08-26 15:36:52.045 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 15:36:52.055 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/ - - - 200 - text/html;+charset=utf-8 194.8776ms
+2022-08-26 15:36:54.158 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/Author - -
+2022-08-26 15:36:54.160 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 15:36:54.188 +00:00 [INF] Route matched with {action = "Index", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(Int32) on controller MangaLibMVC.Controllers.AuthorController (MangaLibMVC).
+2022-08-26 15:36:54.204 +00:00 [INF] Executing action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 15:36:54.213 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 15:36:54.214 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 15:36:56.991 +00:00 [INF] Received HTTP response headers after 2771.581ms - 200
+2022-08-26 15:36:56.992 +00:00 [INF] End processing HTTP request after 2783.346ms - 200
+2022-08-26 15:36:57.164 +00:00 [INF] Executed action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2959.5736ms.
+2022-08-26 15:36:57.171 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 15:36:57.261 +00:00 [INF] Executed ViewResult - view Index executed in 91.2795ms.
+2022-08-26 15:36:57.262 +00:00 [INF] Executed action MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) in 3073.1358ms
+2022-08-26 15:36:57.263 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 15:36:57.265 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Author - - - 200 - text/html;+charset=utf-8 3107.3730ms
+2022-08-26 15:37:03.687 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/Author/Details/1 - -
+2022-08-26 15:37:03.689 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC)'
+2022-08-26 15:37:03.696 +00:00 [INF] Route matched with {action = "Details", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32) on controller MangaLibMVC.Controllers.AuthorController (MangaLibMVC).
+2022-08-26 15:37:03.697 +00:00 [INF] Executing action method MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 15:37:03.699 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/author/1"
+2022-08-26 15:37:03.700 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/author/1"
+2022-08-26 15:37:03.763 +00:00 [INF] Received HTTP response headers after 62.5154ms - 200
+2022-08-26 15:37:03.763 +00:00 [INF] End processing HTTP request after 63.4121ms - 200
+2022-08-26 15:37:03.769 +00:00 [INF] Executed action method MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 71.0547ms.
+2022-08-26 15:37:03.770 +00:00 [INF] Executing ViewResult, running view Details.
+2022-08-26 15:37:03.780 +00:00 [INF] Executed ViewResult - view Details executed in 11.5157ms.
+2022-08-26 15:37:03.781 +00:00 [INF] Executed action MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC) in 84.6078ms
+2022-08-26 15:37:03.781 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.AuthorController.Details (MangaLibMVC)'
+2022-08-26 15:37:03.781 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Author/Details/1 - - - 200 - text/html;+charset=utf-8 94.0385ms
+2022-08-26 15:37:23.222 +00:00 [INF] Application is shutting down...
+2022-08-26 15:38:07.324 +00:00 [INF] Starting web host
+2022-08-26 15:38:07.593 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-26 15:38:07.928 +00:00 [INF] Now listening on: https://[::]:5003
+2022-08-26 15:38:07.931 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 15:38:07.931 +00:00 [INF] Hosting environment: Development
+2022-08-26 15:38:07.932 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-08-26 15:38:15.046 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/ - -
+2022-08-26 15:38:15.088 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 15:38:15.115 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-08-26 15:38:15.127 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 15:38:15.141 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9454ms.
+2022-08-26 15:38:15.151 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 15:38:15.243 +00:00 [INF] Executed ViewResult - view Index executed in 89.9255ms.
+2022-08-26 15:38:15.246 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 129.8814ms
+2022-08-26 15:38:15.246 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 15:38:15.253 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/ - - - 200 - text/html;+charset=utf-8 211.1086ms
+2022-08-26 15:38:16.514 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/Author - -
+2022-08-26 15:38:16.518 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 15:38:16.542 +00:00 [INF] Route matched with {action = "Index", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(Int32) on controller MangaLibMVC.Controllers.AuthorController (MangaLibMVC).
+2022-08-26 15:38:16.560 +00:00 [INF] Executing action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 15:38:16.570 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 15:38:16.571 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 15:38:16.681 +00:00 [INF] Executed action MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) in 139.0359ms
+2022-08-26 15:38:16.682 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 15:38:16.687 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at MangaLibApp.Services.Client.AuthorClientService.GetAuthorsAsync(Int32 pageNumber) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/Services/Client/AuthorClientService.cs:line 20
+   at MangaLibMVC.Controllers.AuthorController.Index(Int32 pageNumber) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Controllers/AuthorController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-26 15:38:16.747 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Author - - - 500 - text/html;+charset=utf-8 233.7716ms
+2022-08-26 15:38:29.367 +00:00 [INF] Application is shutting down...
+2022-08-26 15:39:56.176 +00:00 [INF] Starting web host
+2022-08-26 15:39:56.421 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-26 15:39:56.752 +00:00 [INF] Now listening on: https://[::]:5003
+2022-08-26 15:39:56.756 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 15:39:56.757 +00:00 [INF] Hosting environment: Development
+2022-08-26 15:39:56.757 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-08-26 15:39:57.594 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/ - -
+2022-08-26 15:39:57.630 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 15:39:57.653 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-08-26 15:39:57.661 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 15:39:57.673 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4844ms.
+2022-08-26 15:39:57.682 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 15:39:57.761 +00:00 [INF] Executed ViewResult - view Index executed in 80.5526ms.
+2022-08-26 15:39:57.763 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 109.0837ms
+2022-08-26 15:39:57.764 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 15:39:57.773 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/ - - - 200 - text/html;+charset=utf-8 183.0730ms
+2022-08-26 15:39:59.613 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/Author - -
+2022-08-26 15:39:59.615 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 15:39:59.638 +00:00 [INF] Route matched with {action = "Index", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(Int32) on controller MangaLibMVC.Controllers.AuthorController (MangaLibMVC).
+2022-08-26 15:39:59.649 +00:00 [INF] Executing action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 15:39:59.657 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 15:39:59.658 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 15:39:59.760 +00:00 [INF] Executed action MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) in 122.2469ms
+2022-08-26 15:39:59.762 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 15:39:59.770 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at MangaLibApp.Services.Client.AuthorClientService.GetAuthorsAsync(Int32 pageNumber) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/Services/Client/AuthorClientService.cs:line 20
+   at MangaLibMVC.Controllers.AuthorController.Index(Int32 pageNumber) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Controllers/AuthorController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-26 15:39:59.821 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Author - - - 500 - text/html;+charset=utf-8 208.4310ms
+2022-08-26 15:40:04.420 +00:00 [INF] Application is shutting down...
+2022-08-26 15:42:18.835 +00:00 [INF] Starting web host
+2022-08-26 15:42:19.052 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-26 15:42:19.337 +00:00 [INF] Now listening on: https://[::]:5003
+2022-08-26 15:42:19.344 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 15:42:19.344 +00:00 [INF] Hosting environment: Development
+2022-08-26 15:42:19.344 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-08-26 15:42:31.358 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/ - -
+2022-08-26 15:42:31.402 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 15:42:31.426 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-08-26 15:42:31.434 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 15:42:31.444 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5276ms.
+2022-08-26 15:42:31.454 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 15:42:31.546 +00:00 [INF] Executed ViewResult - view Index executed in 93.8639ms.
+2022-08-26 15:42:31.550 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 121.9542ms
+2022-08-26 15:42:31.551 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 15:42:31.557 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/ - - - 200 - text/html;+charset=utf-8 201.6494ms
+2022-08-26 15:42:33.651 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/Author - -
+2022-08-26 15:42:33.654 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 15:42:33.674 +00:00 [INF] Route matched with {action = "Index", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(Int32) on controller MangaLibMVC.Controllers.AuthorController (MangaLibMVC).
+2022-08-26 15:42:33.686 +00:00 [INF] Executing action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 15:42:33.698 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 15:42:33.699 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 15:42:33.810 +00:00 [INF] Executed action MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) in 134.889ms
+2022-08-26 15:42:33.810 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 15:42:33.815 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.CompleteHandshake(SslAuthenticationOptions sslAuthenticationOptions)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetStringAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at MangaLibApp.Services.Client.AuthorClientService.GetAuthorsAsync(Int32 pageNumber) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/Services/Client/AuthorClientService.cs:line 20
+   at MangaLibMVC.Controllers.AuthorController.Index(Int32 pageNumber) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Controllers/AuthorController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-26 15:42:33.869 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Author - - - 500 - text/html;+charset=utf-8 218.2440ms
+2022-08-26 15:43:13.688 +00:00 [INF] Application is shutting down...
+2022-08-26 15:43:53.047 +00:00 [INF] Starting web host
+2022-08-26 15:43:53.250 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-08-26 15:43:53.523 +00:00 [INF] Now listening on: https://[::]:5003
+2022-08-26 15:43:53.527 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-26 15:43:53.527 +00:00 [INF] Hosting environment: Development
+2022-08-26 15:43:53.527 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC
+2022-08-26 15:43:59.983 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/) - -
+2022-08-26 15:44:00.032 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/) - - - 404 0 - 52.3987ms
+2022-08-26 15:44:03.855 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/ - -
+2022-08-26 15:44:03.860 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 15:44:03.886 +00:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MangaLibMVC.Controllers.HomeController (MangaLibMVC).
+2022-08-26 15:44:03.896 +00:00 [INF] Executing action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 15:44:03.904 +00:00 [INF] Executed action method MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4855ms.
+2022-08-26 15:44:03.916 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 15:44:04.002 +00:00 [INF] Executed ViewResult - view Index executed in 88.3435ms.
+2022-08-26 15:44:04.004 +00:00 [INF] Executed action MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC) in 117.1464ms
+2022-08-26 15:44:04.004 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.HomeController.Index (MangaLibMVC)'
+2022-08-26 15:44:04.008 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/ - - - 200 - text/html;+charset=utf-8 152.5006ms
+2022-08-26 15:44:05.414 +00:00 [INF] Request starting HTTP/2 GET https://localhost:5003/Author - -
+2022-08-26 15:44:05.416 +00:00 [INF] Executing endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 15:44:05.437 +00:00 [INF] Route matched with {action = "Index", controller = "Author"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(Int32) on controller MangaLibMVC.Controllers.AuthorController (MangaLibMVC).
+2022-08-26 15:44:05.449 +00:00 [INF] Executing action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) - Validation state: "Valid"
+2022-08-26 15:44:05.460 +00:00 [INF] Start processing HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 15:44:05.461 +00:00 [INF] Sending HTTP request GET "https://localhost:5001/api/author?PageNumber=1&PageSize=10"
+2022-08-26 15:44:08.040 +00:00 [INF] Received HTTP response headers after 2573.731ms - 200
+2022-08-26 15:44:08.041 +00:00 [INF] End processing HTTP request after 2585.6264ms - 200
+2022-08-26 15:44:08.215 +00:00 [INF] Executed action method MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2766.2813ms.
+2022-08-26 15:44:08.218 +00:00 [INF] Executing ViewResult, running view Index.
+2022-08-26 15:44:08.282 +00:00 [INF] Executed ViewResult - view Index executed in 64.103ms.
+2022-08-26 15:44:08.283 +00:00 [INF] Executed action MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC) in 2845.6034ms
+2022-08-26 15:44:08.283 +00:00 [INF] Executed endpoint 'MangaLibMVC.Controllers.AuthorController.Index (MangaLibMVC)'
+2022-08-26 15:44:08.285 +00:00 [INF] Request finished HTTP/2 GET https://localhost:5003/Author - - - 200 - text/html;+charset=utf-8 2871.2864ms
+2022-08-26 15:44:21.330 +00:00 [INF] Application is shutting down...
+2022-09-19 18:05:02.866 +00:00 [INF] Starting web host
+2022-09-19 18:05:03.092 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:03.396 +00:00 [INF] Starting web host
+2022-09-19 18:05:03.622 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:03.882 +00:00 [INF] Starting web host
+2022-09-19 18:05:04.092 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:04.389 +00:00 [INF] Starting web host
+2022-09-19 18:05:04.612 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:04.916 +00:00 [INF] Starting web host
+2022-09-19 18:05:05.138 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:05.395 +00:00 [INF] Starting web host
+2022-09-19 18:05:05.607 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:05.896 +00:00 [INF] Starting web host
+2022-09-19 18:05:06.106 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:06.395 +00:00 [INF] Starting web host
+2022-09-19 18:05:06.601 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:06.902 +00:00 [INF] Starting web host
+2022-09-19 18:05:07.119 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:07.395 +00:00 [INF] Starting web host
+2022-09-19 18:05:07.603 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:07.908 +00:00 [INF] Starting web host
+2022-09-19 18:05:08.104 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:08.412 +00:00 [INF] Starting web host
+2022-09-19 18:05:08.609 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:08.915 +00:00 [INF] Starting web host
+2022-09-19 18:05:09.123 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:09.419 +00:00 [INF] Starting web host
+2022-09-19 18:05:09.616 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:09.911 +00:00 [INF] Starting web host
+2022-09-19 18:05:10.111 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:10.415 +00:00 [INF] Starting web host
+2022-09-19 18:05:10.618 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:10.917 +00:00 [INF] Starting web host
+2022-09-19 18:05:11.119 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:11.419 +00:00 [INF] Starting web host
+2022-09-19 18:05:11.616 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:11.925 +00:00 [INF] Starting web host
+2022-09-19 18:05:12.124 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:12.442 +00:00 [INF] Starting web host
+2022-09-19 18:05:12.636 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:12.939 +00:00 [INF] Starting web host
+2022-09-19 18:05:13.149 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:13.443 +00:00 [INF] Starting web host
+2022-09-19 18:05:13.672 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:13.947 +00:00 [INF] Starting web host
+2022-09-19 18:05:14.155 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:14.447 +00:00 [INF] Starting web host
+2022-09-19 18:05:14.656 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:14.938 +00:00 [INF] Starting web host
+2022-09-19 18:05:15.162 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:15.460 +00:00 [INF] Starting web host
+2022-09-19 18:05:15.654 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:15.948 +00:00 [INF] Starting web host
+2022-09-19 18:05:16.160 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:16.453 +00:00 [INF] Starting web host
+2022-09-19 18:05:16.650 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:16.951 +00:00 [INF] Starting web host
+2022-09-19 18:05:17.164 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:17.457 +00:00 [INF] Starting web host
+2022-09-19 18:05:17.653 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:17.971 +00:00 [INF] Starting web host
+2022-09-19 18:05:18.190 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:18.473 +00:00 [INF] Starting web host
+2022-09-19 18:05:18.686 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:18.964 +00:00 [INF] Starting web host
+2022-09-19 18:05:19.169 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:19.462 +00:00 [INF] Starting web host
+2022-09-19 18:05:19.665 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20
+2022-09-19 18:05:19.969 +00:00 [INF] Starting web host
+2022-09-19 18:05:20.160 +00:00 [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MangaLibApp.Interfaces.IRegisterService Lifetime: Scoped ImplementationType: MangaLibApp.Services.RegisterService': Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'MangaLibApp.AuthenticationSettings' while attempting to activate 'MangaLibApp.Services.RegisterService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at MangaLibMVC.Program.Main(String[] args) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibMVC/Program.cs:line 20

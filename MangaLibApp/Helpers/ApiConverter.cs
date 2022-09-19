@@ -1,6 +1,5 @@
 using MangaLibApp.Interfaces;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.Internal;
 
 namespace MangaLibApp.Helpers
 {
