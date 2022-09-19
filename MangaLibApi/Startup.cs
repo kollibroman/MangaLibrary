@@ -1,5 +1,7 @@
+using System.Text;
 using MangaLibApp;
 using MangaLibApi.Middleware;
+using Microsoft.IdentityModel.Tokens;
 
 namespace MangaLibApi
 {
@@ -15,6 +17,26 @@ namespace MangaLibApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var AuthSettings = new AuthenticationSettings();
+            Configuration.GetSection("Authentication").Bind(AuthSettings);
+
+            services.AddAuthentication(option =>
+            {
+                option.DefaultAuthenticateScheme = "Bearer";
+                option.DefaultScheme = "Bearer";
+                option.DefaultScheme = "Bearer";
+            }).AddJwtBearer(cfg =>
+            {
+                cfg.RequireHttpsMetadata = false;
+                cfg.SaveToken = true;
+                cfg.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidIssuer = AuthSettings.JwtIssuer,
+                    ValidAudience = AuthSettings.JwtIssuer,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(AuthSettings.JwtKey))
+                };
+            });
+            
             services.AddControllers();
             services.AddSwaggerGen();
             services.AddScoped<ErrorHandler>();
@@ -31,6 +53,8 @@ namespace MangaLibApi
                 app.UseSwaggerUI();
             }
 
+            app.UseAuthentication();
+            
             app.UseHttpsRedirection();
 
             app.UseMiddleware<ErrorHandler>();

@@ -19,6 +19,8 @@ public class RegisterService : IRegisterService
     }
     public async Task RegisterUser(RegisterUserDto dto)
     {
+        
+        
         var newUser = new User()
         {
             Email = dto.Email,

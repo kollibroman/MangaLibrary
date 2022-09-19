@@ -50,7 +50,7 @@ namespace MangaLibApi.Controllers
         public async Task<IActionResult> CreateAuthor([FromBody] CreateAuthorDto dto)
         {
             await _service.Create(dto);
-            return Created($"/api/author/{dto.Id}", null);
+            return Created($"/api/author/name/{dto.Name}", null);
         }
 
         [HttpPut("{id}")]

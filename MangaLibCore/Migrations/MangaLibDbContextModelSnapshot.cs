@@ -55,7 +55,7 @@ namespace MangaLibCore.Migrations
                             Name = "Kei",
                             Surname = "Urana",
                             Type = 7,
-                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Utc).AddTicks(2217)
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(7736)
                         },
                         new
                         {
@@ -63,7 +63,7 @@ namespace MangaLibCore.Migrations
                             Name = "Kouhei",
                             Surname = "Horikoshi",
                             Type = 7,
-                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Utc).AddTicks(2219)
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(7760)
                         },
                         new
                         {
@@ -71,7 +71,7 @@ namespace MangaLibCore.Migrations
                             Name = "KAGYU",
                             Surname = "Kumo",
                             Type = 7,
-                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Utc).AddTicks(2220)
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(7774)
                         },
                         new
                         {
@@ -79,7 +79,7 @@ namespace MangaLibCore.Migrations
                             Name = "Yabako",
                             Surname = "Sandrovich",
                             Type = 7,
-                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Utc).AddTicks(2221)
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(7792)
                         },
                         new
                         {
@@ -87,7 +87,7 @@ namespace MangaLibCore.Migrations
                             Name = "Minami",
                             Surname = "Katsuhisa",
                             Type = 7,
-                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Utc).AddTicks(2222)
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(7811)
                         });
                 });
 
@@ -259,7 +259,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "01/11/2014",
                             Title = "The Fable",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Utc).AddTicks(2350)
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(8178)
                         },
                         new
                         {
@@ -271,7 +271,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Bocu no Pico Academia",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Local).AddTicks(2356)
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Local).AddTicks(8225)
                         },
                         new
                         {
@@ -283,7 +283,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Goblin Slayer",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Local).AddTicks(2369)
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Local).AddTicks(8274)
                         },
                         new
                         {
@@ -295,7 +295,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Kengan Ashua",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Local).AddTicks(2371)
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Local).AddTicks(8292)
                         },
                         new
                         {
@@ -307,7 +307,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Fire Force",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 9, 17, 22, 2, 31, 486, DateTimeKind.Local).AddTicks(2373)
+                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Local).AddTicks(8312)
                         });
                 });
 
@@ -341,6 +341,35 @@ namespace MangaLibCore.Migrations
                     b.HasIndex("ChapterId");
 
                     b.ToTable("Pages");
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "User"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Admin"
+                        });
                 });
 
             modelBuilder.Entity("MangaLibCore.Entities.Tag", b =>
@@ -387,11 +416,16 @@ namespace MangaLibCore.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("RoleId")
+                        .HasColumnType("integer");
+
                     b.Property<string>("UserName")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
 
                     b.ToTable("Users");
                 });
@@ -435,6 +469,17 @@ namespace MangaLibCore.Migrations
                     b.HasOne("MangaLibCore.Entities.Chapter", null)
                         .WithMany("Pages")
                         .HasForeignKey("ChapterId");
+                });
+
+            modelBuilder.Entity("MangaLibCore.Entities.User", b =>
+                {
+                    b.HasOne("MangaLibCore.Entities.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("MangaTag", b =>

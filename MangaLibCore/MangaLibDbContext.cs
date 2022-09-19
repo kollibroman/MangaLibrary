@@ -13,6 +13,7 @@ namespace MangaLibCore
         public DbSet<Chapter> Chapters { get; set; }
         public DbSet<Tag> Tags { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
         public MangaLibDbContext()
         {

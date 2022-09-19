@@ -155,6 +155,18 @@ namespace MangaLibCore
                     MangaName = "The Fable"
                 }  
             );
+            modelBuilder.Entity<Role>().HasData(
+                new Role
+                {
+                    Id = 1,
+                    Name = "User"
+                },
+                new Role
+                {
+                    Id = 2,
+                    Name = "Admin"
+                }
+            );
         }
     }
 }
