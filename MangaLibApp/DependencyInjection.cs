@@ -36,6 +36,7 @@ namespace MangaLibApp
             services.AddScoped<IPageService, PageService>();
             services.AddScoped<ITagService, TagService>();
             services.AddScoped<IRegisterService, RegisterService>();
+            services.AddScoped<IAccountService, AccountService>();
 
             services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
             services.AddScoped<IValidator<RegisterUserDto>, RegisterUserDtoValidator>();

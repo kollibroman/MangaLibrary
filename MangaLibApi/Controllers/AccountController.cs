@@ -9,10 +9,12 @@ namespace MangaLibApi.Controllers;
 public class AccountController : ControllerBase
 {
     private readonly IRegisterService _service;
+    private readonly IAccountService _accountService;
 
-    public AccountController(IRegisterService service)
+    public AccountController(IRegisterService service, IAccountService accountService)
     {
         _service = service;
+        _accountService = accountService;
     }
     [HttpPost("register")]
     public async Task<ActionResult> RegisterUser([FromBody] RegisterUserDto dto)
@@ -26,5 +28,12 @@ public class AccountController : ControllerBase
     {
         string token = await _service.GenerateKJwt(dto);
         return Ok(token); 
+    }
+
+    [HttpGet("{UserName}")]
+    public async Task<IActionResult> GetUserInfo([FromRoute] string UserName)
+    {
+        var accountInfo = await _accountService.GetUserDetails(UserName);
+        return Ok(accountInfo);
     }
 }

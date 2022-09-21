@@ -10420,3 +10420,376 @@ DETAIL: Key (RoleId)=(0) is not present in table "Roles".
 2022-09-19 18:17:41.389 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AccountController.LoginUser (MangaLibApi)'
 2022-09-19 18:17:41.436 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7143/api/account/login application/json 69 - 200 - text/plain;+charset=utf-8 4687.9386ms
 2022-09-19 18:18:11.137 +00:00 [INF] Application is shutting down...
+2022-09-21 20:39:36.120 +00:00 [INF] Starting web host
+2022-09-21 20:39:36.493 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-09-21 20:39:37.165 +00:00 [INF] Now listening on: https://localhost:7143
+2022-09-21 20:39:37.165 +00:00 [INF] Now listening on: http://localhost:5106
+2022-09-21 20:39:37.169 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-21 20:39:37.169 +00:00 [INF] Hosting environment: Development
+2022-09-21 20:39:37.169 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-09-21 20:39:38.155 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-09-21 20:39:38.392 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 252.4699ms
+2022-09-21 20:39:38.935 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-09-21 20:39:39.128 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 193.1138ms
+2022-09-21 20:40:01.073 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/account/1 - -
+2022-09-21 20:40:01.194 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:40:01.236 +00:00 [INF] Route matched with {action = "GetUserInfo", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo(Int32) on controller MangaLibApi.Controllers.AccountController (MangaLibApi).
+2022-09-21 20:40:05.092 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[MangaLibApp.Models.AccountDto, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[MangaLibApp.Services.AccountService+<GetUserDetails>d__3, MangaLibApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-09-21 20:40:05.133 +00:00 [INF] Executed action MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi) in 3888.1757ms
+2022-09-21 20:40:05.138 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:40:05.139 +00:00 [ERR] Serialization and deserialization of 'System.Action' instances are not supported. Path: $.MoveNextAction.
+System.NotSupportedException: Serialization and deserialization of 'System.Action' instances are not supported. Path: $.MoveNextAction.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Action' instances are not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, NotSupportedException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](JsonConverter jsonConverter, Utf8JsonWriter writer, TValue& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MangaLibApi.Middleware.ErrorHandler.InvokeAsync(HttpContext context, RequestDelegate next) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/Middleware/ErrorHandler.cs:line 16
+2022-09-21 20:40:05.195 +00:00 [ERR] Connection id "0HMKS25J6NK61", Request id "0HMKS25J6NK61:00000013": An unhandled exception was thrown by the application.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT u."Id", u."DateOfBirth", u."Email", u."FirstName", u."LastName", u."PasswordHash", u."RoleId", u."UserName", r."Id", r."Name"
+FROM "Users" AS u
+INNER JOIN "Roles" AS r ON u."RoleId" = r."Id"
+WHERE u."Id" = @__id_0
+LIMIT 1
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|255_0(<>c__DisplayClass255_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.Internal.NpgsqlConnector.Reset(Boolean async)
+   at Npgsql.NpgsqlConnection.CloseAsync(Boolean async)
+   at Npgsql.NpgsqlConnection.<DisposeAsync>g__DisposeAsyncCore|109_0()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.ResetStateAsync(Boolean disposeDbConnection)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|22_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.EntityFrameworkCore.DbContext.DisposeAsync()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|22_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<FireOnCompleted>g__ProcessEvents|227_0(HttpProtocol protocol, Stack`1 events)
+2022-09-21 20:40:05.204 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/account/1 - - - 500 - application/json;+charset=utf-8 4131.0964ms
+2022-09-21 20:40:38.968 +00:00 [INF] Application is shutting down...
+2022-09-21 20:40:45.181 +00:00 [INF] Starting web host
+2022-09-21 20:40:45.420 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-09-21 20:40:45.856 +00:00 [INF] Now listening on: https://localhost:7143
+2022-09-21 20:40:45.856 +00:00 [INF] Now listening on: http://localhost:5106
+2022-09-21 20:40:45.861 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-21 20:40:45.861 +00:00 [INF] Hosting environment: Development
+2022-09-21 20:40:45.862 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-09-21 20:40:46.723 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-09-21 20:40:46.888 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 168.8655ms
+2022-09-21 20:40:47.445 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-09-21 20:40:47.640 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 194.2192ms
+2022-09-21 20:40:53.619 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/account/1 - -
+2022-09-21 20:40:53.746 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:40:53.788 +00:00 [INF] Route matched with {action = "GetUserInfo", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo(Int32) on controller MangaLibApi.Controllers.AccountController (MangaLibApi).
+2022-09-21 20:40:58.197 +00:00 [INF] Executed action MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi) in 4393.7272ms
+2022-09-21 20:40:58.209 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:40:58.271 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/account/1 - - - 404 - - 4652.5490ms
+2022-09-21 20:42:16.253 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7143/api/account/register application/json 220
+2022-09-21 20:42:16.258 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AccountController.RegisterUser (MangaLibApi)'
+2022-09-21 20:42:16.263 +00:00 [INF] Route matched with {action = "RegisterUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] RegisterUser(MangaLibApp.Models.RegisterUserDto) on controller MangaLibApi.Controllers.AccountController (MangaLibApi).
+2022-09-21 20:42:16.478 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-09-21 20:42:16.482 +00:00 [INF] Executed action MangaLibApi.Controllers.AccountController.RegisterUser (MangaLibApi) in 219.3102ms
+2022-09-21 20:42:16.483 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AccountController.RegisterUser (MangaLibApi)'
+2022-09-21 20:42:16.484 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7143/api/account/register application/json 220 - 400 - application/problem+json;+charset=utf-8 230.2424ms
+2022-09-21 20:42:29.760 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/account/0 - -
+2022-09-21 20:42:29.764 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:42:29.765 +00:00 [INF] Route matched with {action = "GetUserInfo", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo(Int32) on controller MangaLibApi.Controllers.AccountController (MangaLibApi).
+2022-09-21 20:42:29.862 +00:00 [INF] Executed action MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi) in 97.5742ms
+2022-09-21 20:42:29.863 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:42:29.864 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/account/0 - - - 404 - - 104.1587ms
+2022-09-21 20:42:34.412 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/account/2 - -
+2022-09-21 20:42:34.413 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:42:34.413 +00:00 [INF] Route matched with {action = "GetUserInfo", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo(Int32) on controller MangaLibApi.Controllers.AccountController (MangaLibApi).
+2022-09-21 20:42:34.416 +00:00 [INF] Executed action MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi) in 3.2517ms
+2022-09-21 20:42:34.417 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:42:34.417 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/account/2 - - - 404 - - 5.0162ms
+2022-09-21 20:43:08.229 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7143/api/account/login application/json 66
+2022-09-21 20:43:08.229 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AccountController.LoginUser (MangaLibApi)'
+2022-09-21 20:43:08.234 +00:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] LoginUser(MangaLibApp.Models.LoginDto) on controller MangaLibApi.Controllers.AccountController (MangaLibApi).
+2022-09-21 20:43:08.390 +00:00 [INF] Executed action MangaLibApi.Controllers.AccountController.LoginUser (MangaLibApi) in 155.8801ms
+2022-09-21 20:43:08.390 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AccountController.LoginUser (MangaLibApi)'
+2022-09-21 20:43:08.391 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7143/api/account/login application/json 66 - 400 - - 162.4413ms
+2022-09-21 20:43:25.150 +00:00 [INF] Request starting HTTP/2 POST https://localhost:7143/api/account/login application/json 69
+2022-09-21 20:43:25.150 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AccountController.LoginUser (MangaLibApi)'
+2022-09-21 20:43:25.151 +00:00 [INF] Route matched with {action = "LoginUser", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] LoginUser(MangaLibApp.Models.LoginDto) on controller MangaLibApi.Controllers.AccountController (MangaLibApi).
+2022-09-21 20:43:25.406 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2022-09-21 20:43:25.406 +00:00 [INF] Executed action MangaLibApi.Controllers.AccountController.LoginUser (MangaLibApi) in 255.5568ms
+2022-09-21 20:43:25.407 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AccountController.LoginUser (MangaLibApi)'
+2022-09-21 20:43:25.408 +00:00 [INF] Request finished HTTP/2 POST https://localhost:7143/api/account/login application/json 69 - 200 - text/plain;+charset=utf-8 257.4935ms
+2022-09-21 20:43:45.102 +00:00 [INF] Application is shutting down...
+2022-09-21 20:44:58.955 +00:00 [INF] Starting web host
+2022-09-21 20:44:59.198 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-09-21 20:44:59.615 +00:00 [INF] Now listening on: https://localhost:7143
+2022-09-21 20:44:59.616 +00:00 [INF] Now listening on: http://localhost:5106
+2022-09-21 20:44:59.620 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-21 20:44:59.620 +00:00 [INF] Hosting environment: Development
+2022-09-21 20:44:59.621 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-09-21 20:45:00.483 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-09-21 20:45:00.687 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 207.5288ms
+2022-09-21 20:45:01.205 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-09-21 20:45:01.425 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 219.8512ms
+2022-09-21 20:45:47.762 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/account/Filip - -
+2022-09-21 20:45:47.887 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:45:47.929 +00:00 [INF] Route matched with {action = "GetUserInfo", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo(System.String) on controller MangaLibApi.Controllers.AccountController (MangaLibApi).
+2022-09-21 20:45:48.405 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-09-21 20:45:48.419 +00:00 [INF] Executed action MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi) in 480.9059ms
+2022-09-21 20:45:48.424 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:45:48.427 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/account/Filip - - - 400 - application/problem+json;+charset=utf-8 664.5367ms
+2022-09-21 20:46:09.269 +00:00 [INF] Application is shutting down...
+2022-09-21 20:47:06.595 +00:00 [INF] Starting web host
+2022-09-21 20:47:06.816 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-09-21 20:47:07.196 +00:00 [INF] Now listening on: https://localhost:7143
+2022-09-21 20:47:07.196 +00:00 [INF] Now listening on: http://localhost:5106
+2022-09-21 20:47:07.199 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-21 20:47:07.200 +00:00 [INF] Hosting environment: Development
+2022-09-21 20:47:07.200 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-09-21 20:47:08.067 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-09-21 20:47:08.238 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 173.7607ms
+2022-09-21 20:47:08.678 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-09-21 20:47:08.875 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 197.7430ms
+2022-09-21 20:47:26.005 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/account/KollibroMan - -
+2022-09-21 20:47:26.124 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:47:26.169 +00:00 [INF] Route matched with {action = "GetUserInfo", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo(System.String) on controller MangaLibApi.Controllers.AccountController (MangaLibApi).
+2022-09-21 20:47:26.667 +00:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-09-21 20:47:26.681 +00:00 [INF] Executed action MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi) in 501.1347ms
+2022-09-21 20:47:26.686 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:47:26.689 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/account/KollibroMan - - - 400 - application/problem+json;+charset=utf-8 683.8928ms
+2022-09-21 20:47:37.555 +00:00 [INF] Application is shutting down...
+2022-09-21 20:49:04.891 +00:00 [INF] Starting web host
+2022-09-21 20:49:05.131 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-09-21 20:49:05.520 +00:00 [INF] Now listening on: https://localhost:7143
+2022-09-21 20:49:05.520 +00:00 [INF] Now listening on: http://localhost:5106
+2022-09-21 20:49:05.524 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-21 20:49:05.524 +00:00 [INF] Hosting environment: Development
+2022-09-21 20:49:05.525 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-09-21 20:49:06.390 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-09-21 20:49:06.595 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 208.4512ms
+2022-09-21 20:49:07.113 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-09-21 20:49:07.310 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 196.4871ms
+2022-09-21 20:49:18.908 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/account/KollibroMan - -
+2022-09-21 20:49:19.031 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:49:19.071 +00:00 [INF] Route matched with {action = "GetUserInfo", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo(System.String) on controller MangaLibApi.Controllers.AccountController (MangaLibApi).
+2022-09-21 20:49:23.656 +00:00 [INF] Executed action MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi) in 4560.3528ms
+2022-09-21 20:49:23.676 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:49:23.687 +00:00 [ERR] Missing type map configuration or unsupported mapping.
+
+Mapping types:
+User -> AccountDto
+MangaLibCore.Entities.User -> MangaLibApp.Models.AccountDto
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+User -> AccountDto
+MangaLibCore.Entities.User -> MangaLibApp.Models.AccountDto
+   at lambda_method138(Closure , Object , AccountDto , ResolutionContext )
+   at MangaLibApp.Services.AccountService.GetUserDetails(String UserName) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/Services/AccountService.cs:line 34
+   at MangaLibApi.Controllers.AccountController.GetUserInfo(String UserName) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/Controllers/AccountController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MangaLibApi.Middleware.ErrorHandler.InvokeAsync(HttpContext context, RequestDelegate next) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/Middleware/ErrorHandler.cs:line 16
+2022-09-21 20:49:23.785 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/account/KollibroMan - - - 500 - - 4877.1614ms
+2022-09-21 20:49:43.052 +00:00 [INF] Application is shutting down...
+2022-09-21 20:50:30.884 +00:00 [INF] Starting web host
+2022-09-21 20:50:31.129 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-09-21 20:50:31.524 +00:00 [INF] Now listening on: https://localhost:7143
+2022-09-21 20:50:31.524 +00:00 [INF] Now listening on: http://localhost:5106
+2022-09-21 20:50:31.528 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-21 20:50:31.528 +00:00 [INF] Hosting environment: Development
+2022-09-21 20:50:31.529 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-09-21 20:50:32.377 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-09-21 20:50:32.569 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 195.6559ms
+2022-09-21 20:50:33.141 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-09-21 20:50:33.348 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 207.0200ms
+2022-09-21 20:50:40.310 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/account/KollibroMan - -
+2022-09-21 20:50:40.430 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:50:40.471 +00:00 [INF] Route matched with {action = "GetUserInfo", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo(System.String) on controller MangaLibApi.Controllers.AccountController (MangaLibApi).
+2022-09-21 20:50:45.170 +00:00 [INF] Executed action MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi) in 4682.9777ms
+2022-09-21 20:50:45.185 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:50:45.195 +00:00 [ERR] Missing type map configuration or unsupported mapping.
+
+Mapping types:
+User -> AccountDto
+MangaLibCore.Entities.User -> MangaLibApp.Models.AccountDto
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+User -> AccountDto
+MangaLibCore.Entities.User -> MangaLibApp.Models.AccountDto
+   at lambda_method138(Closure , Object , AccountDto , ResolutionContext )
+   at MangaLibApp.Services.AccountService.GetUserDetails(String UserName) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/Services/AccountService.cs:line 34
+   at MangaLibApi.Controllers.AccountController.GetUserInfo(String UserName) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/Controllers/AccountController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MangaLibApi.Middleware.ErrorHandler.InvokeAsync(HttpContext context, RequestDelegate next) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/Middleware/ErrorHandler.cs:line 16
+2022-09-21 20:50:45.309 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/account/KollibroMan - - - 500 - - 4998.9409ms
+2022-09-21 20:51:11.677 +00:00 [INF] Application is shutting down...
+2022-09-21 20:51:41.177 +00:00 [INF] Starting web host
+2022-09-21 20:51:41.399 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-09-21 20:51:41.783 +00:00 [INF] Now listening on: https://localhost:7143
+2022-09-21 20:51:41.783 +00:00 [INF] Now listening on: http://localhost:5106
+2022-09-21 20:51:41.788 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-21 20:51:41.789 +00:00 [INF] Hosting environment: Development
+2022-09-21 20:51:41.789 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-09-21 20:51:42.658 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-09-21 20:51:42.845 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 191.6916ms
+2022-09-21 20:51:43.382 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-09-21 20:51:43.584 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 201.9591ms
+2022-09-21 20:51:52.538 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/account/KollibroMan - -
+2022-09-21 20:51:52.647 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:51:52.685 +00:00 [INF] Route matched with {action = "GetUserInfo", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo(System.String) on controller MangaLibApi.Controllers.AccountController (MangaLibApi).
+2022-09-21 20:51:57.331 +00:00 [INF] Executed action MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi) in 4631.3954ms
+2022-09-21 20:51:57.351 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 20:51:57.361 +00:00 [ERR] Missing type map configuration or unsupported mapping.
+
+Mapping types:
+User -> AccountDto
+MangaLibCore.Entities.User -> MangaLibApp.Models.AccountDto
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+User -> AccountDto
+MangaLibCore.Entities.User -> MangaLibApp.Models.AccountDto
+   at lambda_method138(Closure , Object , AccountDto , ResolutionContext )
+   at MangaLibApp.Services.AccountService.GetUserDetails(String UserName) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/Services/AccountService.cs:line 34
+   at MangaLibApi.Controllers.AccountController.GetUserInfo(String UserName) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/Controllers/AccountController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MangaLibApi.Middleware.ErrorHandler.InvokeAsync(HttpContext context, RequestDelegate next) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/Middleware/ErrorHandler.cs:line 16
+2022-09-21 20:51:57.466 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/account/KollibroMan - - - 500 - - 4928.1222ms
+2022-09-21 20:52:13.037 +00:00 [INF] Application is shutting down...
+2022-09-21 21:00:46.639 +00:00 [INF] Starting web host
+2022-09-21 21:00:46.875 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-09-21 21:00:47.269 +00:00 [INF] Now listening on: https://localhost:7143
+2022-09-21 21:00:47.269 +00:00 [INF] Now listening on: http://localhost:5106
+2022-09-21 21:00:47.274 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-21 21:00:47.274 +00:00 [INF] Hosting environment: Development
+2022-09-21 21:00:47.275 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-09-21 21:00:48.135 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-09-21 21:00:48.320 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 189.0150ms
+2022-09-21 21:00:48.992 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-09-21 21:00:49.196 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 203.9601ms
+2022-09-21 21:00:59.465 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/account/KollibroMan - -
+2022-09-21 21:00:59.591 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 21:00:59.633 +00:00 [INF] Route matched with {action = "GetUserInfo", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo(System.String) on controller MangaLibApi.Controllers.AccountController (MangaLibApi).
+2022-09-21 21:01:04.291 +00:00 [INF] Executed action MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi) in 4641.3732ms
+2022-09-21 21:01:04.306 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 21:01:04.323 +00:00 [ERR] Error mapping types.
+
+Mapping types:
+User -> AccountDto
+MangaLibCore.Entities.User -> MangaLibApp.Models.AccountDto
+
+Type Map configuration:
+User -> AccountDto
+MangaLibCore.Entities.User -> MangaLibApp.Models.AccountDto
+
+Destination Member:
+Role
+
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+User -> AccountDto
+MangaLibCore.Entities.User -> MangaLibApp.Models.AccountDto
+
+Type Map configuration:
+User -> AccountDto
+MangaLibCore.Entities.User -> MangaLibApp.Models.AccountDto
+
+Destination Member:
+Role
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Role -> RoleDto
+MangaLibCore.Entities.Role -> MangaLibApp.Models.RoleDto
+
+Destination Member:
+Role
+
+   at lambda_method139(Closure , Role , RoleDto , ResolutionContext )
+   at lambda_method138(Closure , Object , AccountDto , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method138(Closure , Object , AccountDto , ResolutionContext )
+   at MangaLibApp.Services.AccountService.GetUserDetails(String UserName) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/Services/AccountService.cs:line 34
+   at MangaLibApi.Controllers.AccountController.GetUserInfo(String UserName) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/Controllers/AccountController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MangaLibApi.Middleware.ErrorHandler.InvokeAsync(HttpContext context, RequestDelegate next) in /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/Middleware/ErrorHandler.cs:line 16
+2022-09-21 21:01:04.425 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/account/KollibroMan - - - 500 - - 4960.5628ms
+2022-09-21 21:01:14.948 +00:00 [INF] Application is shutting down...
+2022-09-21 21:01:33.491 +00:00 [INF] Starting web host
+2022-09-21 21:01:33.736 +00:00 [INF] User profile is available. Using '/home/kollibro_man/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-09-21 21:01:34.173 +00:00 [INF] Now listening on: https://localhost:7143
+2022-09-21 21:01:34.173 +00:00 [INF] Now listening on: http://localhost:5106
+2022-09-21 21:01:34.176 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-21 21:01:34.177 +00:00 [INF] Hosting environment: Development
+2022-09-21 21:01:34.177 +00:00 [INF] Content root path: /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi
+2022-09-21 21:01:34.965 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - -
+2022-09-21 21:01:35.161 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - - - 200 - text/html;charset=utf-8 199.7396ms
+2022-09-21 21:01:35.620 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - -
+2022-09-21 21:01:35.828 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 208.2175ms
+2022-09-21 21:01:44.378 +00:00 [INF] Request starting HTTP/2 GET https://localhost:7143/api/account/KollibroMan - -
+2022-09-21 21:01:44.507 +00:00 [INF] Executing endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 21:01:44.548 +00:00 [INF] Route matched with {action = "GetUserInfo", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo(System.String) on controller MangaLibApi.Controllers.AccountController (MangaLibApi).
+2022-09-21 21:01:49.097 +00:00 [INF] Executing OkObjectResult, writing value of type 'MangaLibApp.Models.AccountDto'.
+2022-09-21 21:01:49.151 +00:00 [INF] Executed action MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi) in 4586.3712ms
+2022-09-21 21:01:49.161 +00:00 [INF] Executed endpoint 'MangaLibApi.Controllers.AccountController.GetUserInfo (MangaLibApi)'
+2022-09-21 21:01:49.209 +00:00 [INF] Request finished HTTP/2 GET https://localhost:7143/api/account/KollibroMan - - - 200 - application/json;+charset=utf-8 4831.3048ms
+2022-09-21 21:02:18.501 +00:00 [INF] Application is shutting down...

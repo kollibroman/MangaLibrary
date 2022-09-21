@@ -26,6 +26,9 @@ namespace MangaLibApp.Mappings
             CreateMap<UploadChapterDto, Chapter>();
             CreateMap<UploadPageDto, Page>();
             CreateMap<UploadCoverDto, Cover>();
+
+            CreateMap<User, AccountDto>();
+            CreateMap<Role, RoleDto>();
         }
     }
 }
