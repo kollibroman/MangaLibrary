@@ -43,7 +43,6 @@ C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibCore/obj/Debug/net6.0
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/bin/Debug/net6.0/MangaLibCore.deps.json
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/bin/Debug/net6.0/MangaLibCore.runtimeconfig.json
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/bin/Debug/net6.0/MangaLibCore.dll
-/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/bin/Debug/net6.0/ref/MangaLibCore.dll
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/bin/Debug/net6.0/MangaLibCore.pdb
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/obj/Debug/net6.0/MangaLibCore.csproj.AssemblyReference.cache
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/obj/Debug/net6.0/MangaLibCore.GeneratedMSBuildEditorConfig.editorconfig
@@ -54,3 +53,4 @@ C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibCore/obj/Debug/net6.0
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/obj/Debug/net6.0/ref/MangaLibCore.dll
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/obj/Debug/net6.0/MangaLibCore.pdb
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/obj/Debug/net6.0/MangaLibCore.genruntimeconfig.cache
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/obj/Debug/net6.0/refint/MangaLibCore.dll

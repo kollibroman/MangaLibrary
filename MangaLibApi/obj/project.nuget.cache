@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IyL6eL5NBomjTX2TU+XiZcva08/NW8K+qGMvPhdqrtMUvXUD2G3eindbFKrcTvgJhiwCIFV5VKdGlqrqrUtUjw==",
+  "dgSpecHash": "6Hpaa2N9XA2gqCgLUyr2puBBzXkCooqWarY+Gq+M1TyowIfG4ig4LbsrgUFQgGtu43trONd6rQatm7qxbPr7Wg==",
   "success": true,
   "projectFilePath": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/MangaLibApi.csproj",
   "expectedPackageFiles": [
@@ -170,7 +170,10 @@
     "/home/kollibro_man/.nuget/packages/system.threading.timer/4.3.0/system.threading.timer.4.3.0.nupkg.sha512",
     "/home/kollibro_man/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512",
     "/home/kollibro_man/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "/home/kollibro_man/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512"
+    "/home/kollibro_man/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
+    "/home/kollibro_man/.nuget/packages/microsoft.netcore.app.ref/6.0.11/microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
+    "/home/kollibro_man/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.11/microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "/home/kollibro_man/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.11/microsoft.netcore.app.host.linux-x64.6.0.11.nupkg.sha512"
   ],
   "logs": []
 }

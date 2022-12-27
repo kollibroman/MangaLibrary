@@ -45,7 +45,6 @@ C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/
 C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.pdb
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net6.0/MangaLibApp.deps.json
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net6.0/MangaLibApp.dll
-/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net6.0/ref/MangaLibApp.dll
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net6.0/MangaLibApp.pdb
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net6.0/MangaLibCore.dll
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net6.0/MangaLibCore.pdb
@@ -58,3 +57,4 @@ C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApp/obj/Debug/net6.0/
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.dll
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net6.0/ref/MangaLibApp.dll
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net6.0/MangaLibApp.pdb
+/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net6.0/refint/MangaLibApp.dll

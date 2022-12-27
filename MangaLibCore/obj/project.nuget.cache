@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kc5fD+AavtSPjQGxKrDOMlZIAN60+D+Jm4B31zBXpYWQRaCmDcbmSKQOZ5xcG2h/4S6FubExb4N/E/LoV+em8Q==",
+  "dgSpecHash": "yHPvstiG+vVJPHrAyG25rI1MtdvrNnDpibqAp2H/Cx3HGAtheFdMiJ5WT1ht09pVnrszitViPcT6eF31gGW5WA==",
   "success": true,
   "projectFilePath": "/home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibCore/MangaLibCore.csproj",
   "expectedPackageFiles": [
@@ -48,7 +48,9 @@
     "/home/kollibro_man/.nuget/packages/system.security.permissions/4.7.0/system.security.permissions.4.7.0.nupkg.sha512",
     "/home/kollibro_man/.nuget/packages/system.security.principal.windows/4.7.0/system.security.principal.windows.4.7.0.nupkg.sha512",
     "/home/kollibro_man/.nuget/packages/system.text.encoding.codepages/4.7.0/system.text.encoding.codepages.4.7.0.nupkg.sha512",
-    "/home/kollibro_man/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512"
+    "/home/kollibro_man/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512",
+    "/home/kollibro_man/.nuget/packages/microsoft.netcore.app.ref/6.0.11/microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
+    "/home/kollibro_man/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.11/microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512"
   ],
   "logs": []
 }

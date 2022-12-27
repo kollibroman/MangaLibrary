@@ -77,7 +77,7 @@ namespace MangaLibApi.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> ActionName([FromRoute]int id, [FromBody] UpdateMangaDto dto)
+        public async Task<IActionResult> UpdateManga([FromRoute]int id, [FromBody] UpdateMangaDto dto)
         {
           if(!ModelState.IsValid)
             {
