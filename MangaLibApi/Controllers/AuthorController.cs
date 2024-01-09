@@ -21,46 +21,47 @@ namespace MangaLibApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAuthors([FromQuery] PaginationFilter paginationFilter)
+        public async Task<IActionResult> GetAuthors([FromQuery] PaginationFilter paginationFilter, CancellationToken ct)
         {
             var route = Request.Path.Value;
+
+            if (route is null)
+            {
+                return BadRequest();
+            }
+            
             var validFilter = new PaginationFilter(paginationFilter.PageNumber, paginationFilter.PageSize);
 
-            var authors = await _service.GetAll(validFilter);
-            var authorsCount = await _service.GetTotalRecords();
+            var authors = await _service.GetAll(validFilter, ct);
+            var authorsCount= await _service.GetTotalRecords(ct);
 
-            var pagedResponse = PaginationHelper.CreatePagedReponse<AuthorDto>(authors, validFilter, authorsCount, _uriService, route);
+            var pagedResponse = PaginationHelper.CreatePagedReponse(authors, validFilter, authorsCount, _uriService, route);
             return Ok(pagedResponse);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetAuthorById([FromRoute] int id)
+        public async Task<IActionResult> GetAuthorById([FromRoute] int id, CancellationToken ct)
         {
-            var author = await _service.GetById(id);
-
-            if(author is null)
-            {
-                return NotFound();
-            }
+            var author = await _service.GetById(id, ct);
 
             return Ok(new Response<AuthorDto>(author));
         }
         
         [HttpPost]
-        public async Task<IActionResult> CreateAuthor([FromBody] CreateAuthorDto dto)
+        public async Task<IActionResult> CreateAuthor([FromBody] CreateAuthorDto dto, CancellationToken ct)
         {
-            await _service.Create(dto);
+            await _service.Create(dto, ct);
             return Created($"/api/author/name/{dto.Name}", null);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateAuthor([FromRoute] int id, [FromBody] UpdateAuthorDto dto)
+        public async Task<IActionResult> UpdateAuthor([FromRoute] int id, [FromBody] UpdateAuthorDto dto, CancellationToken ct)
         {
             if(!ModelState.IsValid)
             {
                 return BadRequest("You are retarded!");
             }
-            var isUpdated = await _service.Update(id, dto);
+            var isUpdated = await _service.Update(id, dto, ct);
 
             if(!isUpdated)
             {
@@ -70,9 +71,9 @@ namespace MangaLibApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteAuthor([FromRoute] int id)
+        public async Task<IActionResult> DeleteAuthor([FromRoute] int id, CancellationToken ct)
         {
-            var isDeleted = await _service.Delete(id);
+            var isDeleted = await _service.Delete(id, ct);
 
             if(isDeleted)
             {

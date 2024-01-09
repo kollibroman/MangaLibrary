@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/blazor.webassembly.js",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
+    },
+    {
+      "Id": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/95fkzlzq0j.gz",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/scopedcss/bundle/MangaLibClient.styles.css",
+      "PackagePath": "staticwebassets/MangaLibClient.styles.css"
+    },
+    {
+      "Id": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/wwwroot/css/app.css",
+      "PackagePath": "staticwebassets/css/app.css"
+    },
+    {
+      "Id": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/wwwroot/css/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/wwwroot/icon-192.png",
+      "PackagePath": "staticwebassets/icon-192.png"
+    },
+    {
+      "Id": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/wwwroot/sample-data/weather.json",
+      "PackagePath": "staticwebassets/sample-data/weather.json"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.MangaLibClient.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.MangaLibClient.props",
+      "PackagePath": "build\\MangaLibClient.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.MangaLibClient.props",
+      "PackagePath": "buildMultiTargeting\\MangaLibClient.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.MangaLibClient.props",
+      "PackagePath": "buildTransitive\\MangaLibClient.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

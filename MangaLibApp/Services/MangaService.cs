@@ -10,44 +10,47 @@ namespace MangaLibApp.Services
 {
     public class MangaService : IMangaService
     {
-        private readonly MangaLibDbContext _dbcontext;
+        private readonly MangaLibDbContext _dbContext;
         private readonly IMapper _mapper;
         private readonly ITagService _service;
 
-        public MangaService(MangaLibDbContext dbcontext, IMapper  mapper, ITagService service)
+        public MangaService(MangaLibDbContext dbContext, IMapper  mapper, ITagService service)
         {
-            _dbcontext = dbcontext;
+            _dbContext = dbContext;
             _mapper = mapper;
             _service = service;
         }
-        public async Task<List<MangaDto>> GetAll(PaginationFilter filter)
+        public async Task<List<MangaDto>> GetAll(PaginationFilter filter, CancellationToken ct)
         {
             var validFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
-            var mangas = await _dbcontext.Mangas
+            
+            var mangas = await _dbContext.Mangas
             .Include(c => c.Cover)
             .Skip((validFilter.PageNumber - 1) * validFilter.PageSize)
             .Take(validFilter.PageSize)
-            .ToListAsync();
+            .ToListAsync(ct);
+            
             return _mapper.Map<List<MangaDto>>(mangas);
         }
 
-        public Task<int> GetTotalRecords()
+        public Task<int> GetTotalRecords(CancellationToken ct)
         {
-            return _dbcontext.Mangas.CountAsync();
+            return _dbContext.Mangas.CountAsync(ct);
         }
 
-        public async Task<MangaDto> GetById(int id)
+        public async Task<MangaDto> GetById(int id, CancellationToken ct)
         {
-            var manga = await _dbcontext.Mangas
+            var manga = await _dbContext.Mangas
             .Include(c => c.Cover)
             .Where(c => c.Cover.MangaName == c.Title)
-            .SingleOrDefaultAsync(i => i.Id == id);
+            .SingleOrDefaultAsync(i => i.Id == id, ct);
+            
             return _mapper.Map<MangaDto>(manga);
         }
 
-        public async Task<bool> Update(int id, UpdateMangaDto dto)
+        public async Task<bool> Update(int id, UpdateMangaDto dto, CancellationToken ct)
         {
-            var manga = await _dbcontext.Mangas.FirstOrDefaultAsync(i => i.Id == id);
+            var manga = await _dbContext.Mangas.FirstOrDefaultAsync(i => i.Id == id, ct);
 
             if(manga is null) 
                 return false;
@@ -55,28 +58,28 @@ namespace MangaLibApp.Services
             manga.Title = dto.Title;
             manga.UpdatedAt = DateTime.Now;
             manga.ChaptersCount = dto.ChaptersCount;
-            await _dbcontext.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync(ct);
             
             return true;
         }
-        public async Task Create(CreateMangaDto dto)
+        public async Task Create(CreateMangaDto dto, CancellationToken ct)
         {
 
            var manga = _mapper.Map<Manga>(dto);
 
-           await _dbcontext.AddAsync(manga);
-           await _dbcontext.SaveChangesAsync();
+           await _dbContext.AddAsync(manga, ct);
+           await _dbContext.SaveChangesAsync(ct);
         }
 
-        public async Task<bool> Delete(int id)
+        public async Task<bool> Delete(int id, CancellationToken ct)
         {
-            var manga = await  _dbcontext.Mangas.SingleOrDefaultAsync(i => i.Id == id);
+            var manga = await  _dbContext.Mangas.SingleOrDefaultAsync(i => i.Id == id, ct);
 
             if(manga is null) 
                 return false;
 
-            _dbcontext.Remove(manga);
-            await _dbcontext.SaveChangesAsync();
+            _dbContext.Remove(manga);
+            await _dbContext.SaveChangesAsync(ct);
             return true;
         }
 

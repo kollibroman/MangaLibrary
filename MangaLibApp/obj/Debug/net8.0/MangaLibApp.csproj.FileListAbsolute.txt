@@ -1,0 +1,16 @@
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net8.0/MangaLibApp.deps.json
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net8.0/MangaLibApp.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net8.0/MangaLibApp.pdb
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net8.0/MangaLibCore.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/bin/Debug/net8.0/MangaLibCore.pdb
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net8.0/MangaLibApp.csproj.AssemblyReference.cache
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net8.0/MangaLibApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net8.0/MangaLibApp.AssemblyInfoInputs.cache
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net8.0/MangaLibApp.AssemblyInfo.cs
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net8.0/MangaLibApp.csproj.CoreCompileInputs.cache
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net8.0/MangaLibApp.sourcelink.json
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net8.0/MangaLibApp.csproj.CopyComplete
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net8.0/MangaLibApp.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net8.0/refint/MangaLibApp.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net8.0/MangaLibApp.pdb
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApp/obj/Debug/net8.0/ref/MangaLibApp.dll

@@ -55,7 +55,7 @@ namespace MangaLibCore.Migrations
                             Name = "Kei",
                             Surname = "Urana",
                             Type = 7,
-                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(7736)
+                            UpdatedAt = new DateTime(2023, 10, 4, 18, 12, 19, 351, DateTimeKind.Utc).AddTicks(4711)
                         },
                         new
                         {
@@ -63,7 +63,7 @@ namespace MangaLibCore.Migrations
                             Name = "Kouhei",
                             Surname = "Horikoshi",
                             Type = 7,
-                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(7760)
+                            UpdatedAt = new DateTime(2023, 10, 4, 18, 12, 19, 351, DateTimeKind.Utc).AddTicks(4713)
                         },
                         new
                         {
@@ -71,7 +71,7 @@ namespace MangaLibCore.Migrations
                             Name = "KAGYU",
                             Surname = "Kumo",
                             Type = 7,
-                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(7774)
+                            UpdatedAt = new DateTime(2023, 10, 4, 18, 12, 19, 351, DateTimeKind.Utc).AddTicks(4715)
                         },
                         new
                         {
@@ -79,7 +79,7 @@ namespace MangaLibCore.Migrations
                             Name = "Yabako",
                             Surname = "Sandrovich",
                             Type = 7,
-                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(7792)
+                            UpdatedAt = new DateTime(2023, 10, 4, 18, 12, 19, 351, DateTimeKind.Utc).AddTicks(4716)
                         },
                         new
                         {
@@ -87,7 +87,7 @@ namespace MangaLibCore.Migrations
                             Name = "Minami",
                             Surname = "Katsuhisa",
                             Type = 7,
-                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(7811)
+                            UpdatedAt = new DateTime(2023, 10, 4, 18, 12, 19, 351, DateTimeKind.Utc).AddTicks(4717)
                         });
                 });
 
@@ -259,7 +259,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "01/11/2014",
                             Title = "The Fable",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Utc).AddTicks(8178)
+                            UpdatedAt = new DateTime(2023, 10, 4, 18, 12, 19, 351, DateTimeKind.Utc).AddTicks(4899)
                         },
                         new
                         {
@@ -271,7 +271,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Bocu no Pico Academia",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Local).AddTicks(8225)
+                            UpdatedAt = new DateTime(2023, 10, 4, 20, 12, 19, 351, DateTimeKind.Local).AddTicks(4906)
                         },
                         new
                         {
@@ -283,7 +283,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Goblin Slayer",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Local).AddTicks(8274)
+                            UpdatedAt = new DateTime(2023, 10, 4, 20, 12, 19, 351, DateTimeKind.Local).AddTicks(4959)
                         },
                         new
                         {
@@ -295,7 +295,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Kengan Ashua",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Local).AddTicks(8292)
+                            UpdatedAt = new DateTime(2023, 10, 4, 20, 12, 19, 351, DateTimeKind.Local).AddTicks(4963)
                         },
                         new
                         {
@@ -307,7 +307,7 @@ namespace MangaLibCore.Migrations
                             PublishedAt = "",
                             Title = "Fire Force",
                             Type = 0,
-                            UpdatedAt = new DateTime(2022, 9, 19, 16, 51, 58, 389, DateTimeKind.Local).AddTicks(8312)
+                            UpdatedAt = new DateTime(2023, 10, 4, 20, 12, 19, 351, DateTimeKind.Local).AddTicks(4968)
                         });
                 });
 

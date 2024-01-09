@@ -19,36 +19,32 @@ namespace MangaLibApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetChapterFromMangaName([FromQuery] string MangaName)
+        public async Task<IActionResult> GetChapterFromMangaName([FromQuery] string mangaName, CancellationToken ct)
         {
-            var pages = await _service.GetAllFromManga(MangaName);
+            var pages = await _service.GetAllFromManga(mangaName, ct);
             return Ok(new Response<List<PageDto>>(pages));
         }
 
         [HttpGet("{ChapterName}")]
-        public async Task<IActionResult> GetChapterByName([FromRoute]int PageNumber)
+        public async Task<IActionResult> GetChapterByName([FromRoute]int pageNumber, CancellationToken ct)
         {
-           var page = await _service.GetByNumber(PageNumber);
+           var page = await _service.GetByNumber(pageNumber, ct);
            
-           if(page is null)
-           {
-                return NotFound();
-           }
-
            return Ok(new Response<PageDto>(page));
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteChapter([FromRoute] int id)
+        public async Task<IActionResult> DeleteChapter([FromRoute] int id, CancellationToken ct)
         {
-           var isDeleted = await _service.Delete(id);
+           var isDeleted = await _service.Delete(id, ct);
 
            if(!isDeleted)
            {
-            _logger.LogError("DUPA");
+                _logger.LogError("DUPA");
                 return NotFound();
            }
-            _logger.LogInformation("NIEDUPA");
+           
+           _logger.LogInformation("NIEDUPA");
            return NoContent();
         }
     }

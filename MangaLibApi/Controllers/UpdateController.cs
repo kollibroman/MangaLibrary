@@ -14,9 +14,9 @@ namespace MangaLibApi.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateCover([FromRoute] int id, IFormFile file)
+        public async Task<IActionResult> UpdateCover([FromRoute] int id, IFormFile file, CancellationToken ct)
         {
-            var isUpdated = await _service.UpdateCover(id, file);
+            var isUpdated = await _service.UpdateCover(id, file, ct);
 
             if(!isUpdated)
             {

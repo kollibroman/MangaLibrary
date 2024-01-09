@@ -1,4 +1,3 @@
-using System.Reflection.Metadata.Ecma335;
 using MangaLibApp.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,27 +17,27 @@ namespace MangaLibApi.Controllers
         }
 
         [HttpPost("page")]
-        public async Task<IActionResult> UploadPage(IFormFile file, int pageNumber, [FromQuery]string MangaName)
+        public async Task<IActionResult> UploadPage(IFormFile file, int pageNumber, [FromQuery]string mangaName, CancellationToken ct)
         {
-            await _service.UploadPageAsync(file, pageNumber, MangaName);
+            await _service.UploadPageAsync(file, pageNumber, mangaName, ct);
 
             _logger.LogInformation("NIEDUPA");
-            return Created($"api/page/{MangaName}", null);
+            return Created($"api/page/{mangaName}", null);
         }
 
         [HttpPost("chapter")]
-        public async Task<IActionResult> UploadChapter(List<IFormFile> files, string ChapterName, string MangaName)
+        public async Task<IActionResult> UploadChapter(List<IFormFile> files, [FromQuery]string chapterName, [FromQuery]string mangaName, CancellationToken ct)
         {
-           await _service.UploadChapterAsync(files, ChapterName, MangaName);
+           await _service.UploadChapterAsync(files, chapterName, mangaName, ct);
 
             _logger.LogInformation("NIEDUPA");
-            return Created($"api/chapter/{ChapterName}", null);
+            return Created($"api/chapter/{chapterName}", null);
         }
 
         [HttpPost("cover")]
-        public async Task<IActionResult> UploadCover(IFormFile file, [FromQuery]string fileName,[FromQuery]string mangaName)
+        public async Task<IActionResult> UploadCover(IFormFile file, [FromQuery]string fileName,[FromQuery]string mangaName, CancellationToken ct)
         {
-           await _service.UploadCoverAsync(file, fileName,mangaName);
+           await _service.UploadCoverAsync(file, fileName,mangaName, ct);
 
            _logger.LogInformation("NIEDUPA");
            return Created($"api/cover/{mangaName}", null);

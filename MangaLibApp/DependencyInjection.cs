@@ -1,14 +1,10 @@
 using System.Reflection;
 using MangaLibApp.Helpers;
 using MangaLibApp.Interfaces;
-using MangaLibApp.Interfaces.Client;
 using MangaLibApp.Services;
-using MangaLibApp.Services.Client;
 using MangaLibCore;
 using Microsoft.AspNetCore.Http;
-using System.Net.Http;
 using Microsoft.Extensions.DependencyInjection;
-using System.Net.Http.Headers;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using MangaLibApp.Models;
@@ -39,22 +35,6 @@ namespace MangaLibApp
 
             services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
             services.AddScoped<IValidator<RegisterUserDto>, RegisterUserDtoValidator>();
-
-            services.AddScoped<IAuthorClientService, AuthorClientService>();
-            services.AddScoped<IChapterClientService, ChapterClientService>();
-            services.AddScoped<ICoverClientService, CoverClientService>();
-            services.AddScoped<IMangaClientService, MangaClientService>();
-            services.AddScoped<IPageClientService, PageClientService>();
-            services.AddScoped<IUpdateClientService, UpdateClientService>();
-            services.AddScoped<IUploadClientService, UploadClientService>();
-
-            services.AddHttpClient<IAuthorClientService, AuthorClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
-            services.AddHttpClient<IChapterClientService, ChapterClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
-            services.AddHttpClient<ICoverClientService, CoverClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
-            services.AddHttpClient<IMangaClientService, MangaClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
-            services.AddHttpClient<IPageClientService, PageClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
-            services.AddHttpClient<IUpdateClientService, UpdateClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
-            services.AddHttpClient<IUploadClientService, UploadClientService>(c => c.BaseAddress = new Uri("https://localhost:5001"));
 
             services.AddScoped<IEfCoreExtensions, EfCoreExtensions>();
 

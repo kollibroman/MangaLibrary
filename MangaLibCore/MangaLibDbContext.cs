@@ -5,7 +5,7 @@ namespace MangaLibCore
 {
     public class MangaLibDbContext : DbContext
     {
-        private string _connectionstring = "Server=127.0.0.1;Port=5432;Database=MangaDb;User Id=postgres;Password=Miau8888; Include Error Detail=true;";
+        private string _connectionstring = "Server=127.0.0.1;Port=5432;Database=LibDb;User Id=postgres;Password=Miau8888; Include Error Detail=true;";
         public DbSet<Manga> Mangas { get; set; }
         public DbSet<Page> Pages { get; set; }
         public DbSet<Author> Authors { get; set; }

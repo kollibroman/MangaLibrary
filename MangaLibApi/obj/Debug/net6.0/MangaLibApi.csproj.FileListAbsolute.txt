@@ -4,7 +4,6 @@
 /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/MangaLibApi.deps.json
 /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/MangaLibApi.runtimeconfig.json
 /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/MangaLibApi.dll
-/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/ref/MangaLibApi.dll
 /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/MangaLibApi.pdb
 /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
 /home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -248,3 +247,18 @@ C:/Users/Filip Kwiek/Documents/GitHub/MangaLibrary/MangaLibApi/obj/Debug/net6.0/
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/FluentValidation.AspNetCore.dll
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/FluentValidation.DependencyInjectionExtensions.dll
 /home/kollibro_man/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/FluentValidation.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/FluentValidation.AspNetCore.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/FluentValidation.DependencyInjectionExtensions.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/System.Net.Http.Formatting.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Microsoft.Tye.Extensions.Configuration.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Newtonsoft.Json.Bson.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Npgsql.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/obj/Debug/net6.0/staticwebassets/msbuild.MangaLibApi.Microsoft.AspNetCore.StaticWebAssets.props
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/obj/Debug/net6.0/staticwebassets/msbuild.build.MangaLibApi.props
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.MangaLibApi.props
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.MangaLibApi.props
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/obj/Debug/net6.0/staticwebassets.pack.json
+/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibApi/obj/Debug/net6.0/refint/MangaLibApi.dll

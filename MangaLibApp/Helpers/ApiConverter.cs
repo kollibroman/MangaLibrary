@@ -5,10 +5,10 @@ namespace MangaLibApp.Helpers
 {
     public class ApiConverter : IApiConverter
     {
-        public async Task<byte[]> convertToByte(IFormFile file)
+        public async Task<byte[]> ConvertToByte(IFormFile file, CancellationToken ct)
         {
             MemoryStream ms = new();
-            await file.CopyToAsync(ms);
+            await file.CopyToAsync(ms, ct);
             var byteArr = ms.ToArray();
 
             await ms.DisposeAsync();
@@ -17,7 +17,7 @@ namespace MangaLibApp.Helpers
             return byteArr;
         }
 
-        public async Task<IFormFile> convertToFile(byte[] byteArr, string title, string fileName)
+        public IFormFile ConvertToFile(byte[] byteArr, string title, string fileName)
         {
             var stream = new MemoryStream(byteArr);
 

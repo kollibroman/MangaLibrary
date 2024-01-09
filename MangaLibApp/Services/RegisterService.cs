@@ -3,14 +3,12 @@ using System.Security.Claims;
 using System.Text;
 using MangaLibApp.Exceptions;
 using MangaLibApp.Interfaces;
-using MangaLibApp.Mappings;
 using MangaLibApp.Models;
 using MangaLibCore;
 using MangaLibCore.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.JSInterop.Infrastructure;
 
 namespace MangaLibApp.Services;
 
@@ -26,10 +24,8 @@ public class RegisterService : IRegisterService
         _hasher = hasher;
         _authSettings = authSettings;
     }
-    public async Task RegisterUser(RegisterUserDto dto)
+    public async Task RegisterUser(RegisterUserDto dto, CancellationToken ct)
     {
-        
-        
         var newUser = new User()
         {
             Email = dto.Email,
@@ -42,15 +38,15 @@ public class RegisterService : IRegisterService
         var hashedPassword = _hasher.HashPassword(newUser, dto.Password);
         newUser.PasswordHash = hashedPassword;
 
-        await _db.Users.AddAsync(newUser);
-        await _db.SaveChangesAsync();
+        await _db.Users.AddAsync(newUser, ct);
+        await _db.SaveChangesAsync(ct);
     }
 
-    public async Task<string> GenerateKJwt(LoginDto dto)
+    public async Task<string> GenerateKJwt(LoginDto dto, CancellationToken ct)
     {
         var user = await _db.Users
             .Include(r => r.Role)
-            .FirstOrDefaultAsync(e => e.Email == dto.Email);
+            .FirstOrDefaultAsync(e => e.Email == dto.Email, ct);
 
         if (user is null)
         {
@@ -68,7 +64,7 @@ public class RegisterService : IRegisterService
             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
             new Claim(ClaimTypes.Name, $"{user.FirstName} {user.LastName}"),
             new Claim(ClaimTypes.Role, $"{user.Role.Name}"),
-            new Claim("DateOfBirth", user.DateOfBirth.Value.ToString("yyyy-MM-dd")),
+            new Claim("DateOfBirth", user.DateOfBirth!.Value.ToString("yyyy-MM-dd")),
         };
 
         var key = new SymmetricSecurityKey((Encoding.UTF8.GetBytes(_authSettings.JwtKey)));

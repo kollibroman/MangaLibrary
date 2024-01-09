@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaLibApp", "MangaLibApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaLibApi", "MangaLibApi\MangaLibApi.csproj", "{E45AC662-E26A-419E-8B9D-543F2D96EB64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaLibMVC", "MangaLibMVC\MangaLibMVC.csproj", "{A7782F51-C678-4FAD-AEE1-C4CFC052B9FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaLibClient", "MangaLibClient\MangaLibClient.csproj", "{287CF5EE-41F2-4E1A-B53E-4E7296502CA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,9 +36,9 @@ Global
 		{E45AC662-E26A-419E-8B9D-543F2D96EB64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E45AC662-E26A-419E-8B9D-543F2D96EB64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E45AC662-E26A-419E-8B9D-543F2D96EB64}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A7782F51-C678-4FAD-AEE1-C4CFC052B9FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7782F51-C678-4FAD-AEE1-C4CFC052B9FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7782F51-C678-4FAD-AEE1-C4CFC052B9FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7782F51-C678-4FAD-AEE1-C4CFC052B9FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{287CF5EE-41F2-4E1A-B53E-4E7296502CA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287CF5EE-41F2-4E1A-B53E-4E7296502CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287CF5EE-41F2-4E1A-B53E-4E7296502CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287CF5EE-41F2-4E1A-B53E-4E7296502CA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

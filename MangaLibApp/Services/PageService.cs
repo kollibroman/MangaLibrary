@@ -1,5 +1,4 @@
 using AutoMapper;
-using MangaLibApp.Filter;
 using MangaLibApp.Interfaces;
 using MangaLibApp.Models;
 using MangaLibCore;
@@ -18,35 +17,35 @@ namespace MangaLibApp.Services
             _db = db;
         }
 
-        public async Task<List<PageDto>> GetAllFromManga(string MangaName)
+        public async Task<List<PageDto>> GetAllFromManga(string mangaName, CancellationToken ct)
         {
             var pages = await _db.Pages
-                .Where(n => n.MangaName == MangaName)
+                .Where(n => n.MangaName == mangaName)
                 .OrderBy(p => p.PageNumber)
-                .ToListAsync();
+                .ToListAsync(ct);
             return _mapper.Map<List<PageDto>>(pages);
         }
 
-        public async Task<PageDto> GetByNumber(int PageNumber)
+        public async Task<PageDto> GetByNumber(int pageNumber, CancellationToken ct)
         {
              var page = await _db.Pages
-               .SingleOrDefaultAsync(c => c.PageNumber == PageNumber);
+               .SingleOrDefaultAsync(c => c.PageNumber == pageNumber, ct);
             return _mapper.Map<PageDto>(page);
         }
 
-        public async Task<int> GetTotalRecordsFromManga(string MangaName)
+        public async Task<int> GetTotalRecordsFromManga(string mangaName, CancellationToken ct)
         {
-            return await _db.Pages.Where(m => m.MangaName == MangaName).CountAsync();
+            return await _db.Pages.Where(m => m.MangaName == mangaName).CountAsync(ct);
         }
-        public async Task<bool> Delete(int id)
+        public async Task<bool> Delete(int id, CancellationToken ct)
         {
-           var page = await _db.Pages.SingleOrDefaultAsync(i => i.Id == id);
+           var page = await _db.Pages.SingleOrDefaultAsync(i => i.Id == id, ct);
 
             if(page is null)
                 return false;
             
             _db.Remove(page);
-            await _db.SaveChangesAsync();
+            await _db.SaveChangesAsync(ct);
             return true;
         }
 

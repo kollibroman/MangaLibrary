@@ -1,5 +1,4 @@
 using AutoMapper;
-using MangaLibApp.Filter;
 using MangaLibApp.Interfaces;
 using MangaLibApp.Models;
 using MangaLibCore;
@@ -18,37 +17,37 @@ namespace MangaLibApp.Services
             _mapper = mapper;
         }
 
-        public async Task<List<ChapterDto>> GetAllFromManga(string MangaName)
+        public async Task<List<ChapterDto>> GetAllFromManga(string mangaName, CancellationToken ct)
         {
                 var chapters = await _db.Chapters
                 .Include(p => p.Pages)
-                .Where(m => m.MangaName == MangaName)
+                .Where(m => m.MangaName == mangaName)
                 .OrderBy(i => i.Id)
-                .ToListAsync();
+                .ToListAsync(ct);
 
                 return _mapper.Map<List<ChapterDto>>(chapters);
         }
 
-        public async Task<ChapterDto> GetById(int id)
+        public async Task<ChapterDto> GetById(int id, CancellationToken ct)
         {
             var chapter = await _db.Chapters
-               .SingleOrDefaultAsync(c => c.Id == id);
+               .SingleOrDefaultAsync(c => c.Id == id, ct);
             return _mapper.Map<ChapterDto>(chapter);
         }
 
-        public async Task<int> GetTotalRecordsFromManga(string MangaName)
+        public async Task<int> GetTotalRecordsFromManga(string mangaName, CancellationToken ct)
         {
-            return await _db.Chapters.Where(m => m.MangaName == MangaName).CountAsync();
+            return await _db.Chapters.Where(m => m.MangaName == mangaName).CountAsync(ct);
         }
-        public async Task<bool> Delete(int id)
+        public async Task<bool> Delete(int id, CancellationToken ct)
         {
-            var chapter = await _db.Chapters.SingleOrDefaultAsync(i => i.Id == id);
+            var chapter = await _db.Chapters.SingleOrDefaultAsync(i => i.Id == id, ct);
 
             if(chapter is null)
                 return false;
             
             _db.Remove(chapter);
-            await _db.SaveChangesAsync();
+            await _db.SaveChangesAsync(ct);
             return true;
         }
     }

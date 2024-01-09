@@ -1,14 +1,12 @@
-using MangaLibApp.Filter;
 using MangaLibApp.Models;
-using Microsoft.AspNetCore.Http;
 
 namespace MangaLibApp.Interfaces
 {
     public interface IChapterService
     {
-        Task<List<ChapterDto>> GetAllFromManga(string MangaName);
-        Task<ChapterDto> GetById(int id);
-        Task<bool> Delete(int id);
-        Task<int> GetTotalRecordsFromManga(string MangaName);
+        Task<List<ChapterDto>> GetAllFromManga(string mangaName, CancellationToken ct);
+        Task<ChapterDto> GetById(int id, CancellationToken ct);
+        Task<bool> Delete(int id, CancellationToken ct);
+        Task<int> GetTotalRecordsFromManga(string mangaName, CancellationToken ct);
     }
 }

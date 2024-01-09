@@ -4,7 +4,7 @@ namespace MangaLibApp.Interfaces
 {
     public interface IApiConverter
     {
-        Task<byte[]> convertToByte(IFormFile file);
-        Task<IFormFile> convertToFile(byte[] byteArr, string title, string fileName);
+        Task<byte[]> ConvertToByte(IFormFile file, CancellationToken ct);
+        IFormFile ConvertToFile(byte[] byteArr, string title, string fileName);
     }
 }

@@ -14,9 +14,10 @@ namespace MangaLibApp.Helpers
             _db = db;
         }
 
-        public async Task<Tag> AddAsync(Tag tag)
+        public async Task<Tag> AddAsync(Tag tag, CancellationToken ct)
         {
-            await _db.Tags.AddAsync(tag);
+            await _db.Tags.AddAsync(tag, ct);
+            await _db.SaveChangesAsync(ct);
             return tag;
         }
     }

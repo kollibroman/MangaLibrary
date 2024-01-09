@@ -1,6 +1,5 @@
 using AutoMapper;
 using MangaLibApp.Interfaces;
-using MangaLibApp.Models;
 using MangaLibCore;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
@@ -21,26 +20,29 @@ namespace MangaLibApp.Services
             _converter = converter;
             _service = service;
         }
-
-        public Task UpdatePage(int id, IFormFile file)
+        
+        //TODO: zaimplementowac
+        public Task UpdatePage(int id, IFormFile file, CancellationToken ct)
         {
             throw new NotImplementedException();
         }
-        public Task UpdateChapter(int id, IFormFile file)
+        
+        //TODO: zaimplementowac
+        public Task UpdateChapter(int id, IFormFile file, CancellationToken ct)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<bool> UpdateCover(int id, IFormFile file)
+        public async Task<bool> UpdateCover(int id, IFormFile file, CancellationToken ct)
         {
-            var cover = await _db.Cover.SingleOrDefaultAsync(i => i.Id == id);
+            var cover = await _db.Cover.SingleOrDefaultAsync(i => i.Id == id, ct);
 
             if(cover is null)
                 return false;
 
-            cover.Data = await _converter.convertToByte(file);
+            cover.Data = await _converter.ConvertToByte(file, ct);
 
-            await _db.SaveChangesAsync();
+            await _db.SaveChangesAsync(ct);
             return true;
         }
 

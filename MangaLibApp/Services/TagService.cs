@@ -1,8 +1,6 @@
 using AutoMapper;
-using MangaLibApp.Helpers;
 using MangaLibApp.Interfaces;
 using MangaLibApp.Models;
-using MangaLibApp.Wrappers;
 using MangaLibCore;
 using MangaLibCore.Entities;
 using MangaLibCore.Interfaces;
@@ -23,31 +21,31 @@ namespace MangaLibApp.Services
             _mapper = mapper;
         }
 
-        public async Task<TagDto> GetTagsAsync()
+        public async Task<TagDto> GetTagsAsync(CancellationToken ct)
         {
-            var Tags = await  _db.Tags.ToListAsync();
+            var tags = await  _db.Tags.ToListAsync(ct);
 
-            return _mapper.Map<TagDto>(Tags);
+            return _mapper.Map<TagDto>(tags);
         }
 
-        public async Task<TEntity> TagAsync<TEntity>(TEntity entity, string str) where TEntity : ITaggable
+        public async Task<TEntity> TagAsync<TEntity>(TEntity entity, string str, CancellationToken ct) where TEntity : ITaggable
         {
             string tag = str.Trim();
 
             if (entity.Tags.All(t => t.TagName != tag))
             {
-                var tagEntity = _db.Tags.FirstOrDefault(t => t.TagName == tag);
+                var tagEntity = await _db.Tags.FirstOrDefaultAsync(t => t.TagName == tag, ct);
 
                 if(tagEntity == null)
-                    tagEntity = await _ext.AddAsync(new Tag {TagName = tag});
+                    tagEntity = await _ext.AddAsync(new Tag {TagName = tag}, ct);
                 entity.Tags.Add(tagEntity);
             }
             return entity;
         }
 
-        public async Task<TEntity> UntagAsync<TEntity>(TEntity entity, string str) where TEntity : ITaggable
+        public async Task<TEntity> UntagAsync<TEntity>(TEntity entity, string str, CancellationToken ct) where TEntity : ITaggable
         {
-            Tag tag = entity.Tags.FirstOrDefault(x => x.TagName == str);
+            var tag = await _db.Tags.FirstOrDefaultAsync(x => x.TagName == str, ct);
 
             if (tag != null)
                 entity.Tags.Remove(tag);
