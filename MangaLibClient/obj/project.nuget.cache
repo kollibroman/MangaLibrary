@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DSO19S1HcHvglYkx5B26IOhhstYEl7PDjDqX3hE1lJsbUc+7qZee1d/GtYpHODmaVcwbjJGPT5AcUL1vEVw4Eg==",
+  "dgSpecHash": "Kz0d+iuzEVxmB+Qf2zmQRfKZh4IJjDN5vRz4oe+gXVhDDz+nO4BQkC2RoNozabgngS+WUZv9pSEmoSv2DG4gVw==",
   "success": true,
   "projectFilePath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/MangaLibClient.csproj",
   "expectedPackageFiles": [
+    "/home/kollibroman/.nuget/packages/blazored.localstorage/4.4.0/blazored.localstorage.4.4.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.aspnetcore.authorization/8.0.0/microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.aspnetcore.components/8.0.0/microsoft.aspnetcore.components.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.aspnetcore.components.analyzers/8.0.0/microsoft.aspnetcore.components.analyzers.8.0.0.nupkg.sha512",
@@ -22,20 +23,22 @@
     "/home/kollibroman/.nuget/packages/microsoft.extensions.fileproviders.abstractions/8.0.0/microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.extensions.fileproviders.physical/8.0.0/microsoft.extensions.fileproviders.physical.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.extensions.filesystemglobbing/8.0.0/microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/microsoft.extensions.http/7.0.0/microsoft.extensions.http.7.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.extensions.logging/8.0.0/microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.jsinterop/8.0.0/microsoft.jsinterop.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.jsinterop.webassembly/8.0.0/microsoft.jsinterop.webassembly.8.0.0.nupkg.sha512",
-    "/home/kollibroman/.nuget/packages/microsoft.net.illink.tasks/8.0.0/microsoft.net.illink.tasks.8.0.0.nupkg.sha512",
-    "/home/kollibroman/.nuget/packages/microsoft.net.sdk.webassembly.pack/8.0.0/microsoft.net.sdk.webassembly.pack.8.0.0.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/microsoft.net.illink.tasks/8.0.2/microsoft.net.illink.tasks.8.0.2.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/microsoft.net.sdk.webassembly.pack/8.0.2/microsoft.net.sdk.webassembly.pack.8.0.2.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/refit/7.0.0/refit.7.0.0.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/refit.httpclientfactory/7.0.0/refit.httpclientfactory.7.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/system.net.http.json/7.0.1/system.net.http.json.7.0.1.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
-    "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.0/microsoft.netcore.app.runtime.mono.browser-wasm.8.0.0.nupkg.sha512"
+    "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.2/microsoft.netcore.app.runtime.mono.browser-wasm.8.0.2.nupkg.sha512"
   ],
   "logs": []
 }

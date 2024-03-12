@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wRo8AmYQdTalA5026empUrNXWLzoxe5j/J4at6MgOG0=",
+  "Hash": "ThH61HTngLZUPq31YGXwGzujyZffGWiegkmTENu6ELQ=",
   "Source": "MangaLibClient",
   "BasePath": "/",
   "Mode": "Root",
@@ -55,6 +55,25 @@
       "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.aspnetcore.components.webassembly/8.0.0/build/net8.0/blazor.webassembly.js"
     },
     {
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/Blazored.LocalStorage.wasm",
+      "SourceId": "MangaLibClient",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/webcil/Blazored.LocalStorage.wasm"
+    },
+    {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.js",
       "SourceId": "MangaLibClient",
       "SourceType": "Computed",
@@ -71,7 +90,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.0/runtimes/browser-wasm/native/dotnet.js"
+      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.1/runtimes/browser-wasm/native/dotnet.js"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.js.map",
@@ -90,15 +109,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.0/runtimes/browser-wasm/native/dotnet.js.map"
+      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.1/runtimes/browser-wasm/native/dotnet.js.map"
     },
     {
-      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.native.8.0.0.jcire74xz0.js",
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.native.8.0.1.s7ckcvrp65.js",
       "SourceId": "MangaLibClient",
       "SourceType": "Computed",
       "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.8.0.0.jcire74xz0.js",
+      "RelativePath": "_framework/dotnet.native.8.0.1.s7ckcvrp65.js",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,7 +128,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.0/runtimes/browser-wasm/native/dotnet.native.js"
+      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.1/runtimes/browser-wasm/native/dotnet.native.js"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.native.wasm",
@@ -128,15 +147,15 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.0/runtimes/browser-wasm/native/dotnet.native.wasm"
+      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.1/runtimes/browser-wasm/native/dotnet.native.wasm"
     },
     {
-      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.runtime.8.0.0.02zqakk9rn.js",
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.runtime.8.0.1.7yc2oava91.js",
       "SourceId": "MangaLibClient",
       "SourceType": "Computed",
       "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.8.0.0.02zqakk9rn.js",
+      "RelativePath": "_framework/dotnet.runtime.8.0.1.7yc2oava91.js",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,7 +166,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.0/runtimes/browser-wasm/native/dotnet.runtime.js"
+      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.1/runtimes/browser-wasm/native/dotnet.runtime.js"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.runtime.js.map",
@@ -166,7 +185,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.0/runtimes/browser-wasm/native/dotnet.runtime.js.map"
+      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.1/runtimes/browser-wasm/native/dotnet.runtime.js.map"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/icudt_CJK.dat",
@@ -185,7 +204,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.0/runtimes/browser-wasm/native/icudt_CJK.dat"
+      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.1/runtimes/browser-wasm/native/icudt_CJK.dat"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/icudt_EFIGS.dat",
@@ -204,7 +223,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.0/runtimes/browser-wasm/native/icudt_EFIGS.dat"
+      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.1/runtimes/browser-wasm/native/icudt_EFIGS.dat"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/icudt_no_CJK.dat",
@@ -223,7 +242,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.0/runtimes/browser-wasm/native/icudt_no_CJK.dat"
+      "OriginalItemSpec": "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.1/runtimes/browser-wasm/native/icudt_no_CJK.dat"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/MangaLibClient.pdb",
@@ -587,6 +606,25 @@
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/webcil/Microsoft.Extensions.FileSystemGlobbing.wasm"
     },
     {
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/Microsoft.Extensions.Http.wasm",
+      "SourceId": "MangaLibClient",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Http.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/webcil/Microsoft.Extensions.Http.wasm"
+    },
+    {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/Microsoft.Extensions.Logging.Abstractions.wasm",
       "SourceId": "MangaLibClient",
       "SourceType": "Computed",
@@ -813,6 +851,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/webcil/netstandard.wasm"
+    },
+    {
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/Refit.HttpClientFactory.wasm",
+      "SourceId": "MangaLibClient",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Refit.HttpClientFactory.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/webcil/Refit.HttpClientFactory.wasm"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/Refit.wasm",
@@ -3912,25 +3969,6 @@
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/webcil/WindowsBase.wasm"
     },
     {
-      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/02zqakk9rn.gz",
-      "SourceId": "MangaLibClient",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.8.0.0.02zqakk9rn.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.runtime.8.0.0.02zqakk9rn.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.runtime.8.0.0.02zqakk9rn.js"
-    },
-    {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/0emhw4ymkn.gz",
       "SourceId": "MangaLibClient",
       "SourceType": "Computed",
@@ -4482,6 +4520,25 @@
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.Diagnostics.Tracing.wasm"
     },
     {
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/4zrdker7ap.gz",
+      "SourceId": "MangaLibClient",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Http.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/Microsoft.Extensions.Http.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/Microsoft.Extensions.Http.wasm"
+    },
+    {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/58u8n13xnu.gz",
       "SourceId": "MangaLibClient",
       "SourceType": "Computed",
@@ -4786,6 +4843,25 @@
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.Threading.ThreadPool.wasm"
     },
     {
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/7ovdgc63r6.gz",
+      "SourceId": "MangaLibClient",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.js"
+    },
+    {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/7pzs5vgpq5.gz",
       "SourceId": "MangaLibClient",
       "SourceType": "Computed",
@@ -4803,6 +4879,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.Numerics.Vectors.wasm"
+    },
+    {
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/7yc2oava91.gz",
+      "SourceId": "MangaLibClient",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.runtime.8.0.1.7yc2oava91.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.runtime.8.0.1.7yc2oava91.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.runtime.8.0.1.7yc2oava91.js"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/7zpr6lbgl4.gz",
@@ -4995,6 +5090,25 @@
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.IO.FileSystem.DriveInfo.wasm"
     },
     {
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/9a9ape3ff5.gz",
+      "SourceId": "MangaLibClient",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_CJK.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/icudt_CJK.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/icudt_CJK.dat"
+    },
+    {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/9nnvfpz5hj.gz",
       "SourceId": "MangaLibClient",
       "SourceType": "Computed",
@@ -5012,6 +5126,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.Web.wasm"
+    },
+    {
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/9uyrjdqz31.gz",
+      "SourceId": "MangaLibClient",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_EFIGS.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/icudt_EFIGS.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/icudt_EFIGS.dat"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/a45ybb1hjj.gz",
@@ -5147,25 +5280,6 @@
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.Threading.Tasks.wasm"
     },
     {
-      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/bu0bzptrig.gz",
-      "SourceId": "MangaLibClient",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.js.map.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.js.map",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.js.map"
-    },
-    {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/c09owh2gr9.gz",
       "SourceId": "MangaLibClient",
       "SourceType": "Computed",
@@ -5240,6 +5354,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.Data.DataSetExtensions.wasm"
+    },
+    {
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/cnrsgoip8d.gz",
+      "SourceId": "MangaLibClient",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.js.map.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.js.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.js.map"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/cran4hfwpm.gz",
@@ -5831,44 +5964,6 @@
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.Net.WebHeaderCollection.wasm"
     },
     {
-      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/jcire74xz0.gz",
-      "SourceId": "MangaLibClient",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.8.0.0.jcire74xz0.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.native.8.0.0.jcire74xz0.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.native.8.0.0.jcire74xz0.js"
-    },
-    {
-      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/jfftc2vakc.gz",
-      "SourceId": "MangaLibClient",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.js"
-    },
-    {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/jg0xuo82rk.gz",
       "SourceId": "MangaLibClient",
       "SourceType": "Computed",
@@ -6076,25 +6171,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.AppContext.wasm"
-    },
-    {
-      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/l3l8rzcjcv.gz",
-      "SourceId": "MangaLibClient",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_EFIGS.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/icudt_EFIGS.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/icudt_EFIGS.dat"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/l3y96o7grr.gz",
@@ -6361,6 +6437,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/Microsoft.Extensions.Primitives.wasm"
+    },
+    {
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/mkly7zv28x.gz",
+      "SourceId": "MangaLibClient",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_no_CJK.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/icudt_no_CJK.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/icudt_no_CJK.dat"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/mqf1xevavl.gz",
@@ -6914,25 +7009,6 @@
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.Collections.wasm"
     },
     {
-      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/q668g5n7jq.gz",
-      "SourceId": "MangaLibClient",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.js.map.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.runtime.js.map",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.runtime.js.map"
-    },
-    {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/qb6o30e786.gz",
       "SourceId": "MangaLibClient",
       "SourceType": "Computed",
@@ -7007,6 +7083,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.Diagnostics.TextWriterTraceListener.wasm"
+    },
+    {
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/qwdt4lr6gw.gz",
+      "SourceId": "MangaLibClient",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.native.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.native.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.native.wasm"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/rmvmz2ckmu.gz",
@@ -7102,6 +7197,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.Threading.Timer.wasm"
+    },
+    {
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/s7ckcvrp65.gz",
+      "SourceId": "MangaLibClient",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.native.8.0.1.s7ckcvrp65.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.native.8.0.1.s7ckcvrp65.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.native.8.0.1.s7ckcvrp65.js"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/srg4wc6quh.gz",
@@ -7275,25 +7389,6 @@
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.IO.Compression.wasm"
     },
     {
-      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/uy6q811xn5.gz",
-      "SourceId": "MangaLibClient",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_no_CJK.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/icudt_no_CJK.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/icudt_no_CJK.dat"
-    },
-    {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/v1i0pwv5gp.gz",
       "SourceId": "MangaLibClient",
       "SourceType": "Computed",
@@ -7387,25 +7482,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.Net.WebClient.wasm"
-    },
-    {
-      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/vda46ysbfs.gz",
-      "SourceId": "MangaLibClient",
-      "SourceType": "Computed",
-      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.wasm.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.native.wasm",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.native.wasm"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/vdygo5ujf6.gz",
@@ -7655,23 +7731,23 @@
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.Net.ServicePoint.wasm"
     },
     {
-      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/yky02opg6p.gz",
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/yks0fdkuol.gz",
       "SourceId": "MangaLibClient",
       "SourceType": "Computed",
       "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
       "BasePath": "/",
-      "RelativePath": "_framework/icudt_CJK.dat.gz",
+      "RelativePath": "_framework/dotnet.runtime.js.map.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/icudt_CJK.dat",
+      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.runtime.js.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/icudt_CJK.dat"
+      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/dotnet.runtime.js.map"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/yumhufe5c7.gz",
@@ -7710,6 +7786,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.Reflection.DispatchProxy.wasm"
+    },
+    {
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/yy484gvoln.gz",
+      "SourceId": "MangaLibClient",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/Blazored.LocalStorage.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/Blazored.LocalStorage.wasm"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/z09ovugacv.gz",
@@ -7767,6 +7862,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/System.Security.Cryptography.X509Certificates.wasm"
+    },
+    {
+      "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/zsig1yxs21.gz",
+      "SourceId": "MangaLibClient",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Refit.HttpClientFactory.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/Refit.HttpClientFactory.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/bin/Debug/net8.0/wwwroot/_framework/Refit.HttpClientFactory.wasm"
     },
     {
       "Identity": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibClient/obj/Debug/net8.0/compressed/zut9de47ww.gz",

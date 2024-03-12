@@ -1,15 +1,15 @@
 {
   "mainAssemblyName": "MangaLibClient",
   "resources": {
-    "hash": "sha256-4s9nMFyJ4hnv9ya6lEQfkyh6O9SBpJ2CpEBJ3toBmaY=",
+    "hash": "sha256-CLEcCaYmWoSLUhKa76Zyux+9oSH/ptTIvLCVyg+LTJU=",
     "jsModuleNative": {
-      "dotnet.native.8.0.0.jcire74xz0.js": "sha256-LjLDIz9+J7uuiwMlQ4HbNx2BnSpphOtO2MwkoI28vdI="
+      "dotnet.native.8.0.1.s7ckcvrp65.js": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.8.0.0.02zqakk9rn.js": "sha256-WdSX3HQvnBYF0KJLZoOyHvTzMHetaob6PV0Kn2K+QXw="
+      "dotnet.runtime.8.0.1.7yc2oava91.js": "sha256-HZOoaGpz9ekMa/oSmeApSKp3DXNdVUq2UBqsTIIiN8A="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-Vr6ZXKoP77zgabrMIxQ1GbOkrxfx5XGqHO0odLhUIMY="
+      "dotnet.native.wasm": "sha256-dqpunZywlYy86b4O6ZjONasmG+4FH0P17FZ0OIf/lIg="
     },
     "icu": {
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -17,6 +17,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
+      "Blazored.LocalStorage.wasm": "sha256-xHBGFCMjDjvvTwtMvgaMBNmQk9JdVhGmws2/GMZlxrI=",
       "Microsoft.AspNetCore.Authorization.wasm": "sha256-j29bzsbGr0GXbz3saSOBqDtWxNOK08Or3b1HgnZ+pvA=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-0SRqG4hZOVUUFxERmD93PJWBJR6d4gCf5UB9vF6jB9A=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-v5x7jiwdpMdHj54wA/JoDsrCrnr89XklOokSoWNJzF0=",
@@ -33,6 +34,7 @@
       "Microsoft.Extensions.FileProviders.Abstractions.wasm": "sha256-IUopixuV8E09mP+TIgRp/lXEbeacXbUTW7cu0v5B9Tc=",
       "Microsoft.Extensions.FileProviders.Physical.wasm": "sha256-MS+zB0xkKhKk/QdE32ZwKtdlrLMLI/y2NAKPUWhcBVg=",
       "Microsoft.Extensions.FileSystemGlobbing.wasm": "sha256-AnWUKd0qJ8ZNKkRC0AFK2cjjszB7reXiP+bXdIi8bic=",
+      "Microsoft.Extensions.Http.wasm": "sha256-Fe3LbA/B3OyQFUA22gv3dQOE9m4fdjc2ZXV17rLywEE=",
       "Microsoft.Extensions.Logging.wasm": "sha256-Rx+UwnmyfTtMmlYd3HWJOvYVnSSwShUKrbPvqkfxmZk=",
       "Microsoft.Extensions.Logging.Abstractions.wasm": "sha256-R+hweMNg9P7RU++DPEpfqsjng2tWserGZEtjsL3gl84=",
       "Microsoft.Extensions.Options.wasm": "sha256-HPL9mH3zbRHz2Dv2qcWF0dUEk69pohDoiXzfTp2UMyE=",
@@ -40,6 +42,7 @@
       "Microsoft.JSInterop.wasm": "sha256-sm2HpM+aEsdu8kPTluhkGijieh9Fr/JLihBU0ZZvtVI=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-3wQR1/VN+SB8r7Gkqf93l8O4F1aSbaghQWV2PoaJByI=",
       "Refit.wasm": "sha256-dPwscuQlG8+6ooNRwKHdWwNfae//Eappj61KwmkhSsI=",
+      "Refit.HttpClientFactory.wasm": "sha256-2v8SVr0ieLx31h9R8ogS7vPDu4cK0gDsFaqWeYeWELg=",
       "System.IO.Pipelines.wasm": "sha256-JqVBy6SV+3qk+IK3VJiyIDt9CsVk6b1/ytTXmrI4mTM=",
       "Microsoft.CSharp.wasm": "sha256-ZpkICZtm/DHNuGrRDRfVyuTokNnwnPl7dxJGrPk6z5g=",
       "Microsoft.VisualBasic.Core.wasm": "sha256-coGIpdzImgRuQzGOx9iJkE/euOSMnY1mLy59OHmdq7k=",
@@ -209,10 +212,10 @@
       "mscorlib.wasm": "sha256-cDuLeL3OCtVtiid/dyex1MVgbuzDSRwZxKzuP2Dp4mg=",
       "netstandard.wasm": "sha256-A0h86SDieTMoU/wU2JTszWCsUmMuguDcbap0b0BzsmI=",
       "System.Private.CoreLib.wasm": "sha256-/0DNIm/T0C07X7Tuz5uR8JvVCoAfEE2MnfPUSjyS9xc=",
-      "MangaLibClient.wasm": "sha256-Zc0Q5y7ImeHaupCtMm8zZFIawxoXPQsPowTAvHVzBdk="
+      "MangaLibClient.wasm": "sha256-sFQeRp6qGs3//uVwrvI0FMLHOn0BkL9dqn5Jwdhx7u0="
     },
     "pdb": {
-      "MangaLibClient.pdb": "sha256-bek9hE9whOazu1D5rvOEuE+5c7h5f7PT4OCwum5AvSU="
+      "MangaLibClient.pdb": "sha256-TxBK9CPsJGG3yZOXKulzW3Y3+5flmSM04N3Vx2xSO6U="
     }
   },
   "cacheBootResources": true,

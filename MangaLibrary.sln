@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaLibCore", "MangaLibCore\MangaLibCore.csproj", "{430D98E8-4CE2-4DE6-9A61-3BE9B46EA402}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaLibrary.Api", "MangaLibrary.Api\MangaLibrary.Api.csproj", "{66AC7CBA-66B3-4D9D-8209-56F08A8D77A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaLibApp", "MangaLibApp\MangaLibApp.csproj", "{FEA7058B-9777-48C7-B7D9-1E1A7B4475B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaLibrary.Client", "MangaLibrary.Client\MangaLibrary.Client.csproj", "{917C6177-68B1-4667-BFB7-6D6B2B5798D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaLibApi", "MangaLibApi\MangaLibApi.csproj", "{E45AC662-E26A-419E-8B9D-543F2D96EB64}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaLibClient", "MangaLibClient\MangaLibClient.csproj", "{287CF5EE-41F2-4E1A-B53E-4E7296502CA1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaLibrary.Shared", "MangaLibrary.Shared\MangaLibrary.Shared.csproj", "{DE12FD14-4B9A-4BC3-9139-7D0BC6BAB0DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,25 +18,21 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{430D98E8-4CE2-4DE6-9A61-3BE9B46EA402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{430D98E8-4CE2-4DE6-9A61-3BE9B46EA402}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{430D98E8-4CE2-4DE6-9A61-3BE9B46EA402}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{430D98E8-4CE2-4DE6-9A61-3BE9B46EA402}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9CBEE364-202B-4CFA-BDAF-33C1414B4F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9CBEE364-202B-4CFA-BDAF-33C1414B4F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CBEE364-202B-4CFA-BDAF-33C1414B4F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CBEE364-202B-4CFA-BDAF-33C1414B4F0F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FEA7058B-9777-48C7-B7D9-1E1A7B4475B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FEA7058B-9777-48C7-B7D9-1E1A7B4475B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FEA7058B-9777-48C7-B7D9-1E1A7B4475B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FEA7058B-9777-48C7-B7D9-1E1A7B4475B8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E45AC662-E26A-419E-8B9D-543F2D96EB64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E45AC662-E26A-419E-8B9D-543F2D96EB64}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E45AC662-E26A-419E-8B9D-543F2D96EB64}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E45AC662-E26A-419E-8B9D-543F2D96EB64}.Release|Any CPU.Build.0 = Release|Any CPU
-		{287CF5EE-41F2-4E1A-B53E-4E7296502CA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{287CF5EE-41F2-4E1A-B53E-4E7296502CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{287CF5EE-41F2-4E1A-B53E-4E7296502CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{287CF5EE-41F2-4E1A-B53E-4E7296502CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66AC7CBA-66B3-4D9D-8209-56F08A8D77A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66AC7CBA-66B3-4D9D-8209-56F08A8D77A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66AC7CBA-66B3-4D9D-8209-56F08A8D77A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66AC7CBA-66B3-4D9D-8209-56F08A8D77A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{917C6177-68B1-4667-BFB7-6D6B2B5798D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{917C6177-68B1-4667-BFB7-6D6B2B5798D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{917C6177-68B1-4667-BFB7-6D6B2B5798D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{917C6177-68B1-4667-BFB7-6D6B2B5798D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE12FD14-4B9A-4BC3-9139-7D0BC6BAB0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE12FD14-4B9A-4BC3-9139-7D0BC6BAB0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE12FD14-4B9A-4BC3-9139-7D0BC6BAB0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE12FD14-4B9A-4BC3-9139-7D0BC6BAB0DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
