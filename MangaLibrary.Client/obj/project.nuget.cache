@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CVY+kXAqBA9fswA8IHBA1sEwrdtgxmAmeYZrRao0ysgMAhyuHbJj8ghyPNmk7ASYLjqwksPeijkiszDKKUUSSQ==",
+  "dgSpecHash": "8a2xzH/yKVOzZ2l/ujauo00qtAZl/R1AgeC+NPEvo/so97tcuWQE8AsMt4Cvh3RvCX4yBDlcw71F/byAF75Q7g==",
   "success": true,
   "projectFilePath": "/home/kollibroman/LosoweProjekty/MangaLibrary/MangaLibrary.Client/MangaLibrary.Client.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "/home/kollibroman/.nuget/packages/microsoft.extensions.fileproviders.abstractions/8.0.0/microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.extensions.fileproviders.physical/8.0.0/microsoft.extensions.fileproviders.physical.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.extensions.filesystemglobbing/8.0.0/microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/microsoft.extensions.http/7.0.0/microsoft.extensions.http.7.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.extensions.logging/8.0.0/microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
@@ -30,7 +31,14 @@
     "/home/kollibroman/.nuget/packages/microsoft.jsinterop.webassembly/8.0.2/microsoft.jsinterop.webassembly.8.0.2.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.net.illink.tasks/8.0.2/microsoft.net.illink.tasks.8.0.2.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.net.sdk.webassembly.pack/8.0.2/microsoft.net.sdk.webassembly.pack.8.0.2.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/refit/7.0.0/refit.7.0.0.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/refit.httpclientfactory/7.0.0/refit.httpclientfactory.7.0.0.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/refit.newtonsoft.json/7.0.0/refit.newtonsoft.json.7.0.0.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/serilog/3.1.1/serilog.3.1.1.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/serilog.sinks.console/5.0.1/serilog.sinks.console.5.0.1.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
+    "/home/kollibroman/.nuget/packages/system.net.http.json/7.0.1/system.net.http.json.7.0.1.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
     "/home/kollibroman/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.2/microsoft.netcore.app.runtime.mono.browser-wasm.8.0.2.nupkg.sha512"

@@ -1,0 +1,9 @@
+2024-03-12 16:43:05.203 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-03-12 16:43:05.828 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-03-12 16:43:05.830 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-03-12 16:43:05.996 +01:00 [DBG] The property 'WrittenEntity.AuthorId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-03-12 16:43:06.175 +01:00 [DBG] Entity Framework Core 8.0.2 initialized 'MangaLibContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.2+5a671b9769f2d00a75b0ba42ce30c444a12407e3' with options: None
+2024-03-12 16:43:06.228 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<Guid>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-03-12 16:43:06.228 +01:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<Guid>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-03-12 16:43:06.241 +01:00 [DBG] The property 'WrittenEntity.AuthorId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-03-12 16:43:06.867 +01:00 [DBG] 'MangaLibContext' disposed.
