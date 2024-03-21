@@ -1,0 +1,29 @@
+﻿services:
+  mangalibrary.api:
+    image: mangalibrary.api
+    build:
+      context: .
+      dockerfile: MangaLibrary.Api/Dockerfile
+    ports:
+      - 5000:5000
+    environment:
+      - ASPNETCORE_URLS=http://*:5000
+    networks:
+      - Reader-Network
+    
+  database:
+      image: postgres:latest
+      container_name: postgresql
+      environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+        - POSTGRES_DB=postgres
+      volumes:
+        - ./volumes/data/db:/var/lib/postgresql/data
+      ports:
+        - 5433:5432
+      networks:
+        - Reader-Network
+networks:
+    Reader-Network:
+        driver: bridge
